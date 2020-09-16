@@ -3,11 +3,11 @@
   <title>iyuge2</title>
   
   <subtitle>1 + 1 &gt; 2</subtitle>
-  <link href="http://iyuge2.top/atom.xml" rel="self"/>
+  <link href="https://iyuge2.top/atom.xml" rel="self"/>
   
-  <link href="http://iyuge2.top/"/>
+  <link href="https://iyuge2.top/"/>
   <updated>2020-09-16T16:06:42.699Z</updated>
-  <id>http://iyuge2.top/</id>
+  <id>https://iyuge2.top/</id>
   
   <author>
     <name>iyuge2</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>机器学习系列（1）—— 感知机</title>
-    <link href="http://iyuge2.top/2020/09/16/ml1-perception/"/>
-    <id>http://iyuge2.top/2020/09/16/ml1-perception/</id>
+    <link href="https://iyuge2.top/2020/09/16/ml1-perception/"/>
+    <id>https://iyuge2.top/2020/09/16/ml1-perception/</id>
     <published>2020-09-16T15:11:36.000Z</published>
     <updated>2020-09-16T16:06:42.699Z</updated>
     
@@ -38,19 +38,19 @@
     
     
     
-    <category term="技术区" scheme="http://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="机器学习" scheme="http://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="面试" scheme="http://iyuge2.top/tags/%E9%9D%A2%E8%AF%95/"/>
+    <category term="面试" scheme="https://iyuge2.top/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>使用ssh免密登录服务器</title>
-    <link href="http://iyuge2.top/2020/09/16/usessh/"/>
-    <id>http://iyuge2.top/2020/09/16/usessh/</id>
+    <link href="https://iyuge2.top/2020/09/16/usessh/"/>
+    <id>https://iyuge2.top/2020/09/16/usessh/</id>
     <published>2020-09-16T14:39:02.000Z</published>
     <updated>2020-09-16T14:41:08.605Z</updated>
     
@@ -68,17 +68,17 @@ cat</summary>
     
     
     
-    <category term="技术区" scheme="http://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="linux" scheme="http://iyuge2.top/tags/linux/"/>
+    <category term="linux" scheme="https://iyuge2.top/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>VScode使用Tips</title>
-    <link href="http://iyuge2.top/2020/09/16/usevscode/"/>
-    <id>http://iyuge2.top/2020/09/16/usevscode/</id>
+    <link href="https://iyuge2.top/2020/09/16/usevscode/"/>
+    <id>https://iyuge2.top/2020/09/16/usevscode/</id>
     <published>2020-09-16T11:22:41.790Z</published>
     <updated>2020-09-16T14:54:38.481Z</updated>
     
@@ -94,19 +94,19 @@ cat</summary>
     
     
     
-    <category term="技术区" scheme="http://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="说明文档" scheme="http://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
+    <category term="说明文档" scheme="https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
     
-    <category term="python" scheme="http://iyuge2.top/tags/python/"/>
+    <category term="python" scheme="https://iyuge2.top/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>由置换操作&quot;a,b = b,a&quot;引发的一些思考</title>
-    <link href="http://iyuge2.top/2020/09/16/pythonreplacement/"/>
-    <id>http://iyuge2.top/2020/09/16/pythonreplacement/</id>
+    <link href="https://iyuge2.top/2020/09/16/pythonreplacement/"/>
+    <id>https://iyuge2.top/2020/09/16/pythonreplacement/</id>
     <published>2020-09-16T10:46:43.798Z</published>
     <updated>2020-09-16T11:12:04.761Z</updated>
     
@@ -117,17 +117,17 @@ cat</summary>
     
     
     
-    <category term="技术区" scheme="http://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="python" scheme="http://iyuge2.top/tags/python/"/>
+    <category term="python" scheme="https://iyuge2.top/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>Vscode + Github + Hexo构建个人博客</title>
-    <link href="http://iyuge2.top/2020/09/16/createblog/"/>
-    <id>http://iyuge2.top/2020/09/16/createblog/</id>
+    <link href="https://iyuge2.top/2020/09/16/createblog/"/>
+    <id>https://iyuge2.top/2020/09/16/createblog/</id>
     <published>2020-09-16T09:38:20.287Z</published>
     <updated>2020-09-16T09:39:26.048Z</updated>
     
@@ -145,17 +145,17 @@ cat</summary>
     
     
     
-    <category term="技术区" scheme="http://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="说明文档" scheme="http://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
+    <category term="说明文档" scheme="https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
     
   </entry>
   
   <entry>
     <title>开始的地方</title>
-    <link href="http://iyuge2.top/2020/09/16/start/"/>
-    <id>http://iyuge2.top/2020/09/16/start/</id>
+    <link href="https://iyuge2.top/2020/09/16/start/"/>
+    <id>https://iyuge2.top/2020/09/16/start/</id>
     <published>2020-09-15T17:08:42.156Z</published>
     <updated>2020-09-16T06:14:50.277Z</updated>
     
@@ -174,10 +174,10 @@ cat</summary>
     
     
     
-    <category term="杂想间" scheme="http://iyuge2.top/categories/%E6%9D%82%E6%83%B3%E9%97%B4/"/>
+    <category term="杂想间" scheme="https://iyuge2.top/categories/%E6%9D%82%E6%83%B3%E9%97%B4/"/>
     
     
-    <category term="起点" scheme="http://iyuge2.top/tags/%E8%B5%B7%E7%82%B9/"/>
+    <category term="起点" scheme="https://iyuge2.top/tags/%E8%B5%B7%E7%82%B9/"/>
     
   </entry>
   
