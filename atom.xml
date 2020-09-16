@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>iyuge2</title>
   
-  <subtitle>学而不思则罔</subtitle>
+  <subtitle>1 + 1 &gt; 2</subtitle>
   <link href="http://iyuge2.top/atom.xml" rel="self"/>
   
   <link href="http://iyuge2.top/"/>
-  <updated>2020-09-16T11:12:04.761Z</updated>
+  <updated>2020-09-16T14:41:08.605Z</updated>
   <id>http://iyuge2.top/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用ssh免密登录服务器</title>
+    <link href="http://iyuge2.top/2020/09/16/usessh/"/>
+    <id>http://iyuge2.top/2020/09/16/usessh/</id>
+    <published>2020-09-16T14:39:02.000Z</published>
+    <updated>2020-09-16T14:41:08.605Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;在服务器端使用&lt;code&gt;ssh-keygen&lt;/code&gt;生成密钥对，在用户的家目录中生成了一个 .ssh 的隐藏目录，内含两个密钥文件，id_rsa 为私钥，id_rsa.pub 为公钥。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd ~/.ssh
+cat</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="http://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="linux" scheme="http://iyuge2.top/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VScode使用Tips</title>
+    <link href="http://iyuge2.top/2020/09/16/usevscode/"/>
+    <id>http://iyuge2.top/2020/09/16/usevscode/</id>
+    <published>2020-09-16T11:22:41.790Z</published>
+    <updated>2020-09-16T14:54:38.481Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;配置文件&quot;&gt;&lt;a href=&quot;#配置文件&quot; class=&quot;headerlink&quot; title=&quot;配置文件&quot;&gt;&lt;/a&gt;配置文件&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;vscode中的配置分用户区（User）和工作区（Workspace）。&lt;br&gt;覆盖范围：用户区</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="http://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="说明文档" scheme="http://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
+    
+    <category term="python" scheme="http://iyuge2.top/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>由置换操作&quot;a,b = b,a&quot;引发的一些思考</title>

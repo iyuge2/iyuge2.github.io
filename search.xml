@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>使用ssh免密登录服务器</title>
+      <link href="2020/09/16/usessh/"/>
+      <url>2020/09/16/usessh/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>在服务器端使用<code>ssh-keygen</code>生成密钥对，在用户的家目录中生成了一个 .ssh 的隐藏目录，内含两个密钥文件，id_rsa 为私钥，id_rsa.pub 为公钥。</p><pre><code>cd ~/.sshcat id_rsa.pub &gt;&gt; authorized_keyschmod 600 authorized_keyschmod 700 ~/.ssh</code></pre></li><li><p>设置 SSH，打开密钥登录功能，编辑 /etc/ssh/sshd_config 文件，进行如下设置：</p><pre><code>RSAAuthentication yesPubkeyAuthentication yes</code></pre></li><li><p>重启ssh服务</p><pre><code>/etc/init.d/ssh restart</code></pre></li><li><p>在本地~/.ssh/目录下新建一个文件（名字随便取）,将服务器端的私钥id_rsa里的全部内容复制到新建的文件中，并将该文件权限改为<code>0600</code></p><blockquote><p>注意，windows用户“~”目录一般为<code>C:\Users\***</code></p></blockquote></li><li><p>本地使用下面命令进行登陆</p><pre><code>ssh xxx@xxx.xxx.xxx.xxx -p [端口号] -i ~/.ssh/[filename]</code></pre></li><li><p>设置别称，方便下次登录，在用户配置文件中用<code>alias</code>给上述命令取一个别称。</p><pre><code>vim ~/.bashrcalias xxx = 'ssh xxx@xxx.xxx.xxx.xxx -p [端口号] -i ~/.ssh/[filename]'</code></pre></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术区 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>VScode使用Tips</title>
+      <link href="2020/09/16/usevscode/"/>
+      <url>2020/09/16/usevscode/</url>
+      
+        <content type="html"><![CDATA[<h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><blockquote><p>vscode中的配置分用户区（User）和工作区（Workspace）。<br>覆盖范围：用户区 &gt; 工作区<br>优先级：工作区 &gt; 用户区</p></blockquote><h4 id="插件推荐"><a href="#插件推荐" class="headerlink" title="插件推荐"></a>插件推荐</h4><blockquote><p>编程语言相关插件就不说了，直接按照官方推荐来就好了。</p></blockquote><ul><li>Remote Development<blockquote><p>一个远程连接工具包，目前只用到了里面的<code>remote-ssh</code>，用于连接服务器。<br>可以直接将服务器上一切在本地vscode中使用，简直不要太爽！！！</p></blockquote></li></ul><p><strong>连接方式</strong><br>左侧点击插件-&gt;点击齿轮-&gt;修改配置信息</p><pre><code>Host 随便取个名    HostName [主机ip]    User [用户名]    IdentityFile [如果设置了ssh密钥登陆，这里填写密钥地址，否则，可以不用此项]</code></pre><blockquote><p><strong>注意</strong>: 连接成功后，会在服务器的用户根目录下创建一个<code>.vscode-server</code>文件夹，里面存放远端vscode配置信息。第一次连接或者vscode更新时，服务器需要连网。<br>传送门：<a href="./ssh.md">如何通过ssh免密登录服务器</a></p></blockquote><ul><li>配色和字体推荐  <blockquote><p>配色推荐：Monokai Pro(直接在扩展中心安装即可)<br>字体推荐：<a href="https://github.com/tonsky/FiraCode">FiraCode</a> [<a href="https://github.com/tonsky/FiraCode/wiki">安装教程</a>]</p></blockquote></li></ul><p>显示效果：<br><img src="fonts-theme.png" alt="vscode配色效果"></p><ul><li><p>Settings Sync  </p><blockquote><p>将vscode配置（包括插件）同步到github gist中，方便一键移植。<br><a href="https://juejin.im/post/5b9b5a6f6fb9a05d22728e36">配置教程</a><br>上传配置快捷键: shift+Alt/option+U<br>下载配置快捷键: shift+Alt/option+D</p></blockquote></li><li><p>其他插件</p></li></ul><table><thead><tr><th align="center">插件</th><th align="center">功能</th></tr></thead><tbody><tr><td align="center">Chinese Language Pack</td><td align="center">vscode汉化包</td></tr><tr><td align="center">Code Runner</td><td align="center">一键运行所有程序</td></tr><tr><td align="center">Code Spell Checker</td><td align="center">英文单词检查插件</td></tr><tr><td align="center">Edit csv</td><td align="center">csv文件可视化编辑器</td></tr><tr><td align="center">filesize</td><td align="center">在底部bar中显示文件大小</td></tr><tr><td align="center">github pull requests</td><td align="center">集成github</td></tr><tr><td align="center">LaTex Workshop</td><td align="center">集成LaTex</td></tr><tr><td align="center">Live Share</td><td align="center">远程协同编程</td></tr><tr><td align="center">Path Autocomplete</td><td align="center">路径自动补全插件</td></tr><tr><td align="center">Vim</td><td align="center">vim快捷键</td></tr><tr><td align="center">TabNine</td><td align="center">AI补代码</td></tr><tr><td align="center">Markdown Preview Enhanced</td><td align="center">markdown预览和导出神器</td></tr></tbody></table><h4 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h4><ul><li><p>无法更新？</p><blockquote><p><code>sudo chown $USER ~/Library/Caches/com.microsoft.VSCode.ShipIt/</code></p></blockquote></li><li><p>VS Code报错Module ‘xx’ has no ‘xx’ member pylint(no-member)</p><blockquote><p>在设置中添加<code>"python.linting.pylintArgs": ["--generate-members"]</code></p></blockquote></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术区 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 说明文档 </tag>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>由置换操作&quot;a,b = b,a&quot;引发的一些思考</title>
       <link href="2020/09/16/pythonreplacement/"/>
       <url>2020/09/16/pythonreplacement/</url>
