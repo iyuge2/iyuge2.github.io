@@ -6,7 +6,7 @@
   <link href="http://iyuge2.top/atom.xml" rel="self"/>
   
   <link href="http://iyuge2.top/"/>
-  <updated>2020-09-15T17:10:55.279Z</updated>
+  <updated>2020-09-16T06:14:50.277Z</updated>
   <id>http://iyuge2.top/</id>
   
   <author>
@@ -20,19 +20,19 @@
     <title>开始的地方</title>
     <link href="http://iyuge2.top/2020/09/16/start/"/>
     <id>http://iyuge2.top/2020/09/16/start/</id>
-    <published>2020-09-15T17:15:33.000Z</published>
-    <updated>2020-09-15T17:10:55.279Z</updated>
+    <published>2020-09-15T17:08:42.156Z</published>
+    <updated>2020-09-16T06:14:50.277Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;总觉得要写点啥了&lt;/p&gt;
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;象牙塔的日子就要看到终点了，一个全新的起点也即将开始。总觉得要慢慢开始写点啥了，雁过留痕，风过留声。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) {</summary>
+       </summary>
         
       
     
@@ -41,25 +41,26 @@
     <category term="杂想间" scheme="http://iyuge2.top/categories/%E6%9D%82%E6%83%B3%E9%97%B4/"/>
     
     
-    <category term="其他" scheme="http://iyuge2.top/tags/%E5%85%B6%E4%BB%96/"/>
+    <category term="起点" scheme="http://iyuge2.top/tags/%E8%B5%B7%E7%82%B9/"/>
     
   </entry>
   
   <entry>
-    <title>Github + Hexo构建个人博客</title>
-    <link href="http://iyuge2.top/2020/09/16/getblog/"/>
-    <id>http://iyuge2.top/2020/09/16/getblog/</id>
-    <published>2020-09-15T17:08:00.000Z</published>
-    <updated>2020-09-15T17:08:36.480Z</updated>
+    <title>Vscode + Github + Hexo构建个人博客</title>
+    <link href="http://iyuge2.top/2020/09/16/createblog/"/>
+    <id>http://iyuge2.top/2020/09/16/createblog/</id>
+    <published>2020-09-15T17:05:45.700Z</published>
+    <updated>2020-09-16T09:33:55.430Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h3&gt;&lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-    </summary>
+    <summary type="html">&lt;h3 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;一直想着打造个人博客，总结知识，现在终于开始动手了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3</summary>
         
       
     
@@ -68,34 +69,7 @@
     <category term="技术区" scheme="http://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="其他" scheme="http://iyuge2.top/tags/%E5%85%B6%E4%BB%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://iyuge2.top/2020/09/16/hello-world/"/>
-    <id>http://iyuge2.top/2020/09/16/hello-world/</id>
-    <published>2020-09-15T16:27:00.000Z</published>
-    <updated>2020-09-15T17:06:43.217Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="http://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="测试" scheme="http://iyuge2.top/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-    <category term="入门" scheme="http://iyuge2.top/tags/%E5%85%A5%E9%97%A8/"/>
+    <category term="说明文档" scheme="http://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
     
   </entry>
   

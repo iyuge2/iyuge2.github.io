@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Github + Hexo构建个人博客, iyuge2">
+    <meta name="keywords" content="Vscode + Github + Hexo构建个人博客, iyuge2">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Github + Hexo构建个人博客 | iyuge2</title>
+    <title>Vscode + Github + Hexo构建个人博客 | iyuge2</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -288,12 +288,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Github + Hexo构建个人博客</h1>
+                    <h1 class="description center-align post-title">Vscode + Github + Hexo构建个人博客</h1>
                 </div>
             </div>
         </div>
@@ -410,8 +410,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%85%B6%E4%BB%96/">
-                                <span class="chip bg-color">其他</span>
+                            <a href="/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/">
+                                <span class="chip bg-color">说明文档</span>
                             </a>
                         
                     </div>
@@ -451,7 +451,135 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><script>
+                <h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><blockquote>
+<p>一直想着打造个人博客，总结知识，现在终于开始动手了。</p>
+</blockquote>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><strong>前后尝试了两种不同的写作方式</strong></p>
+<ol>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/getgridea/gridea">静态博客写作客户端Gridea</a></p>
+<blockquote>
+<p>这种方式非常简单，可以像写笔记一样写博客，省去了很多麻烦。但目前支持的主题比较少，定制化功能也不够完整，不能支持<code>vim</code>快捷键，试用了一段时间后还是放弃了，没用过的还是非常推荐试一下的。</p>
+</blockquote>
+</li>
+<li><p>基于hexo构建博客站</p>
+<blockquote>
+<p>也比较简单，主题丰富，浅层次定制化比较简单，但若想深度定制化就需要前端知识了。（目前这块还比较薄弱，逐步完善ing…）<br>关于如何基于Hexo构建已经有非常多文章介绍了:<br><a target="_blank" rel="noopener" href="https://yafine-blog.cn/posts/4ab2.html">Hexo+github 搭建博客 (超级详细版，精细入微)</a><br><a target="_blank" rel="noopener" href="https://blog.licardo.cn/posts/36692/">Hexo 搭建个人博客详细教程</a></p>
+</blockquote>
+</li>
+</ol>
+<p>这里，我主要针对第二种方式介绍自己<strong>使用到的工具</strong>以及期间<strong>碰到的问题和解决方式</strong></p>
+<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><h4 id="使用到的工具"><a href="#使用到的工具" class="headerlink" title="使用到的工具"></a>使用到的工具</h4><ul>
+<li><p>Github Page</p>
+<blockquote>
+<p>托管博客网站</p>
+</blockquote>
+</li>
+<li><p>Hexo</p>
+<blockquote>
+<p>建站框架，拥有丰富的<a target="_blank" rel="noopener" href="https://hexo.io/themes/">主题</a>，这里推荐两款主题: <a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">Matery</a> 和 <a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">butterfly</a></p>
+</blockquote>
+</li>
+<li><p>阿里云 / 腾讯云 / 华为云 / …</p>
+<blockquote>
+<p>域名服务商，提供域名服务，可以自定义博客域名，而不是使用默认的[username.github.io]。  </p>
+</blockquote>
+</li>
+<li><p>VScode</p>
+<blockquote>
+<p>博客编辑，一款越来越喜欢的编辑神器。<br>安装插件<code>Markdown Preview Enhanced </code>后开启markdown预览功能，就很舒服了！</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="问题-amp-解决方案"><a href="#问题-amp-解决方案" class="headerlink" title="问题 &amp; 解决方案"></a>问题 &amp; 解决方案</h4><h5 id="1-如何自定义域名"><a href="#1-如何自定义域名" class="headerlink" title="1. 如何自定义域名"></a>1. 如何自定义域名</h5><ul>
+<li><p>注册一个域名</p>
+<blockquote>
+<p>我选择了阿里云，学生注册第一年免费试用，其他的应该也有类似优惠。</p>
+</blockquote>
+</li>
+<li><p>解析域名，两种方式可选</p>
+<blockquote>
+<p>(1) 用A记录，即使用ip地址，ip地址可以用<code>dig username.github.io +noall +answer</code>获得，一般会得到多个ip地址，每个都添加一个A记录即可。<br>(2) 用CNAME记录，即别名转换，一般会添加两条记录，这样就可以通过多种方式访问自己的博客了。<br><img src="createBlog/cname.png" alt="CNAME"></p>
+</blockquote>
+</li>
+<li><p>添加到github中</p>
+<blockquote>
+<p>在[username.github.io]的setting页面下，输入自己设置的域名（只需要到二级域名即可），第一次时HTTPS会变成不可选，仔细读提示后发现要过一段时间才能选择。（我等了大概半小时就可以了）<br><img src="createBlog/github-dns.png" alt="github-dns"></p>
+</blockquote>
+</li>
+<li><p>添加CNAME文件</p>
+<blockquote>
+<p>上面操作结束后，每一次重新部署(<code>hexo d</code>)都会自动覆盖掉上一步的域名填入，这里需要在<code>source</code>目录下新建一个<code>CNAME</code>文件（无后缀），里面就只需填入注册的域名名字即可。<br>注：是在source目录下新建，不是根目录下！</p>
+</blockquote>
+</li>
+</ul>
+<h5 id="2-vscode中的hexo快捷键设置"><a href="#2-vscode中的hexo快捷键设置" class="headerlink" title="2. vscode中的hexo快捷键设置"></a>2. vscode中的hexo快捷键设置</h5><blockquote>
+<p>利用<code>vscode</code>的task机制，创建两个最常用功能的快捷键“本地预览”和“远程部署” 。参考自<a target="_blank" rel="noopener" href="https://blog.vlitter.top/post/make-vscode-be-the-best-editor-for-hexo/">将VS Code打造成Hexo博客的最佳编辑器</a></p>
+</blockquote>
+<p>一般地，除了个性化设置外，正常博客编写只需要用到<code>_posts</code>目录了，因此推荐在<code>_posts</code>目录下进行下面操作</p>
+<ul>
+<li>定义功能命令脚本</li>
+</ul>
+<p>(1) 新建预览功能脚本：<code>bins &gt; preview.sh</code></p>
+<pre><code>export PATH=/usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin:$PATH
+hexo server</code></pre>
+<p>(2) 新建部署功能脚本：<code>bins &gt; post.sh</code></p>
+<pre><code>export PATH=/usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin:$PATH
+hexo clean &amp;&amp; hexo generate --deploy</code></pre>
+<p><strong>Note:</strong> 因为vscode中的task打开的是非交互式的终端，因此需要用<code>export</code>加载<code>node</code>环境，否则会报<code>node</code>找不到的异常。貌似<code>windows</code>中是不需要这样的。</p>
+<ul>
+<li>定义任务配置<blockquote>
+<p>新建<code>.vscode &gt; tasks.json</code>文件，里面定义用到的任务配置。</p>
+</blockquote>
+<pre><code>{
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "HexoPost",
+          "type": "shell",
+          "command": "${workspaceRoot}/bins/post.sh",       
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          },
+          "presentation": {
+              "echo": true,
+              "reveal": "always",
+              "panel": "new"
+          }
+      },
+      {
+          "label": "HexoPreview",
+          "type": "shell",
+          "command": "${workspaceRoot}/bins/preview.sh",       
+          "group": {
+              "kind": "test",
+              "isDefault": true
+          },
+          "presentation": {
+              "echo": true,
+              "reveal": "always",
+              "panel": "new"
+          }
+      },
+  ]
+}</code></pre>
+</li>
+</ul>
+<p><strong>Note:</strong> 上述任务重新定义了<code>build</code>和<code>test</code>两个任务。</p>
+<ul>
+<li>重定义快捷键<blockquote>
+<p>打开键盘快捷键更改界面（<code>mac</code>下是输入<code>command+k</code>后紧接着输入<code>command+s</code>）。<br>在打开的界面中输入<code>任务</code>两个字，找到对应条目双击后就能更改快捷键设置。<br><img src="./createBlog/task-map.png"></p>
+</blockquote>
+</li>
+</ul>
+<h5 id="3-posts中文档的目录设置"><a href="#3-posts中文档的目录设置" class="headerlink" title="3. posts中文档的目录设置"></a>3. posts中文档的目录设置</h5><blockquote>
+<p>一般新建的文档都直接在<code>_posts</code>目录下，如果时间长了，则文档结构有点乱，因此希望按照自己的需求在这个目录下设置不同的目录结构。这里希望改成按照年份组织文档。</p>
+</blockquote>
+<ul>
+<li>最简单的方法<br>更改<code>hexo</code>根目录下的<code>_config.yml</code>中的<code>permalink</code>属性，将其改为<code>:year/:month/:day/:name/</code>。即将后面的<code>:title</code>改为了<code>:name</code>。</li>
+</ul>
+<p><strong>Note:</strong> <code>permalink</code>表示浏览器搜索栏中显示的文档路径编排方式，其中，<code>:title</code>表示的是文档相对于<code>_posts</code>的相对路径，而<code>:name</code>是文档的名称。</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -494,7 +622,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://iyuge2.top/2020/09/16/getblog/">http://iyuge2.top/2020/09/16/getblog/</a>
+                    <a href="http://iyuge2.top/2020/09/16/createblog/">http://iyuge2.top/2020/09/16/createblog/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -532,8 +660,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%85%B6%E4%BB%96/">
-                                    <span class="chip bg-color">其他</span>
+                                <a href="/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/">
+                                    <span class="chip bg-color">说明文档</span>
                                 </a>
                             
                         </div>
@@ -717,7 +845,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            总觉得要写点啥了
+                            雁过留痕，风过留声
                         
                     </div>
                     <div class="publish-info">
@@ -739,8 +867,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%85%B6%E4%BB%96/">
-                        <span class="chip bg-color">其他</span>
+                    <a href="/tags/%E8%B5%B7%E7%82%B9/">
+                        <span class="chip bg-color">起点</span>
                     </a>
                     
                 </div>
@@ -751,22 +879,22 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/16/hello-world/">
+                <a href="/2020/09/16/createblog/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Vscode + Github + Hexo构建个人博客">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">Vscode + Github + Hexo构建个人博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            基于github page与hexo打造个人博客，并配置vscode编辑环境
                         
                     </div>
                     <div class="publish-info">
@@ -785,15 +913,12 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%B5%8B%E8%AF%95/">
-                        <span class="chip bg-color">测试</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%85%A5%E9%97%A8/">
-                        <span class="chip bg-color">入门</span>
+                    <a href="/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/">
+                        <span class="chip bg-color">说明文档</span>
                     </a>
                     
                 </div>
@@ -859,7 +984,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
             collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
+            headingSelector: 'h2, h3, h4, h5, h6'
         });
 
         // modify the toc link href to support Chinese.
@@ -871,7 +996,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         // modify the heading title id to support Chinese.
         i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
+        $('#articleContent').children('h2, h3, h4, h5, h6').each(function () {
             $(this).attr('id', tocHeading + (++i));
         });
 
