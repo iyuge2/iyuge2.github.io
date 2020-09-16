@@ -6,7 +6,7 @@
   <link href="https://iyuge2.top/atom.xml" rel="self"/>
   
   <link href="https://iyuge2.top/"/>
-  <updated>2020-09-16T16:27:07.572Z</updated>
+  <updated>2020-09-16T16:46:26.655Z</updated>
   <id>https://iyuge2.top/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>机器学习系列（1）—— 感知机</title>
-    <link href="https://iyuge2.top/2020/59960.html"/>
-    <id>https://iyuge2.top/2020/59960.html</id>
+    <link href="https://iyuge2.top/2020/ml1-perception/"/>
+    <id>https://iyuge2.top/2020/ml1-perception/</id>
     <published>2020-09-16T15:11:36.000Z</published>
-    <updated>2020-09-16T16:27:07.572Z</updated>
+    <updated>2020-09-16T16:46:26.655Z</updated>
     
     
       
@@ -49,10 +49,10 @@
   
   <entry>
     <title>使用ssh免密登录服务器</title>
-    <link href="https://iyuge2.top/2020/23719.html"/>
-    <id>https://iyuge2.top/2020/23719.html</id>
+    <link href="https://iyuge2.top/2020/usessh/"/>
+    <id>https://iyuge2.top/2020/usessh/</id>
     <published>2020-09-16T14:39:02.000Z</published>
-    <updated>2020-09-16T16:26:27.703Z</updated>
+    <updated>2020-09-16T16:45:46.658Z</updated>
     
     
       
@@ -76,60 +76,11 @@ cat</summary>
   </entry>
   
   <entry>
-    <title>VScode使用Tips</title>
-    <link href="https://iyuge2.top/2020/1769.html"/>
-    <id>https://iyuge2.top/2020/1769.html</id>
-    <published>2020-09-16T11:22:41.790Z</published>
-    <updated>2020-09-16T16:26:27.704Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;配置文件&quot;&gt;&lt;a href=&quot;#配置文件&quot; class=&quot;headerlink&quot; title=&quot;配置文件&quot;&gt;&lt;/a&gt;配置文件&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;vscode中的配置分用户区（User）和工作区（Workspace）。&lt;br&gt;覆盖范围：用户区</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="说明文档" scheme="https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
-    
-    <category term="python" scheme="https://iyuge2.top/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>由置换操作&quot;a,b = b,a&quot;引发的一些思考</title>
-    <link href="https://iyuge2.top/2020/43188.html"/>
-    <id>https://iyuge2.top/2020/43188.html</id>
-    <published>2020-09-16T10:46:43.798Z</published>
-    <updated>2020-09-16T16:26:27.700Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;在C或者C++中，交换两个变量的值，一般需要借由中间变量实现（某些情况下可以直接通过加减实现，但这种不够安全）。&lt;br&gt;但是，在Python中，竟可以直接通过“a,b = b,a”实现，这是如何做到的呢？以及这种实现方式有什么需要注意的吗？&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="python" scheme="https://iyuge2.top/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Vscode + Github + Hexo构建个人博客</title>
-    <link href="https://iyuge2.top/2020/43316.html"/>
-    <id>https://iyuge2.top/2020/43316.html</id>
-    <published>2020-09-16T09:38:20.287Z</published>
-    <updated>2020-09-16T16:26:27.698Z</updated>
+    <link href="https://iyuge2.top/2020/createblog/"/>
+    <id>https://iyuge2.top/2020/createblog/</id>
+    <published>2020-09-15T16:00:00.000Z</published>
+    <updated>2020-09-16T16:47:36.886Z</updated>
     
     
       
@@ -153,11 +104,32 @@ cat</summary>
   </entry>
   
   <entry>
+    <title>由置换操作&quot;a,b = b,a&quot;引发的一些思考</title>
+    <link href="https://iyuge2.top/2020/pythonreplacement/"/>
+    <id>https://iyuge2.top/2020/pythonreplacement/</id>
+    <published>2020-09-15T16:00:00.000Z</published>
+    <updated>2020-09-16T16:46:07.796Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;在C或者C++中，交换两个变量的值，一般需要借由中间变量实现（某些情况下可以直接通过加减实现，但这种不够安全）。&lt;br&gt;但是，在Python中，竟可以直接通过“a,b = b,a”实现，这是如何做到的呢？以及这种实现方式有什么需要注意的吗？&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="python" scheme="https://iyuge2.top/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>开始的地方</title>
-    <link href="https://iyuge2.top/2020/40074.html"/>
-    <id>https://iyuge2.top/2020/40074.html</id>
-    <published>2020-09-15T17:08:42.156Z</published>
-    <updated>2020-09-16T16:26:27.702Z</updated>
+    <link href="https://iyuge2.top/2020/start/"/>
+    <id>https://iyuge2.top/2020/start/</id>
+    <published>2020-09-15T16:00:00.000Z</published>
+    <updated>2020-09-16T16:46:12.759Z</updated>
     
     
       
@@ -178,6 +150,34 @@ cat</summary>
     
     
     <category term="起点" scheme="https://iyuge2.top/tags/%E8%B5%B7%E7%82%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VScode使用Tips</title>
+    <link href="https://iyuge2.top/2020/usevscode/"/>
+    <id>https://iyuge2.top/2020/usevscode/</id>
+    <published>2020-09-15T16:00:00.000Z</published>
+    <updated>2020-09-16T16:45:51.527Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;配置文件&quot;&gt;&lt;a href=&quot;#配置文件&quot; class=&quot;headerlink&quot; title=&quot;配置文件&quot;&gt;&lt;/a&gt;配置文件&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;vscode中的配置分用户区（User）和工作区（Workspace）。&lt;br&gt;覆盖范围：用户区</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="说明文档" scheme="https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
+    
+    <category term="python" scheme="https://iyuge2.top/tags/python/"/>
     
   </entry>
   
