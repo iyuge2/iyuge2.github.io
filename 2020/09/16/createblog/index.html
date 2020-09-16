@@ -498,12 +498,12 @@
 </li>
 <li><p>解析域名，两种方式可选</p>
 <blockquote>
-<p>(1) 用A记录，即使用ip地址，ip地址可以用<code>dig username.github.io +noall +answer</code>获得，一般会得到多个ip地址，每个都添加一个A记录即可。<br>(2) 用CNAME记录，即别名转换，一般会添加两条记录，这样就可以通过多种方式访问自己的博客了。<br><img src="createBlog/cname.png" alt="CNAME"></p>
+<p>(1) 用A记录，即使用ip地址，ip地址可以用<code>dig username.github.io +noall +answer</code>获得，一般会得到多个ip地址，每个都添加一个A记录即可。<br>(2) 用CNAME记录，即别名转换，一般会添加两条记录，这样就可以通过多种方式访问自己的博客了。<br><img src="cname.png" alt="CNAME"></p>
 </blockquote>
 </li>
 <li><p>添加到github中</p>
 <blockquote>
-<p>在[username.github.io]的setting页面下，输入自己设置的域名（只需要到二级域名即可），第一次时HTTPS会变成不可选，仔细读提示后发现要过一段时间才能选择。（我等了大概半小时就可以了）<br><img src="createBlog/github-dns.png" alt="github-dns"></p>
+<p>在[username.github.io]的setting页面下，输入自己设置的域名（只需要到二级域名即可），第一次时HTTPS会变成不可选，仔细读提示后发现要过一段时间才能选择。（我等了大概半小时就可以了）<br><img src="github-dns.png" alt="github-dns"></p>
 </blockquote>
 </li>
 <li><p>添加CNAME文件</p>
@@ -568,7 +568,7 @@ hexo clean &amp;&amp; hexo generate --deploy</code></pre>
 <p><strong>Note:</strong> 上述任务重新定义了<code>build</code>和<code>test</code>两个任务。</p>
 <ul>
 <li>重定义快捷键<blockquote>
-<p>打开键盘快捷键更改界面（<code>mac</code>下是输入<code>command+k</code>后紧接着输入<code>command+s</code>）。<br>在打开的界面中输入<code>任务</code>两个字，找到对应条目双击后就能更改快捷键设置。<br><img src="./createBlog/task-map.png"></p>
+<p>打开键盘快捷键更改界面（<code>mac</code>下是输入<code>command+k</code>后紧接着输入<code>command+s</code>）。<br>在打开的界面中输入<code>任务</code>两个字，找到对应条目双击后就能更改快捷键设置。<br><img src="task-map.png"></p>
 </blockquote>
 </li>
 </ul>
@@ -579,6 +579,9 @@ hexo clean &amp;&amp; hexo generate --deploy</code></pre>
 <li>最简单的方法<br>更改<code>hexo</code>根目录下的<code>_config.yml</code>中的<code>permalink</code>属性，将其改为<code>:year/:month/:day/:name/</code>。即将后面的<code>:title</code>改为了<code>:name</code>。</li>
 </ul>
 <p><strong>Note:</strong> <code>permalink</code>表示浏览器搜索栏中显示的文档路径编排方式，其中，<code>:title</code>表示的是文档相对于<code>_posts</code>的相对路径，而<code>:name</code>是文档的名称。</p>
+<h3 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h3><blockquote>
+<p>作为一个新人，一切还不熟悉，慢慢长大，逐渐完善自己的贝壳屋！</p>
+</blockquote>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -829,57 +832,9 @@ hexo clean &amp;&amp; hexo generate --deploy</code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
-            <div class="card">
-                <a href="/2020/09/16/start/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="开始的地方">
-                        
-                        <span class="card-title">开始的地方</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            雁过留痕，风过留声
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-16
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%9D%82%E6%83%B3%E9%97%B4/" class="post-category">
-                                    杂想间
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E8%B5%B7%E7%82%B9/">
-                        <span class="chip bg-color">起点</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
                 <a href="/2020/09/16/createblog/">
@@ -919,6 +874,55 @@ hexo clean &amp;&amp; hexo generate --deploy</code></pre>
                     
                     <a href="/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/">
                         <span class="chip bg-color">说明文档</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/09/16/start/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="开始的地方">
+                        
+                        <span class="card-title">开始的地方</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            雁过留痕，风过留声
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%9D%82%E6%83%B3%E9%97%B4/" class="post-category">
+                                    杂想间
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%B5%B7%E7%82%B9/">
+                        <span class="chip bg-color">起点</span>
                     </a>
                     
                 </div>
