@@ -6,7 +6,7 @@
   <link href="https://iyuge2.top/atom.xml" rel="self"/>
   
   <link href="https://iyuge2.top/"/>
-  <updated>2020-09-16T16:46:26.655Z</updated>
+  <updated>2020-09-30T02:28:58.338Z</updated>
   <id>https://iyuge2.top/</id>
   
   <author>
@@ -17,11 +17,61 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>机器学习系列（1）—— 感知机</title>
-    <link href="https://iyuge2.top/2020/ml1-perception/"/>
-    <id>https://iyuge2.top/2020/ml1-perception/</id>
-    <published>2020-09-16T15:11:36.000Z</published>
-    <updated>2020-09-16T16:46:26.655Z</updated>
+    <title>python中容易忽视的小知识点</title>
+    <link href="https://iyuge2.top/2020/python/"/>
+    <id>https://iyuge2.top/2020/python/</id>
+    <published>2020-09-28T05:30:36.000Z</published>
+    <updated>2020-09-30T02:28:58.338Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="python" scheme="https://iyuge2.top/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux脚本知识点总结</title>
+    <link href="https://iyuge2.top/2020/linuxshell/"/>
+    <id>https://iyuge2.top/2020/linuxshell/</id>
+    <published>2020-09-28T05:08:36.000Z</published>
+    <updated>2020-09-28T05:06:19.413Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="Linux" scheme="https://iyuge2.top/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对话系统中点点滴滴</title>
+    <link href="https://iyuge2.top/2020/survey-ds/"/>
+    <id>https://iyuge2.top/2020/survey-ds/</id>
+    <published>2020-09-16T16:00:00.000Z</published>
+    <updated>2020-09-22T05:14:32.623Z</updated>
     
     
       
@@ -41,9 +91,93 @@
     <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
+    <category term="深度学习" scheme="https://iyuge2.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="综述" scheme="https://iyuge2.top/tags/%E7%BB%BC%E8%BF%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>多模态学习各子领域的研究进展</title>
+    <link href="https://iyuge2.top/2020/survey-mml/"/>
+    <id>https://iyuge2.top/2020/survey-mml/</id>
+    <published>2020-09-16T16:00:00.000Z</published>
+    <updated>2020-09-22T05:14:32.624Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       </summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="深度学习" scheme="https://iyuge2.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="综述" scheme="https://iyuge2.top/tags/%E7%BB%BC%E8%BF%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习系列——感知机</title>
+    <link href="https://iyuge2.top/2020/ml-perception/"/>
+    <id>https://iyuge2.top/2020/ml-perception/</id>
+    <published>2020-09-16T15:11:36.000Z</published>
+    <updated>2020-09-28T03:48:24.037Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;感知机是一种分类算法，1957年就被提出，也算机器学习的开山代表作了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;前向过程&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#前向过程&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
     <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="面试" scheme="https://iyuge2.top/tags/%E9%9D%A2%E8%AF%95/"/>
+  </entry>
+  
+  <entry>
+    <title>机器学习系列——开篇</title>
+    <link href="https://iyuge2.top/2020/ml-start/"/>
+    <id>https://iyuge2.top/2020/ml-start/</id>
+    <published>2020-09-16T15:11:36.000Z</published>
+    <updated>2020-09-22T05:14:32.619Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -52,7 +186,7 @@
     <link href="https://iyuge2.top/2020/usessh/"/>
     <id>https://iyuge2.top/2020/usessh/</id>
     <published>2020-09-16T14:39:02.000Z</published>
-    <updated>2020-09-16T16:45:46.658Z</updated>
+    <updated>2020-09-22T05:14:32.654Z</updated>
     
     
       
@@ -60,9 +194,9 @@
         
         
     <summary type="html">&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;在服务器端使用&lt;code&gt;ssh-keygen&lt;/code&gt;生成密钥对，在用户的家目录中生成了一个 .ssh 的隐藏目录，内含两个密钥文件，id_rsa 为私钥，id_rsa.pub 为公钥。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;cd ~/.ssh
-cat</summary>
+&lt;li&gt;在服务器端使用&lt;code&gt;ssh-keygen&lt;/code&gt;生成密钥对，在用户的家目录中生成了一个 .ssh 的隐藏目录，内含两个密钥文件，id_rsa 为私钥，id_rsa.pub 为公钥。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre</summary>
         
       
     
@@ -80,14 +214,15 @@ cat</summary>
     <link href="https://iyuge2.top/2020/createblog/"/>
     <id>https://iyuge2.top/2020/createblog/</id>
     <published>2020-09-15T16:00:00.000Z</published>
-    <updated>2020-09-16T16:47:36.886Z</updated>
+    <updated>2020-09-22T05:38:24.486Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h3&gt;&lt;blockquote&gt;
+    <summary type="html">&lt;h3 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt; 写在前面&lt;/h3&gt;
+&lt;blockquote&gt;
 &lt;p&gt;一直想着打造个人博客，总结知识，现在终于开始动手了。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3</summary>
@@ -104,21 +239,30 @@ cat</summary>
   </entry>
   
   <entry>
-    <title>由置换操作&quot;a,b = b,a&quot;引发的一些思考</title>
-    <link href="https://iyuge2.top/2020/pythonreplacement/"/>
-    <id>https://iyuge2.top/2020/pythonreplacement/</id>
+    <title>VScode使用Tips</title>
+    <link href="https://iyuge2.top/2020/usevscode/"/>
+    <id>https://iyuge2.top/2020/usevscode/</id>
     <published>2020-09-15T16:00:00.000Z</published>
-    <updated>2020-09-16T16:46:07.796Z</updated>
+    <updated>2020-09-22T05:14:32.655Z</updated>
     
     
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;在C或者C++中，交换两个变量的值，一般需要借由中间变量实现（某些情况下可以直接通过加减实现，但这种不够安全）。&lt;br&gt;但是，在Python中，竟可以直接通过“a,b = b,a”实现，这是如何做到的呢？以及这种实现方式有什么需要注意的吗？&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;配置文件&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#配置文件&quot;&gt;&lt;/a&gt; 配置文件&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;vscode中的配置分用户区（User）和工作区（Workspace）。&lt;br&gt;
+覆盖范围：用户区</summary>
+        
+      
     
     
     
     <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
+    
+    <category term="说明文档" scheme="https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
     
     <category term="python" scheme="https://iyuge2.top/tags/python/"/>
     
@@ -129,7 +273,7 @@ cat</summary>
     <link href="https://iyuge2.top/2020/start/"/>
     <id>https://iyuge2.top/2020/start/</id>
     <published>2020-09-15T16:00:00.000Z</published>
-    <updated>2020-09-16T16:46:12.759Z</updated>
+    <updated>2020-09-22T05:14:32.623Z</updated>
     
     
       
@@ -154,28 +298,22 @@ cat</summary>
   </entry>
   
   <entry>
-    <title>VScode使用Tips</title>
-    <link href="https://iyuge2.top/2020/usevscode/"/>
-    <id>https://iyuge2.top/2020/usevscode/</id>
+    <title>由置换操作&quot;a,b = b,a&quot;引发的一些思考</title>
+    <link href="https://iyuge2.top/2020/pythonreplacement/"/>
+    <id>https://iyuge2.top/2020/pythonreplacement/</id>
     <published>2020-09-15T16:00:00.000Z</published>
-    <updated>2020-09-16T16:45:51.527Z</updated>
+    <updated>2020-09-22T05:14:32.622Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;配置文件&quot;&gt;&lt;a href=&quot;#配置文件&quot; class=&quot;headerlink&quot; title=&quot;配置文件&quot;&gt;&lt;/a&gt;配置文件&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;vscode中的配置分用户区（User）和工作区（Workspace）。&lt;br&gt;覆盖范围：用户区</summary>
-        
-      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;在C或者C++中，交换两个变量的值，一般需要借由中间变量实现（某些情况下可以直接通过加减实现，但这种不够安全）。&lt;br&gt;
+但是，在Python中，竟可以直接通过“a,b = b,a”实现，这是如何做到的呢？以及这种实现方式有什么需要注意的吗？&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
     
     
     
     <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
-    
-    <category term="说明文档" scheme="https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
     
     <category term="python" scheme="https://iyuge2.top/tags/python/"/>
     
