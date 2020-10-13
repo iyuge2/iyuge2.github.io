@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Linux脚本知识点总结, iyuge2">
+    <meta name="keywords" content="机器学习系列——KMeans, iyuge2">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Linux脚本知识点总结 | iyuge2</title>
+    <title>机器学习系列——KMeans | iyuge2</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -290,12 +290,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Linux脚本知识点总结</h1>
+                    <h1 class="description center-align post-title">机器学习系列——KMeans</h1>
                 </div>
             </div>
         </div>
@@ -412,8 +412,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Linux/">
-                                <span class="chip bg-color">Linux</span>
+                            <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">机器学习</span>
                             </a>
                         
                     </div>
@@ -437,7 +437,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-28
+                    2020-10-07
                 </div>
                 
 
@@ -453,322 +453,91 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="写在前面"><a class="markdownIt-Anchor" href="#写在前面"></a> 写在前面</h4>
-<blockquote>
-<p>本文所记录的所有shell知识都只针对于<code>Bash</code></p>
+                <blockquote>
+<p>K-Means算法是一种常用的无监督聚类算法。</p>
 </blockquote>
-<h4 id="指定shell解释器"><a class="markdownIt-Anchor" href="#指定shell解释器"></a> 指定<code>shell</code>解释器</h4>
-<ol>
-<li>在文件头部指定</li>
-</ol>
-<pre class="highlight"><code class="">#!/bin/bash
-echo "hello world"
-</code></pre>
-<ol start="2">
-<li>在脚本执行时指定</li>
-</ol>
-<pre class="highlight"><code class="">/bin/bash ./myshell.sh
-</code></pre>
-<p><strong>Note:</strong> 似乎不用指定也可以，是因为系统有默认的解释器，可以用<code>echo $SHELL</code>查看，这点跟<code>python</code>类似。在后文中，省略了指定解释器这一步骤。</p>
-<h4 id="注释"><a class="markdownIt-Anchor" href="#注释"></a> 注释</h4>
-<pre class="highlight"><code class=""># 这是一个单行注释
+<h3 id="代码实现"><a class="markdownIt-Anchor" href="#代码实现"></a> 代码实现</h3>
+<pre class="highlight"><code class="python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
 
-:&lt;&lt;EOF
-这是多行注释
-这是多行注释
-EOF
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">k_means</span><span class="hljs-params">(x, epochs, k=<span class="hljs-number">3</span>, delta=<span class="hljs-number">10e-8</span>)</span>:</span>
+    <span class="hljs-string">'''Parameters
+    x: input data, (num_samples, feature_dims)
+    epochs: number of running epochs
+    k: number of cluster center
+    delta: threshold for early stop
+    '''</span>
+    num_samples, feature_dims = x.shape
+    <span class="hljs-comment"># 随机选取k个样本点作为聚类中心</span>
+    indices = np.random.randint(<span class="hljs-number">0</span>, num_samples, size=k)
+    centers = x[indices]
+    step = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">while</span> step &lt; epochs:
+        step += <span class="hljs-number">1</span>
+        <span class="hljs-comment"># 根据样本点到中心点的距离进行分类</span>
+        results = [[] <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> range(k)]
+        <span class="hljs-keyword">for</span> cur_x <span class="hljs-keyword">in</span> x:
+            dist = np.inf
+            x_res = <span class="hljs-number">0</span>
+            <span class="hljs-keyword">for</span> i, c <span class="hljs-keyword">in</span> enumerate(centers):
+                cur_dist = np.linalg.norm(cur_x - c)
+                <span class="hljs-keyword">if</span> cur_dist &lt; dist:
+                    x_res = i
+                    dist = cur_dist
+            results[x_res].append(cur_x)
+        <span class="hljs-comment"># 更新聚类中心</span>
+        early_stop = <span class="hljs-literal">True</span>
+        <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> range(k):
+            <span class="hljs-comment"># 未考虑空聚类问题</span>
+            new_center = np.array(results[c]).mean(axis=<span class="hljs-number">0</span>)
+            <span class="hljs-keyword">if</span> np.linalg.norm(new_center - centers[c]) &gt; delta:
+                early_stop = <span class="hljs-literal">False</span>
+            centers[c] = new_center
+        <span class="hljs-keyword">if</span> early_stop:
+            <span class="hljs-keyword">break</span>
+    <span class="hljs-keyword">return</span> centers, results
 </code></pre>
-<p><strong>Note:</strong> <code>EOF</code>可以用其他字符代替</p>
-<h4 id="变量"><a class="markdownIt-Anchor" href="#变量"></a> 变量</h4>
+<h3 id="优缺点"><a class="markdownIt-Anchor" href="#优缺点"></a> 优缺点</h3>
+<h4 id="优点"><a class="markdownIt-Anchor" href="#优点"></a> 优点</h4>
 <ul>
-<li>变量定义</li>
+<li>原理及实现上比较简单。</li>
+<li>收敛速度快，效果好。</li>
+<li>参数少。</li>
 </ul>
+<h4 id="缺点"><a class="markdownIt-Anchor" href="#缺点"></a> 缺点</h4>
+<ul>
+<li>K值不好把握，受初始化影响较大。</li>
+<li>对异常点敏感</li>
+</ul>
+<h3 id="面试点"><a class="markdownIt-Anchor" href="#面试点"></a> 面试点</h3>
+<h4 id="1-k值如何选择"><a class="markdownIt-Anchor" href="#1-k值如何选择"></a> 1. K值如何选择</h4>
+<ul>
+<li>根据特定的场景选择，其实是依赖人工先验。</li>
+<li>手肘法。</li>
+<li>轮廓系数法，使用轮廓系数评估聚类质量，选取聚类质量最好的k值。</li>
+</ul>
+<h4 id="2-初始点的选择对最终结果是否有影响"><a class="markdownIt-Anchor" href="#2-初始点的选择对最终结果是否有影响"></a> 2. 初始点的选择对最终结果是否有影响</h4>
+<p>有影响，随机选择的中心可能会导致k-means陷入局部最优解。</p>
+<h4 id="3-算法是否一定收敛"><a class="markdownIt-Anchor" href="#3-算法是否一定收敛"></a> 3. 算法是否一定收敛</h4>
+<p>是的，可以证明K-means算法一定收敛，因为每个点到自身所属的质心的距离平方和为一个凸函数，通过迭代一定可以到达<strong>局部最优解</strong>。（不一定到达全局最优解）</p>
+<h4 id="4-在数据量很大时如何处理"><a class="markdownIt-Anchor" href="#4-在数据量很大时如何处理"></a> 4. 在数据量很大时，如何处理</h4>
 <blockquote>
-<p>与<code>C / C++</code> 不同的是，变量定义时<strong>等号两边不能有空格</strong>，变量使用时用<code>${var_name}</code>或者<code>$var_name</code></p>
+<p>K-means算法在大数据量下，计算时间过长。</p>
 </blockquote>
-<pre class="highlight"><code class="">name=iyuge2
-echo "hello ${name}"
-</code></pre>
+<p>一种改进算法是Mini Batch K-Means，使用一种批处理的方法对数据点之间进行距离计算。即从不同类别的样本中抽取出一部分样本来代表各自类型进行计算。</p>
+<h4 id="5-与knn的区别"><a class="markdownIt-Anchor" href="#5-与knn的区别"></a> 5. 与KNN的区别</h4>
 <ul>
-<li>只读变量</li>
+<li>KNN是分类算法，需要带label的数据，是监督学习；而KMeans是聚类算法，不需要带label的数据，是无监督学习。</li>
+<li>KNN没有明显的前期学习过程，而KMeans有明显的学习过程。</li>
+<li>两者过程上也完全不同。</li>
 </ul>
+<h4 id="6-空聚类的处理"><a class="markdownIt-Anchor" href="#6-空聚类的处理"></a> 6. 空聚类的处理</h4>
 <blockquote>
-<p>可以用<code>readonly</code>指定<strong>只读变量</strong></p>
+<p>如果在一轮过后，存在某个类中一个样本都没有，则存在空聚类。</p>
 </blockquote>
-<pre class="highlight"><code class="">readonly name='iyuge2'
-name='iyuge8' # error: name: is read only
-</code></pre>
+<p>两种处理方法：</p>
 <ul>
-<li>删除变量</li>
-</ul>
-<blockquote>
-<p>使用<code>unset</code>删除变量，<strong>无法删除只读变量</strong></p>
-</blockquote>
-<p><strong>Note:</strong> 使用未定义变量不会报错，会输出空值。</p>
-<h4 id="数据类型"><a class="markdownIt-Anchor" href="#数据类型"></a> 数据类型</h4>
-<blockquote>
-<p><code>shell</code>中最常用的两个数据类型就是<code>字符串</code>和<code>数字</code>.</p>
-</blockquote>
-<h6 id="字符串"><a class="markdownIt-Anchor" href="#字符串"></a> 字符串</h6>
-<ul>
-<li>字符串定义</li>
-</ul>
-<blockquote>
-<p>字符串定义有<code>单引号</code>和<code>双引号</code>两种，两者的差异较大。</p>
-</blockquote>
-<ol>
-<li>单引号</li>
-</ol>
-<blockquote>
-<p>单引号字符串中无法使用变量、转义符号等，即所有的字符都会原样输出。<br>
-单引号中不能出现单个单引号，若出现成对单引号，则作为拼接字符串用。</p>
-</blockquote>
-<ol start="2">
-<li>双引号</li>
-</ol>
-<blockquote>
-<p>双引号字符串中可以使用变量和转义字符。</p>
-</blockquote>
-<ul>
-<li>字符串常用操作</li>
-</ul>
-<pre class="highlight"><code class="">name="iyuge2"
-str="hello "$name" !" # 拼接字符串
-echo ${#str} # 获取字符串长度
-echo ${str:1:4} # 输出: ello, 截取字符串，从位置1开始截取4个字符
-</code></pre>
-<h5 id="数组"><a class="markdownIt-Anchor" href="#数组"></a> 数组</h5>
-<ul>
-<li>数组定义</li>
-</ul>
-<blockquote>
-<p>括号表示数组，数组元素用<code>空格</code>符号（包括空格和换行）分开。</p>
-</blockquote>
-<ul>
-<li>常用操作</li>
-</ul>
-<pre class="highlight"><code class="">arr = (1 2 3 4 5) # 定义数组
-echo $arr[0] # 访问数组
-echo $(#arr[*]) # 获取数组元素个数，也可以为 $(#arr[@])
-</code></pre>
-<h4 id="运算表达式"><a class="markdownIt-Anchor" href="#运算表达式"></a> 运算表达式</h4>
-<blockquote>
-<p>原生bash不支持数学运算，可以借助外部命令实现</p>
-</blockquote>
-<ul>
-<li>示例</li>
-</ul>
-<pre class="highlight"><code class="">val=`expr 2 + 2`
-echo $val
-</code></pre>
-<p><strong>Note:</strong> <code>2 + 2</code>中运算符两边必须有空格</p>
-<ul>
-<li>关系运算符</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-eq</td>
-<td>等于</td>
-</tr>
-<tr>
-<td>-ne</td>
-<td>不等于</td>
-</tr>
-<tr>
-<td>-gt</td>
-<td>大于</td>
-</tr>
-<tr>
-<td>-lt</td>
-<td>小于</td>
-</tr>
-<tr>
-<td>-ge</td>
-<td>大于等于</td>
-</tr>
-<tr>
-<td>-le</td>
-<td>小于等于</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>布尔运算符</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>!</td>
-<td>非</td>
-</tr>
-<tr>
-<td>-o / ||</td>
-<td>或</td>
-</tr>
-<tr>
-<td>-a / &amp;&amp;</td>
-<td>与</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>字符串运算符</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>=</td>
-<td>等于</td>
-</tr>
-<tr>
-<td>!=</td>
-<td>不等于</td>
-</tr>
-<tr>
-<td>-z</td>
-<td>判断是否为空</td>
-</tr>
-<tr>
-<td>-n</td>
-<td>判段是否不为空</td>
-</tr>
-</tbody>
-</table>
-<h4 id="参数传递"><a class="markdownIt-Anchor" href="#参数传递"></a> 参数传递</h4>
-<blockquote>
-<p>通过命令行运行脚本时，一般会向脚本传递几个参数，因此在脚本中如何获取各个参数是此节的重点。</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$n</td>
-<td>第n个参数，$0表示文件名</td>
-</tr>
-<tr>
-<td>$#</td>
-<td>传递到脚本的参数个数</td>
-</tr>
-<tr>
-<td>$^</td>
-<td>参数字符串</td>
-</tr>
-<tr>
-<td>$$</td>
-<td>脚本运行的当前进程ID号</td>
-</tr>
-<tr>
-<td>$!</td>
-<td>后台运行的最后一个进程ID号</td>
-</tr>
-<tr>
-<td>$@</td>
-<td>参数字符串，每个参数被加上了引号</td>
-</tr>
-<tr>
-<td>$?</td>
-<td>显示最后命令的退出状态</td>
-</tr>
-</tbody>
-</table>
-<h4 id="流程控制"><a class="markdownIt-Anchor" href="#流程控制"></a> 流程控制</h4>
-<ul>
-<li>if</li>
-</ul>
-<pre class="highlight"><code class="">if condition
-then
-    commands
-fi
-</code></pre>
-<p>写出一行</p>
-<pre class="highlight"><code class="">if [ condition ]; then command; fi
-</code></pre>
-<ul>
-<li>if-else</li>
-</ul>
-<pre class="highlight"><code class="">if condition
-then
-    commands
-else
-    commands
-fi
-</code></pre>
-<ul>
-<li>for循环</li>
-</ul>
-<pre class="highlight"><code class="">for a in 1 2 3 4 5
-do
-    commands
-done
-</code></pre>
-<ul>
-<li>while语句</li>
-</ul>
-<pre class="highlight"><code class="">while condition
-do
-    command
-done
-</code></pre>
-<ul>
-<li>until循环</li>
-</ul>
-<pre class="highlight"><code class="">until condition
-do
-    command
-done
-</code></pre>
-<ul>
-<li>case语句</li>
-</ul>
-<pre class="highlight"><code class="">case v in
-c1
-    commands
-c2
-    commands
-esac
-</code></pre>
-<p>同样支持<code>break</code>和<code>continue</code>语句。</p>
-<h4 id="函数"><a class="markdownIt-Anchor" href="#函数"></a> 函数</h4>
-<ul>
-<li>定义格式</li>
-</ul>
-<blockquote>
-<p>加中括号的是可有可无的</p>
-</blockquote>
-<pre class="highlight"><code class="">[ function ] func_name ()
-{
-  action;
-  [return int;]
-}
-</code></pre>
-<p><strong>Note:</strong> 函数参数的传递方式与上节“<a href="#%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92">参数传递</a>”一致</p>
-<h3 id="参考资料"><a class="markdownIt-Anchor" href="#参考资料"></a> 参考资料</h3>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-shell-variable.html">RUNOOB.COM</a></li>
+<li>选择一个距离当前任何质心都最远的点，将其指派给此空类。</li>
+<li>从具有最大距离平方和的簇中选择一个替补的质心，即将某个簇一分为二。</li>
 </ul>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -813,7 +582,7 @@ esac
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://iyuge2.top/2020/linuxshell/">https://iyuge2.top/2020/linuxshell/</a>
+                    <a href="https://iyuge2.top/2020/ml-kmeans/">https://iyuge2.top/2020/ml-kmeans/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -851,8 +620,8 @@ esac
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Linux/">
-                                    <span class="chip bg-color">Linux</span>
+                                <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">机器学习</span>
                                 </a>
                             
                         </div>
@@ -1287,24 +1056,24 @@ esac
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/python/">
+                <a href="/2020/ml-naivebayes/">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/1.jpg" class="responsive-img" alt="python中容易忽视的小知识点">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/18.jpg" class="responsive-img" alt="机器学习系列—朴素贝叶斯">
                         
-                        <span class="card-title">python中容易忽视的小知识点</span>
+                        <span class="card-title">机器学习系列—朴素贝叶斯</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            python作为当前机器学习和深度学习的主流语言，了解它的方方面面显得尤为重要
+                            朴素贝叶斯
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-28
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-07
                         </span>
                         <span class="publish-author">
                             
@@ -1321,8 +1090,8 @@ esac
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">机器学习</span>
                     </a>
                     
                 </div>
@@ -1336,24 +1105,24 @@ esac
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/survey-mml/">
+                <a href="/2020/ml-knn/">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/9.jpg" class="responsive-img" alt="多模态学习各子领域的研究进展">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/12.jpg" class="responsive-img" alt="机器学习系列——K近邻法">
                         
-                        <span class="card-title">多模态学习各子领域的研究进展</span>
+                        <span class="card-title">机器学习系列——K近邻法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            多模态学习作为近年兴起的一个分支，致力于结合多个模态信息进行识别判断。本文将结合多模态各个子领域的研究现状做一个尽可能全面的分析和讨论。
+                            KNN——近朱者赤，近墨者黑
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-06
                             </span>
                         <span class="publish-author">
                             
@@ -1370,12 +1139,8 @@ esac
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">深度学习</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%BB%BC%E8%BF%B0/">
-                        <span class="chip bg-color">综述</span>
+                    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">机器学习</span>
                     </a>
                     
                 </div>

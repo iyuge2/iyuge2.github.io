@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Linux脚本知识点总结, iyuge2">
+    <meta name="keywords" content="机器学习系列——K近邻法, iyuge2">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Linux脚本知识点总结 | iyuge2</title>
+    <title>机器学习系列——K近邻法 | iyuge2</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -290,12 +290,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Linux脚本知识点总结</h1>
+                    <h1 class="description center-align post-title">机器学习系列——K近邻法</h1>
                 </div>
             </div>
         </div>
@@ -412,8 +412,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Linux/">
-                                <span class="chip bg-color">Linux</span>
+                            <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">机器学习</span>
                             </a>
                         
                     </div>
@@ -437,7 +437,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-28
+                    2020-10-06
                 </div>
                 
 
@@ -453,323 +453,89 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="写在前面"><a class="markdownIt-Anchor" href="#写在前面"></a> 写在前面</h4>
-<blockquote>
-<p>本文所记录的所有shell知识都只针对于<code>Bash</code></p>
+                <blockquote>
+<p>K近邻法（K-nearest neighbor, k-NN)是一种分类与回归方法。既能处理分类问题，也能处理回归问题。此算法的三要素为“<strong>K值的选择、距离的度量以及分类决策规则</strong>”。</p>
 </blockquote>
-<h4 id="指定shell解释器"><a class="markdownIt-Anchor" href="#指定shell解释器"></a> 指定<code>shell</code>解释器</h4>
-<ol>
-<li>在文件头部指定</li>
-</ol>
-<pre class="highlight"><code class="">#!/bin/bash
-echo "hello world"
-</code></pre>
-<ol start="2">
-<li>在脚本执行时指定</li>
-</ol>
-<pre class="highlight"><code class="">/bin/bash ./myshell.sh
-</code></pre>
-<p><strong>Note:</strong> 似乎不用指定也可以，是因为系统有默认的解释器，可以用<code>echo $SHELL</code>查看，这点跟<code>python</code>类似。在后文中，省略了指定解释器这一步骤。</p>
-<h4 id="注释"><a class="markdownIt-Anchor" href="#注释"></a> 注释</h4>
-<pre class="highlight"><code class=""># 这是一个单行注释
-
-:&lt;&lt;EOF
-这是多行注释
-这是多行注释
-EOF
-</code></pre>
-<p><strong>Note:</strong> <code>EOF</code>可以用其他字符代替</p>
-<h4 id="变量"><a class="markdownIt-Anchor" href="#变量"></a> 变量</h4>
+<h3 id="优缺点"><a class="markdownIt-Anchor" href="#优缺点"></a> 优缺点</h3>
+<h4 id="优点"><a class="markdownIt-Anchor" href="#优点"></a> 优点</h4>
 <ul>
-<li>变量定义</li>
+<li>无训练过程，适用于样本容量较大时的自动分类问题</li>
+<li>可用于非线性分类</li>
+<li>既可用于分类，也可用于回归</li>
+<li>对数据无假设依赖，对异常点不敏感。</li>
+</ul>
+<h4 id="缺点"><a class="markdownIt-Anchor" href="#缺点"></a> 缺点</h4>
+<ul>
+<li>预测过程的计算量较大，尤其是特征数较多的情况下。</li>
+<li>样本不均衡时，对稀有类别的预测准确率低。（可以用权值加以改进）</li>
+<li>KD树的建立需要较大的内存空间。</li>
+<li>相比于决策树模型，可解释性差。</li>
+</ul>
+<h3 id="面试点"><a class="markdownIt-Anchor" href="#面试点"></a> 面试点</h3>
+<h4 id="1-不平衡样本问题"><a class="markdownIt-Anchor" href="#1-不平衡样本问题"></a> 1. 不平衡样本问题</h4>
+<blockquote>
+<p>不平衡的样本容易造成什么问题，有没有比较好的解决方式</p>
+</blockquote>
+<p>样本类别不平衡时，容易产生两个问题：</p>
+<ul>
+<li>在K个近邻中，大类别的点容易更多，但这些点可能离实例较远，影响了最后的分类。</li>
 </ul>
 <blockquote>
-<p>与<code>C / C++</code> 不同的是，变量定义时<strong>等号两边不能有空格</strong>，变量使用时用<code>${var_name}</code>或者<code>$var_name</code></p>
+<p>利用权值，给距实例点越近的样本点赋予更大的投票权重，反之越小。</p>
 </blockquote>
-<pre class="highlight"><code class="">name=iyuge2
-echo "hello ${name}"
-</code></pre>
 <ul>
-<li>只读变量</li>
+<li>在小类别实例点寻找K近邻时，容易将距离较远的其他大类别样本考虑进来。</li>
 </ul>
 <blockquote>
-<p>可以用<code>readonly</code>指定<strong>只读变量</strong></p>
+<p>限定一个最大距离，只考虑某个距离范围的所有最近邻。</p>
 </blockquote>
-<pre class="highlight"><code class="">readonly name='iyuge2'
-name='iyuge8' # error: name: is read only
-</code></pre>
+<h4 id="2-如何优化算法"><a class="markdownIt-Anchor" href="#2-如何优化算法"></a> 2. 如何优化算法</h4>
+<p>原始KNN算法存在几个性能瓶颈：</p>
 <ul>
-<li>删除变量</li>
+<li>在样本点非常多时，计算量较大</li>
 </ul>
 <blockquote>
-<p>使用<code>unset</code>删除变量，<strong>无法删除只读变量</strong></p>
+<p>采用分组的思想，有两种分组策略：1）对样本按照类别分组，每个类别有若干组，计算出每组的质中心，用质中心代替此组的所有样本，这样降低了样本的数量。2）将样本按照距离分组，得到每组的质中心，将每组当作一个隐类别，采用KNN得到未知实例点归属于哪个组。然后再在该组内利用KNN得到未知实例点的归属类别。一般地，后面这种方法使用更加普遍。</p>
 </blockquote>
-<p><strong>Note:</strong> 使用未定义变量不会报错，会输出空值。</p>
-<h4 id="数据类型"><a class="markdownIt-Anchor" href="#数据类型"></a> 数据类型</h4>
-<blockquote>
-<p><code>shell</code>中最常用的两个数据类型就是<code>字符串</code>和<code>数字</code>.</p>
-</blockquote>
-<h6 id="字符串"><a class="markdownIt-Anchor" href="#字符串"></a> 字符串</h6>
 <ul>
-<li>字符串定义</li>
+<li>KD树每一次划分是依据特征的维度值，切分维度顺序能否优化</li>
 </ul>
 <blockquote>
-<p>字符串定义有<code>单引号</code>和<code>双引号</code>两种，两者的差异较大。</p>
-</blockquote>
-<ol>
-<li>单引号</li>
-</ol>
-<blockquote>
-<p>单引号字符串中无法使用变量、转义符号等，即所有的字符都会原样输出。<br>
-单引号中不能出现单个单引号，若出现成对单引号，则作为拼接字符串用。</p>
-</blockquote>
-<ol start="2">
-<li>双引号</li>
-</ol>
-<blockquote>
-<p>双引号字符串中可以使用变量和转义字符。</p>
+<p>可以先对每一维度求方差，方差越大，说明数据的分布更加分散，则可以从方差大的维度进行划分。这种策略下可以得到更好的切分效果。</p>
 </blockquote>
 <ul>
-<li>字符串常用操作</li>
-</ul>
-<pre class="highlight"><code class="">name="iyuge2"
-str="hello "$name" !" # 拼接字符串
-echo ${#str} # 获取字符串长度
-echo ${str:1:4} # 输出: ello, 截取字符串，从位置1开始截取4个字符
-</code></pre>
-<h5 id="数组"><a class="markdownIt-Anchor" href="#数组"></a> 数组</h5>
-<ul>
-<li>数组定义</li>
+<li>KD树在空间维数接近训练实例数时，搜索效率急剧下降</li>
 </ul>
 <blockquote>
-<p>括号表示数组，数组元素用<code>空格</code>符号（包括空格和换行）分开。</p>
+<p>在KD树建好后，结合BBF算法进行搜索。即在搜索过程中引入一个队列，在搜索“左/右"子树时，就将对应层的兄弟节点存进队列中，避免了不断的回溯过程。</p>
 </blockquote>
+<h4 id="3-欧式距离-曼哈顿距离"><a class="markdownIt-Anchor" href="#3-欧式距离-曼哈顿距离"></a> 3. 欧式距离 &amp; 曼哈顿距离</h4>
 <ul>
-<li>常用操作</li>
-</ul>
-<pre class="highlight"><code class="">arr = (1 2 3 4 5) # 定义数组
-echo $arr[0] # 访问数组
-echo $(#arr[*]) # 获取数组元素个数，也可以为 $(#arr[@])
-</code></pre>
-<h4 id="运算表达式"><a class="markdownIt-Anchor" href="#运算表达式"></a> 运算表达式</h4>
-<blockquote>
-<p>原生bash不支持数学运算，可以借助外部命令实现</p>
-</blockquote>
-<ul>
-<li>示例</li>
-</ul>
-<pre class="highlight"><code class="">val=`expr 2 + 2`
-echo $val
-</code></pre>
-<p><strong>Note:</strong> <code>2 + 2</code>中运算符两边必须有空格</p>
-<ul>
-<li>关系运算符</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-eq</td>
-<td>等于</td>
-</tr>
-<tr>
-<td>-ne</td>
-<td>不等于</td>
-</tr>
-<tr>
-<td>-gt</td>
-<td>大于</td>
-</tr>
-<tr>
-<td>-lt</td>
-<td>小于</td>
-</tr>
-<tr>
-<td>-ge</td>
-<td>大于等于</td>
-</tr>
-<tr>
-<td>-le</td>
-<td>小于等于</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>布尔运算符</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>!</td>
-<td>非</td>
-</tr>
-<tr>
-<td>-o / ||</td>
-<td>或</td>
-</tr>
-<tr>
-<td>-a / &amp;&amp;</td>
-<td>与</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>字符串运算符</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>=</td>
-<td>等于</td>
-</tr>
-<tr>
-<td>!=</td>
-<td>不等于</td>
-</tr>
-<tr>
-<td>-z</td>
-<td>判断是否为空</td>
-</tr>
-<tr>
-<td>-n</td>
-<td>判段是否不为空</td>
-</tr>
-</tbody>
-</table>
-<h4 id="参数传递"><a class="markdownIt-Anchor" href="#参数传递"></a> 参数传递</h4>
-<blockquote>
-<p>通过命令行运行脚本时，一般会向脚本传递几个参数，因此在脚本中如何获取各个参数是此节的重点。</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$n</td>
-<td>第n个参数，$0表示文件名</td>
-</tr>
-<tr>
-<td>$#</td>
-<td>传递到脚本的参数个数</td>
-</tr>
-<tr>
-<td>$^</td>
-<td>参数字符串</td>
-</tr>
-<tr>
-<td>$$</td>
-<td>脚本运行的当前进程ID号</td>
-</tr>
-<tr>
-<td>$!</td>
-<td>后台运行的最后一个进程ID号</td>
-</tr>
-<tr>
-<td>$@</td>
-<td>参数字符串，每个参数被加上了引号</td>
-</tr>
-<tr>
-<td>$?</td>
-<td>显示最后命令的退出状态</td>
-</tr>
-</tbody>
-</table>
-<h4 id="流程控制"><a class="markdownIt-Anchor" href="#流程控制"></a> 流程控制</h4>
-<ul>
-<li>if</li>
-</ul>
-<pre class="highlight"><code class="">if condition
-then
-    commands
-fi
-</code></pre>
-<p>写出一行</p>
-<pre class="highlight"><code class="">if [ condition ]; then command; fi
-</code></pre>
-<ul>
-<li>if-else</li>
-</ul>
-<pre class="highlight"><code class="">if condition
-then
-    commands
-else
-    commands
-fi
-</code></pre>
-<ul>
-<li>for循环</li>
-</ul>
-<pre class="highlight"><code class="">for a in 1 2 3 4 5
-do
-    commands
-done
-</code></pre>
-<ul>
-<li>while语句</li>
-</ul>
-<pre class="highlight"><code class="">while condition
-do
-    command
-done
-</code></pre>
-<ul>
-<li>until循环</li>
-</ul>
-<pre class="highlight"><code class="">until condition
-do
-    command
-done
-</code></pre>
-<ul>
-<li>case语句</li>
-</ul>
-<pre class="highlight"><code class="">case v in
-c1
-    commands
-c2
-    commands
-esac
-</code></pre>
-<p>同样支持<code>break</code>和<code>continue</code>语句。</p>
-<h4 id="函数"><a class="markdownIt-Anchor" href="#函数"></a> 函数</h4>
-<ul>
-<li>定义格式</li>
+<li>欧式距离</li>
 </ul>
 <blockquote>
-<p>加中括号的是可有可无的</p>
+<p>欧几里得距离度量(Euclidean Metric)，指在两个点之间的真实距离，适用于空间问题。</p>
 </blockquote>
-<pre class="highlight"><code class="">[ function ] func_name ()
-{
-  action;
-  [return int;]
-}
-</code></pre>
-<p><strong>Note:</strong> 函数参数的传递方式与上节“<a href="#%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92">参数传递</a>”一致</p>
-<h3 id="参考资料"><a class="markdownIt-Anchor" href="#参考资料"></a> 参考资料</h3>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>D</mi><mrow><mi>e</mi><mi>u</mi><mi>d</mi></mrow></msub><mo>=</mo><msqrt><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mo stretchy="false">(</mo><msubsup><mi>x</mi><mn>1</mn><mi>i</mi></msubsup><mo>−</mo><msubsup><mi>x</mi><mn>2</mn><mi>i</mi></msubsup><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">D_{eud} = \sqrt{\sum_{i=1}^N(x_1^i - x_2^i)^2}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">e</span><span class="mord mathdefault mtight">u</span><span class="mord mathdefault mtight">d</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.3337550000000005em;vertical-align:-1.277669em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.0560860000000005em;"><span class="svg-align" style="top:-5.293754999999999em;"><span class="pstrut" style="height:5.293755em;"></span><span class="mord" style="padding-left:1.056em;"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8283360000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8064640000000001em;"><span style="top:-2.433692em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span><span style="top:-3.0448000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.26630799999999993em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8064640000000001em;"><span style="top:-2.433692em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span><span style="top:-3.0448000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.26630799999999993em;"><span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-4.0160860000000005em;"><span class="pstrut" style="height:5.293755em;"></span><span class="hide-tail" style="min-width:0.742em;height:3.373755em;"><svg width="400em" height="3.373755em" viewBox="0 0 400000 3373" preserveAspectRatio="xMinYMin slice"><path d="M702 80H400000v40H742v3239l-4 4-4 4c-.667.7
+-2 1.5-4 2.5s-4.167 1.833-6.5 2.5-5.5 1-9.5 1h-12l-28-84c-16.667-52-96.667
+-294.333-240-727l-212 -643 -85 170c-4-3.333-8.333-7.667-13 -13l-13-13l77-155
+ 77-156c66 199.333 139 419.667 219 661 l218 661zM702 80H400000v40H742z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span></span></span></span></span></p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-shell-variable.html">RUNOOB.COM</a></li>
+<li>曼哈顿距离</li>
 </ul>
+<blockquote>
+<p>曼哈顿距离(Manhattan Distance)，计算两个点在标准坐标系上的绝对轴距总和。适用于路径问题。</p>
+</blockquote>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>D</mi><mrow><mi>M</mi><mi>a</mi><mi>h</mi></mrow></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mi mathvariant="normal">∣</mi><msubsup><mi>x</mi><mn>1</mn><mi>i</mi></msubsup><mo>−</mo><msubsup><mi>x</mi><mn>2</mn><mi>i</mi></msubsup><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">D_{Mah} = \sum_{i=1}^N|x_1^i - x_2^i|
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">M</span><span class="mord mathdefault mtight">a</span><span class="mord mathdefault mtight">h</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.106005em;vertical-align:-1.277669em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8283360000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">∣</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8746639999999999em;"><span style="top:-2.4530000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.1246639999999999em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8746639999999999em;"><span style="top:-2.4530000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mord">∣</span></span></span></span></span></p>
+<h4 id="4-是否需要归一化为什么需要"><a class="markdownIt-Anchor" href="#4-是否需要归一化为什么需要"></a> 4. 是否需要归一化，为什么需要</h4>
+<p>需要归一化，因为特征变量的值域范围对距离度量有很大的影响。即值域越大的变量会在距离计算中占据主导作用，因此，应先对变量进行归一化。</p>
+<h4 id="5-切分时中值的计算"><a class="markdownIt-Anchor" href="#5-切分时中值的计算"></a> 5. 切分时中值的计算</h4>
+<blockquote>
+<p>KD树每一次继续切分都要计算孩子区间在需切分维度上的中值，计算量很大，有什么方法可以对其进行优化？</p>
+</blockquote>
+<p>提前将所有样本点按照各个维度排序。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -813,7 +579,7 @@ esac
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://iyuge2.top/2020/linuxshell/">https://iyuge2.top/2020/linuxshell/</a>
+                    <a href="https://iyuge2.top/2020/ml-knn/">https://iyuge2.top/2020/ml-knn/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -851,8 +617,8 @@ esac
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Linux/">
-                                    <span class="chip bg-color">Linux</span>
+                                <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">机器学习</span>
                                 </a>
                             
                         </div>
@@ -1287,24 +1053,24 @@ esac
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/python/">
+                <a href="/2020/ml-kmeans/">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/1.jpg" class="responsive-img" alt="python中容易忽视的小知识点">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/7.jpg" class="responsive-img" alt="机器学习系列——KMeans">
                         
-                        <span class="card-title">python中容易忽视的小知识点</span>
+                        <span class="card-title">机器学习系列——KMeans</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            python作为当前机器学习和深度学习的主流语言，了解它的方方面面显得尤为重要
+                            KMeans
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-28
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-07
                         </span>
                         <span class="publish-author">
                             
@@ -1321,8 +1087,8 @@ esac
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">机器学习</span>
                     </a>
                     
                 </div>
@@ -1336,24 +1102,24 @@ esac
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/survey-mml/">
+                <a href="/2020/dualproblem/">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/9.jpg" class="responsive-img" alt="多模态学习各子领域的研究进展">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/17.jpg" class="responsive-img" alt="数学系列——对偶问题">
                         
-                        <span class="card-title">多模态学习各子领域的研究进展</span>
+                        <span class="card-title">数学系列——对偶问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            多模态学习作为近年兴起的一个分支，致力于结合多个模态信息进行识别判断。本文将结合多模态各个子领域的研究现状做一个尽可能全面的分析和讨论。
+                            原始问题 -> 对偶问题
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-06
                             </span>
                         <span class="publish-author">
                             
@@ -1370,12 +1136,8 @@ esac
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">深度学习</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%BB%BC%E8%BF%B0/">
-                        <span class="chip bg-color">综述</span>
+                    <a href="/tags/%E6%95%B0%E5%AD%A6/">
+                        <span class="chip bg-color">数学</span>
                     </a>
                     
                 </div>

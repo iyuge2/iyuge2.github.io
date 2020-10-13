@@ -6,7 +6,7 @@
   <link href="https://iyuge2.top/atom.xml" rel="self"/>
   
   <link href="https://iyuge2.top/"/>
-  <updated>2020-09-30T02:28:58.338Z</updated>
+  <updated>2020-10-13T02:12:53.067Z</updated>
   <id>https://iyuge2.top/</id>
   
   <author>
@@ -15,6 +15,220 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>程序员面试题汇总</title>
+    <link href="https://iyuge2.top/2020/interview/"/>
+    <id>https://iyuge2.top/2020/interview/</id>
+    <published>2020-10-12T02:13:00.000Z</published>
+    <updated>2020-10-13T02:12:53.067Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;计算机基础&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#计算机基础&quot;&gt;&lt;/a&gt; 计算机基础&lt;/h3&gt;
+&lt;h4 id=&quot;操作系统&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#操作系统&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="工作" scheme="https://iyuge2.top/tags/%E5%B7%A5%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习系列——支持向量机</title>
+    <link href="https://iyuge2.top/2020/ml-svm/"/>
+    <id>https://iyuge2.top/2020/ml-svm/</id>
+    <published>2020-10-08T08:14:49.000Z</published>
+    <updated>2020-10-08T09:47:18.840Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#基本原理&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习系列——逻辑斯谛回归</title>
+    <link href="https://iyuge2.top/2020/ml-lr/"/>
+    <id>https://iyuge2.top/2020/ml-lr/</id>
+    <published>2020-10-08T07:17:49.000Z</published>
+    <updated>2020-10-08T09:47:18.839Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#基本原理&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习系列—决策树</title>
+    <link href="https://iyuge2.top/2020/ml-decisiontree/"/>
+    <id>https://iyuge2.top/2020/ml-decisiontree/</id>
+    <published>2020-10-07T07:59:29.000Z</published>
+    <updated>2020-10-08T09:47:18.841Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;决策树模型可以同时用于分类和回归任务，该模型的解释性较好。包含三个关键步骤：特征选择、树的生成和树的剪枝。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习系列—朴素贝叶斯</title>
+    <link href="https://iyuge2.top/2020/ml-naivebayes/"/>
+    <id>https://iyuge2.top/2020/ml-naivebayes/</id>
+    <published>2020-10-07T07:59:29.000Z</published>
+    <updated>2020-10-07T11:46:35.369Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;朴素贝叶斯算法是基于贝叶斯定理和特征条件独立性假设的分类方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#基本原理&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习系列——KMeans</title>
+    <link href="https://iyuge2.top/2020/ml-kmeans/"/>
+    <id>https://iyuge2.top/2020/ml-kmeans/</id>
+    <published>2020-10-07T06:40:36.000Z</published>
+    <updated>2020-10-07T08:55:46.265Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;K-Means算法是一种常用的无监督聚类算法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;代码实现&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#代码实现&quot;&gt;&lt;/a&gt; 代码实现&lt;/h3&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习系列——K近邻法</title>
+    <link href="https://iyuge2.top/2020/ml-knn/"/>
+    <id>https://iyuge2.top/2020/ml-knn/</id>
+    <published>2020-10-06T11:50:36.000Z</published>
+    <updated>2020-10-07T08:55:46.266Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;K近邻法（K-nearest neighbor,</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数学系列——对偶问题</title>
+    <link href="https://iyuge2.top/2020/dualproblem/"/>
+    <id>https://iyuge2.top/2020/dualproblem/</id>
+    <published>2020-10-06T08:09:36.000Z</published>
+    <updated>2020-10-06T09:57:58.947Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;原始问题&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#原始问题&quot;&gt;&lt;/a&gt; 原始问题&lt;/h3&gt;
+&lt;p&gt;考虑一般的带约束优化问题：&lt;/p&gt;
+&lt;p class=&quot;katex-block&quot;&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="数学" scheme="https://iyuge2.top/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>python中容易忽视的小知识点</title>
@@ -67,37 +281,6 @@
   </entry>
   
   <entry>
-    <title>对话系统中点点滴滴</title>
-    <link href="https://iyuge2.top/2020/survey-ds/"/>
-    <id>https://iyuge2.top/2020/survey-ds/</id>
-    <published>2020-09-16T16:00:00.000Z</published>
-    <updated>2020-09-22T05:14:32.623Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       </summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="深度学习" scheme="https://iyuge2.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="综述" scheme="https://iyuge2.top/tags/%E7%BB%BC%E8%BF%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>多模态学习各子领域的研究进展</title>
     <link href="https://iyuge2.top/2020/survey-mml/"/>
     <id>https://iyuge2.top/2020/survey-mml/</id>
@@ -129,11 +312,42 @@
   </entry>
   
   <entry>
+    <title>对话系统中点点滴滴</title>
+    <link href="https://iyuge2.top/2020/survey-ds/"/>
+    <id>https://iyuge2.top/2020/survey-ds/</id>
+    <published>2020-09-16T16:00:00.000Z</published>
+    <updated>2020-09-22T05:14:32.623Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       </summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="深度学习" scheme="https://iyuge2.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="综述" scheme="https://iyuge2.top/tags/%E7%BB%BC%E8%BF%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>机器学习系列——感知机</title>
     <link href="https://iyuge2.top/2020/ml-perception/"/>
     <id>https://iyuge2.top/2020/ml-perception/</id>
     <published>2020-09-16T15:11:36.000Z</published>
-    <updated>2020-09-28T03:48:24.037Z</updated>
+    <updated>2020-10-07T11:54:07.258Z</updated>
     
     
       
@@ -143,7 +357,7 @@
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;感知机是一种分类算法，1957年就被提出，也算机器学习的开山代表作了。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&quot;前向过程&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#前向过程&quot;&gt;&lt;/a&gt;</summary>
+&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#基本原理&quot;&gt;&lt;/a&gt;</summary>
         
       
     
@@ -161,7 +375,7 @@
     <link href="https://iyuge2.top/2020/ml-start/"/>
     <id>https://iyuge2.top/2020/ml-start/</id>
     <published>2020-09-16T15:11:36.000Z</published>
-    <updated>2020-09-22T05:14:32.619Z</updated>
+    <updated>2020-10-12T02:12:51.411Z</updated>
     
     
       
@@ -206,6 +420,35 @@
     
     
     <category term="linux" scheme="https://iyuge2.top/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开始的地方</title>
+    <link href="https://iyuge2.top/2020/start/"/>
+    <id>https://iyuge2.top/2020/start/</id>
+    <published>2020-09-15T16:00:00.000Z</published>
+    <updated>2020-09-22T05:14:32.623Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;象牙塔的日子就要看到终点了，一个全新的起点也即将开始。总觉得要慢慢开始写点啥了，雁过留痕，风过留声。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;script&gt;
+       </summary>
+        
+      
+    
+    
+    
+    <category term="杂想间" scheme="https://iyuge2.top/categories/%E6%9D%82%E6%83%B3%E9%97%B4/"/>
+    
+    
+    <category term="起点" scheme="https://iyuge2.top/tags/%E8%B5%B7%E7%82%B9/"/>
     
   </entry>
   
@@ -265,35 +508,6 @@
     <category term="说明文档" scheme="https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
     
     <category term="python" scheme="https://iyuge2.top/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>开始的地方</title>
-    <link href="https://iyuge2.top/2020/start/"/>
-    <id>https://iyuge2.top/2020/start/</id>
-    <published>2020-09-15T16:00:00.000Z</published>
-    <updated>2020-09-22T05:14:32.623Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;象牙塔的日子就要看到终点了，一个全新的起点也即将开始。总觉得要慢慢开始写点啥了，雁过留痕，风过留声。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;script&gt;
-       </summary>
-        
-      
-    
-    
-    
-    <category term="杂想间" scheme="https://iyuge2.top/categories/%E6%9D%82%E6%83%B3%E9%97%B4/"/>
-    
-    
-    <category term="起点" scheme="https://iyuge2.top/tags/%E8%B5%B7%E7%82%B9/"/>
     
   </entry>
   

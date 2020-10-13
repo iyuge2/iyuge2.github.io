@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Linux脚本知识点总结, iyuge2">
+    <meta name="keywords" content="程序员面试题汇总, iyuge2">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Linux脚本知识点总结 | iyuge2</title>
+    <title>程序员面试题汇总 | iyuge2</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -290,12 +290,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Linux脚本知识点总结</h1>
+                    <h1 class="description center-align post-title">程序员面试题汇总</h1>
                 </div>
             </div>
         </div>
@@ -412,8 +412,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Linux/">
-                                <span class="chip bg-color">Linux</span>
+                            <a href="/tags/%E5%B7%A5%E4%BD%9C/">
+                                <span class="chip bg-color">工作</span>
                             </a>
                         
                     </div>
@@ -437,7 +437,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-28
+                    2020-10-12
                 </div>
                 
 
@@ -453,322 +453,483 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="写在前面"><a class="markdownIt-Anchor" href="#写在前面"></a> 写在前面</h4>
+                <h3 id="计算机基础"><a class="markdownIt-Anchor" href="#计算机基础"></a> 计算机基础</h3>
+<h4 id="操作系统"><a class="markdownIt-Anchor" href="#操作系统"></a> 操作系统</h4>
+<ul>
+<li>操作系统的四大特性</li>
+</ul>
 <blockquote>
-<p>本文所记录的所有shell知识都只针对于<code>Bash</code></p>
+<p>并发（不是并行）、共享、虚拟和异步</p>
 </blockquote>
-<h4 id="指定shell解释器"><a class="markdownIt-Anchor" href="#指定shell解释器"></a> 指定<code>shell</code>解释器</h4>
+<ul>
+<li>用户态切换到核心态的方式</li>
+</ul>
+<blockquote>
+<p>系统调用<br>
+异常<br>
+中断</p>
+</blockquote>
+<ul>
+<li>异常和中断的区别</li>
+</ul>
+<blockquote>
+<p>异常：cpu指令内部的事件，比如除零异常，缺页异常<br>
+中断：cpu指令之外的事件，比如设备请求中断</p>
+</blockquote>
+<ul>
+<li>进程与线程的含义及其区别</li>
+<li>管程</li>
+</ul>
+<blockquote>
+<p>由一组数据以及定义在这组数据之上的对这组数据操作组成的软件模块（数据+操作）</p>
+</blockquote>
+<ul>
+<li>进程之间的通信方式</li>
+</ul>
+<blockquote>
+<p>管道、消息队列、信号量、共享存储、SOCKET套接字</p>
+</blockquote>
+<ul>
+<li>进程之间的同步</li>
+</ul>
+<blockquote>
+<p>同步机制的原则：空闲让进、忙则等待、有限等待以及让权等待<br>
+同步方式：原子操作、信号量机制（PV操作）</p>
+</blockquote>
+<ul>
+<li>线程同步的方式有哪些</li>
+</ul>
+<blockquote>
 <ol>
-<li>在文件头部指定</li>
+<li>互斥量：采用互斥对象机制，保证公共资源不会被多个线程同时访问</li>
+<li>信号量：控制当前资源的剩余数量，控制同一时刻访问某资源的最大线程数量</li>
+<li>事件（信号）：通过通知操作的方式实现多线程同步</li>
 </ol>
-<pre class="highlight"><code class="">#!/bin/bash
-echo "hello world"
-</code></pre>
-<ol start="2">
-<li>在脚本执行时指定</li>
-</ol>
-<pre class="highlight"><code class="">/bin/bash ./myshell.sh
-</code></pre>
-<p><strong>Note:</strong> 似乎不用指定也可以，是因为系统有默认的解释器，可以用<code>echo $SHELL</code>查看，这点跟<code>python</code>类似。在后文中，省略了指定解释器这一步骤。</p>
-<h4 id="注释"><a class="markdownIt-Anchor" href="#注释"></a> 注释</h4>
-<pre class="highlight"><code class=""># 这是一个单行注释
-
-:&lt;&lt;EOF
-这是多行注释
-这是多行注释
-EOF
-</code></pre>
-<p><strong>Note:</strong> <code>EOF</code>可以用其他字符代替</p>
-<h4 id="变量"><a class="markdownIt-Anchor" href="#变量"></a> 变量</h4>
+</blockquote>
 <ul>
-<li>变量定义</li>
+<li>什么是缓冲区溢出攻击？有什么危害？其原因是什么？</li>
 </ul>
 <blockquote>
-<p>与<code>C / C++</code> 不同的是，变量定义时<strong>等号两边不能有空格</strong>，变量使用时用<code>${var_name}</code>或者<code>$var_name</code></p>
+<p>含义：缓冲区溢出是指计算机向缓冲区填充数据时超出了缓冲区本身的容量<br>
+危害：溢出的数据会覆盖在合法数据上，攻击时可能会跳转并且执行一段恶意代码<br>
+原因：程序没有仔细检查用户输入</p>
 </blockquote>
-<pre class="highlight"><code class="">name=iyuge2
-echo "hello ${name}"
-</code></pre>
 <ul>
-<li>只读变量</li>
+<li>什么是死锁，死锁产生的条件</li>
 </ul>
 <blockquote>
-<p>可以用<code>readonly</code>指定<strong>只读变量</strong></p>
-</blockquote>
-<pre class="highlight"><code class="">readonly name='iyuge2'
-name='iyuge8' # error: name: is read only
-</code></pre>
-<ul>
-<li>删除变量</li>
-</ul>
-<blockquote>
-<p>使用<code>unset</code>删除变量，<strong>无法删除只读变量</strong></p>
-</blockquote>
-<p><strong>Note:</strong> 使用未定义变量不会报错，会输出空值。</p>
-<h4 id="数据类型"><a class="markdownIt-Anchor" href="#数据类型"></a> 数据类型</h4>
-<blockquote>
-<p><code>shell</code>中最常用的两个数据类型就是<code>字符串</code>和<code>数字</code>.</p>
-</blockquote>
-<h6 id="字符串"><a class="markdownIt-Anchor" href="#字符串"></a> 字符串</h6>
-<ul>
-<li>字符串定义</li>
-</ul>
-<blockquote>
-<p>字符串定义有<code>单引号</code>和<code>双引号</code>两种，两者的差异较大。</p>
-</blockquote>
 <ol>
-<li>单引号</li>
+<li>含义：你拿了一部分，我拿了一部分，但双方都没有拿到运行时需要的资源数目不肯让步，从而发生死锁</li>
+<li>条件：互斥条件、请求保持条件、不剥夺条件、循环等待条件（即，一个资源同时只能给一个进程使用，每个进程得到资源后都会一直持有直到完成任务释放资源，就算该进程被阻塞时也不会放弃原有资源，并且进程之间互相不能剥夺对方已有的资源。最终，当形成了循环等待链时，就发生了死锁。）</li>
+<li>解锁方法：破坏死锁产生条件之一即可</li>
+<li>避免方法：银行家算法（核心思想：将剩余资源优先分配给那些能够完成任务的进程）</li>
 </ol>
-<blockquote>
-<p>单引号字符串中无法使用变量、转义符号等，即所有的字符都会原样输出。<br>
-单引号中不能出现单个单引号，若出现成对单引号，则作为拼接字符串用。</p>
 </blockquote>
-<ol start="2">
-<li>双引号</li>
+<ul>
+<li>进程有哪几种状态，状态之间的转移条件是什么</li>
+</ul>
+<blockquote>
+<p>就绪状态、运行状态、阻塞状态</p>
+</blockquote>
+<ul>
+<li>进程调度策略</li>
+</ul>
+<blockquote>
+<p>FCFS先来先服务，短作业优先，优先级调度，高响应调度，时间片轮转，多级反馈</p>
+</blockquote>
+<ul>
+<li>内存连续分配方式</li>
+</ul>
+<blockquote>
+<p>动态分区分配的算法：首次适应算法、最佳适应算法、最坏适应算法</p>
+</blockquote>
+<ul>
+<li>基本分页存储管理方式</li>
+</ul>
+<blockquote>
+<p>慢表 + 快表，多级页表</p>
+</blockquote>
+<ul>
+<li>页面置换算法（时间局部性 &amp; 空间局部性）</li>
+</ul>
+<blockquote>
+<ol>
+<li>先进先出算法</li>
+<li>最近最久未使用算法（时间）</li>
+<li>最少使用（次数）</li>
+<li>时钟clock算法(NRU算法) -&gt; 改进型clock算法</li>
 </ol>
-<blockquote>
-<p>双引号字符串中可以使用变量和转义字符。</p>
 </blockquote>
 <ul>
-<li>字符串常用操作</li>
-</ul>
-<pre class="highlight"><code class="">name="iyuge2"
-str="hello "$name" !" # 拼接字符串
-echo ${#str} # 获取字符串长度
-echo ${str:1:4} # 输出: ello, 截取字符串，从位置1开始截取4个字符
-</code></pre>
-<h5 id="数组"><a class="markdownIt-Anchor" href="#数组"></a> 数组</h5>
-<ul>
-<li>数组定义</li>
+<li>基本分段储存管理方式</li>
 </ul>
 <blockquote>
-<p>括号表示数组，数组元素用<code>空格</code>符号（包括空格和换行）分开。</p>
+<p>二维地址(段号+段内地址)</p>
 </blockquote>
 <ul>
-<li>常用操作</li>
-</ul>
-<pre class="highlight"><code class="">arr = (1 2 3 4 5) # 定义数组
-echo $arr[0] # 访问数组
-echo $(#arr[*]) # 获取数组元素个数，也可以为 $(#arr[@])
-</code></pre>
-<h4 id="运算表达式"><a class="markdownIt-Anchor" href="#运算表达式"></a> 运算表达式</h4>
-<blockquote>
-<p>原生bash不支持数学运算，可以借助外部命令实现</p>
-</blockquote>
-<ul>
-<li>示例</li>
-</ul>
-<pre class="highlight"><code class="">val=`expr 2 + 2`
-echo $val
-</code></pre>
-<p><strong>Note:</strong> <code>2 + 2</code>中运算符两边必须有空格</p>
-<ul>
-<li>关系运算符</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-eq</td>
-<td>等于</td>
-</tr>
-<tr>
-<td>-ne</td>
-<td>不等于</td>
-</tr>
-<tr>
-<td>-gt</td>
-<td>大于</td>
-</tr>
-<tr>
-<td>-lt</td>
-<td>小于</td>
-</tr>
-<tr>
-<td>-ge</td>
-<td>大于等于</td>
-</tr>
-<tr>
-<td>-le</td>
-<td>小于等于</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>布尔运算符</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>!</td>
-<td>非</td>
-</tr>
-<tr>
-<td>-o / ||</td>
-<td>或</td>
-</tr>
-<tr>
-<td>-a / &amp;&amp;</td>
-<td>与</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>字符串运算符</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>=</td>
-<td>等于</td>
-</tr>
-<tr>
-<td>!=</td>
-<td>不等于</td>
-</tr>
-<tr>
-<td>-z</td>
-<td>判断是否为空</td>
-</tr>
-<tr>
-<td>-n</td>
-<td>判段是否不为空</td>
-</tr>
-</tbody>
-</table>
-<h4 id="参数传递"><a class="markdownIt-Anchor" href="#参数传递"></a> 参数传递</h4>
-<blockquote>
-<p>通过命令行运行脚本时，一般会向脚本传递几个参数，因此在脚本中如何获取各个参数是此节的重点。</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$n</td>
-<td>第n个参数，$0表示文件名</td>
-</tr>
-<tr>
-<td>$#</td>
-<td>传递到脚本的参数个数</td>
-</tr>
-<tr>
-<td>$^</td>
-<td>参数字符串</td>
-</tr>
-<tr>
-<td>$$</td>
-<td>脚本运行的当前进程ID号</td>
-</tr>
-<tr>
-<td>$!</td>
-<td>后台运行的最后一个进程ID号</td>
-</tr>
-<tr>
-<td>$@</td>
-<td>参数字符串，每个参数被加上了引号</td>
-</tr>
-<tr>
-<td>$?</td>
-<td>显示最后命令的退出状态</td>
-</tr>
-</tbody>
-</table>
-<h4 id="流程控制"><a class="markdownIt-Anchor" href="#流程控制"></a> 流程控制</h4>
-<ul>
-<li>if</li>
-</ul>
-<pre class="highlight"><code class="">if condition
-then
-    commands
-fi
-</code></pre>
-<p>写出一行</p>
-<pre class="highlight"><code class="">if [ condition ]; then command; fi
-</code></pre>
-<ul>
-<li>if-else</li>
-</ul>
-<pre class="highlight"><code class="">if condition
-then
-    commands
-else
-    commands
-fi
-</code></pre>
-<ul>
-<li>for循环</li>
-</ul>
-<pre class="highlight"><code class="">for a in 1 2 3 4 5
-do
-    commands
-done
-</code></pre>
-<ul>
-<li>while语句</li>
-</ul>
-<pre class="highlight"><code class="">while condition
-do
-    command
-done
-</code></pre>
-<ul>
-<li>until循环</li>
-</ul>
-<pre class="highlight"><code class="">until condition
-do
-    command
-done
-</code></pre>
-<ul>
-<li>case语句</li>
-</ul>
-<pre class="highlight"><code class="">case v in
-c1
-    commands
-c2
-    commands
-esac
-</code></pre>
-<p>同样支持<code>break</code>和<code>continue</code>语句。</p>
-<h4 id="函数"><a class="markdownIt-Anchor" href="#函数"></a> 函数</h4>
-<ul>
-<li>定义格式</li>
+<li>分页和分段的区别</li>
 </ul>
 <blockquote>
-<p>加中括号的是可有可无的</p>
+<ol>
+<li>段是信息的逻辑单位，根据用户需求划分，因此段对用户是可见的；而页是信息的物理单位，为了管理内存方便而划分，对用户是透明的</li>
+<li>段的大小不固定，根据功能需求而定；页的大小固定，由操作系统决定</li>
+<li>段易于存储和保护用户的共享；页的保护和共享受到限制</li>
+</ol>
 </blockquote>
-<pre class="highlight"><code class="">[ function ] func_name ()
-{
-  action;
-  [return int;]
-}
-</code></pre>
-<p><strong>Note:</strong> 函数参数的传递方式与上节“<a href="#%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92">参数传递</a>”一致</p>
-<h3 id="参考资料"><a class="markdownIt-Anchor" href="#参考资料"></a> 参考资料</h3>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-shell-variable.html">RUNOOB.COM</a></li>
+<li>参考</li>
+</ul>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/23755202">常见面试题整理–操作系统篇（每位开发者必备）</a></li>
+<li><a target="_blank" rel="noopener" href="https://juejin.im/entry/6844903478859431943">操作系统面试重难点总结</a></li>
+</ol>
+<!-- #### 计算机组成原理 -->
+<h4 id="计算机网络"><a class="markdownIt-Anchor" href="#计算机网络"></a> 计算机网络</h4>
+<ul>
+<li>简述OSI七层模型</li>
+</ul>
+<blockquote>
+<p>物理层（比特）-&gt;数据链路层（帧）-&gt;网络层（数据报）-&gt;传输层（报文段TCP或者用户数据段UDP）-&gt;会话层-&gt;表示层-&gt;应用层。<br>
+其中，在端系统中含有上述七层，而在网络传输过程的中继系统中仅含有<code>物理层、数据链路层以及网络层</code>三部分，有些甚至连<code>网络层</code>也没有</p>
+</blockquote>
+<ul>
+<li>简述TCP/IP四层模型</li>
+</ul>
+<blockquote>
+<p>网络接口层 -&gt; 网际层 -&gt; 运输层 -&gt; 应用层</p>
+</blockquote>
+<ul>
+<li>协议与端口的区别</li>
+</ul>
+<blockquote>
+<p>端口：同一主机中，各层之间是通过端口进行数据传递的<br>
+协议：不同主机中，同一层之间是通过协议进行数据解析和编码的</p>
+</blockquote>
+<ul>
+<li>简述TCP与UDP的区别</li>
+</ul>
+<blockquote>
+<p>两者都是OSI模型中运输层的协议。<br>
+TCP：传输控制协议，提供的是面向连接、可靠的字节流服务。传输数据之前需要先进行连接，并且提供数据验证，用于可靠的通信传输。（超时重传、丢失重复数据、流量控制），通过协议中的顺序编号和确认号实现上述功能<br>
+UDP：用户数据报协议，面向数据报的运输层协议，不需要提前连接，不对数据进行验证，传输速度更快，借助其他层进行数据校验</p>
+</blockquote>
+<ul>
+<li>了解的端口及其对应的服务</li>
+</ul>
+<blockquote>
+<p>21 – FTP文件传输协议<br>
+22 – SSH<br>
+25 – SMTP简单邮件传输协议<br>
+80 – HTTP超文本传输协议<br>
+110 – POP3邮件协议</p>
+</blockquote>
+<ul>
+<li>TCP的<code>三次握手</code>和<code>四次分手</code></li>
+</ul>
+<blockquote>
+<p>由于TCP提供可靠的数据传输，因此客户端与服务器必须互相确认。<br>
+三次握手：客户端向服务器发送连接建立请求（第一次握手），服务器收到后返回一个确认信号+请求信号（第二次握手，此时服务器端到客户端的连接被建立了），然后，客户端返回一个确认建立的信号（第三次握手，此时客户端到服务器端的连接被建立了）。建立连接时两个方向一般是同时的，所以可以在第二次握手时，同时传递确认和请求信号。<br>
+四次分手：分手要谨慎！！！这个理解相对简单，因为数据传输是双向的，并且两个方向的连接也不一定同时断开。所以每一个方向的传输都要一来一回进行分手确认。</p>
+</blockquote>
+<ul>
+<li>在浏览器中输入网址之后的执行过程</li>
+</ul>
+<blockquote>
+<ol>
+<li>查找域名对应的IP地址（这步会依次查找浏览器缓存-&gt;系统缓存-&gt;路由器缓存-&gt;ISPNDS缓存-&gt;根域名服务器）</li>
+<li>浏览器向IP对应的web服务器发送一个HTTP请求</li>
+<li>服务器响应请求，发回网页内容</li>
+<li>浏览器解析网页内容</li>
+</ol>
+</blockquote>
+<ul>
+<li>HTTP中GET和POST的区别</li>
+</ul>
+<blockquote>
+<p>POST请求可能修改服务器上资源<br>
+GET用于信息获取</p>
+</blockquote>
+<ul>
+<li>统一资源定位符URL的格式</li>
+</ul>
+<blockquote>
+<p>&lt;协议&gt;://&lt;主机&gt;:&lt;端口&gt;/&lt;路径&gt;</p>
+</blockquote>
+<ul>
+<li>参考</li>
+</ul>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/24001696">常见面试题整理–计算机网络篇（每位开发者必备）</a></li>
+<li><a target="_blank" rel="noopener" href="https://juejin.im/post/6844903662838349838">搞定计算机网络面试，看这篇就够了（补充版）</a></li>
+</ol>
+<h4 id="数据库"><a class="markdownIt-Anchor" href="#数据库"></a> 数据库</h4>
+<ul>
+<li>存储过程</li>
+</ul>
+<blockquote>
+<p>存储过程是一个预编译的代码块，可以直接调用，用于实现一些功能，执行效率高。一个存储过程替代大量SQL语句，可以降低网络通信量，提高通信效率，并且在一定程度上确保了数据安全。</p>
+</blockquote>
+<ul>
+<li>索引</li>
+</ul>
+<blockquote>
+<p>索引是对数据库表中一或多个列的值进行排序的结构，帮助数据库获取数据的数据结构。<br>
+索引类型：普通索引、唯一索引、主键索引、全文索引。<br>
+索引采用的数据结构通常是<code>B-Tree</code>或者<code>B+Tree</code></p>
+</blockquote>
+<ul>
+<li>事务</li>
+</ul>
+<blockquote>
+<p>是数据库并发操作的基本单位。一个事务是一个操作序列，这些操作是不可分割的工作单位，也可以视为一个原子操作（即执行过程中不能被打断）。另外，事务是维护数据一致性的单位。<br>
+事务的4个基本特征：原子性（事务的操作要不都成功，要不都失败）、一致性（只有合法的数据可以被写入数据库，否则应该支持回滚操作）、隔离性（允许多个用户并发访问，各个事务之间的修改必须相互独立）、持久性（事务结束，结果必须是确定和持久的）。</p>
+</blockquote>
+<ul>
+<li>数据库的乐观锁和悲观锁</li>
+</ul>
+<blockquote>
+<p>乐观锁：乐观并发控制，假设不会发生并发冲突，只在提交操作时检查是否违反数据完整性。<br>
+悲观锁：悲观并发控制，假定会发生冲突，屏蔽一切可能违反数据完整性的操作。</p>
+</blockquote>
+<ul>
+<li>超键、候选键、主键和外键的区别</li>
+</ul>
+<blockquote>
+<p>超键：在关系中能唯一标识元组的属性集称为关系模式的超键。一个属性可以为作为一个超键，多个属性组合在一起也可以作为一个超键。超键包含候选键和主键<br>
+候选键：是最小超键，即没有冗余元素的超键<br>
+主键：数据库表中对储存数据对象予以唯一和完整标识的数据列或属性的组合。一个数据列只能有一个主键，且主键的取值不能缺失，即不能为空值（Null）<br>
+外键：在一个表中存在的另一个表的主键称此表的外键</p>
+</blockquote>
+<ul>
+<li>视图及其应用场景</li>
+</ul>
+<blockquote>
+<p>视图：虚拟表，是多个物理表行或列的子集。视图可以进行增删改查的操作，对它的修改不会对物理表产生影响。<br>
+应用场景：将部分数据提供给访问者；统一各个表的查询方式等</p>
+</blockquote>
+<ul>
+<li>删除操作drop，delete，truncate的区别</li>
+</ul>
+<blockquote>
+<ol>
+<li>delete和truncate只删除表的数据不删除表的结构</li>
+<li>delete语句是dml,这个操作会放到rollback segement中,事务提交之后才生效;如果有相应的trigger,执行的时候将被触发. truncate,drop是ddl, 操作立即生效,原数据不放到rollback segment中,不能回滚. 操作不触发trigger.</li>
+<li>一般地，不再需要一张表的时候，用drop；想删除部分数据行时候，用delete；保留表而删除所有数据的时候用truncate</li>
+</ol>
+</blockquote>
+<ul>
+<li>数据库的范式</li>
+</ul>
+<blockquote>
+<p>第一范式：所有列属性不可再分，所有的数据表都应该符合此要求<br>
+第二范式：消除了非主属性对于码的部分函数依赖（即避免了只有某几列值发生变化，其他非主属性的列值都不怎么变，避免数据冗余的问题）<br>
+第三范式：消除了非主属性对于码的传递函数依赖（基本解决了数据冗余过大、插入异常、修改异常、删除异常等问题）<br>
+BCNF范式：消除主属性对于码的部分与传递函数依赖</p>
+</blockquote>
+<ul>
+<li>参考</li>
+</ul>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/23713529?refer=passer">常见面试题整理–数据库篇（每位开发者必备）</a></li>
+</ol>
+<h3 id="编程语言"><a class="markdownIt-Anchor" href="#编程语言"></a> 编程语言</h3>
+<h4 id="c-c"><a class="markdownIt-Anchor" href="#c-c"></a> C / C++</h4>
+<ul>
+<li>C语言中的malloc和C++中的new的区别</li>
+</ul>
+<blockquote>
+<ol>
+<li>new与delete对应，malloc与free对应</li>
+<li>new、delete是操作符，可以重载，只能在C++中使用</li>
+<li>malloc、free是函数，可以覆盖，C和C++中都可以使用</li>
+<li>new可以调用对象的构造函数，delete可以调用响应的析构函数</li>
+<li>malloc仅用于分配内容，free用于回收内存，并不执行构造和析构函数</li>
+<li>new、delete返回的是某种数据类型指针，malloc、free返回的是void指针</li>
+</ol>
+</blockquote>
+<ul>
+<li>面向对象的三大特性</li>
+</ul>
+<blockquote>
+<p>封装、继承、多态</p>
+</blockquote>
+<ul>
+<li>拷贝构造函数和赋值运算符的区别</li>
+</ul>
+<blockquote>
+<ol>
+<li>拷贝构造函数生成新的类对象，而赋值运算符不会</li>
+<li>由于拷贝构造函数直接构造新对象，因此在初始化对象前不用检验源对象与新建对象是否相同。而赋值运算符就需要这个过程。</li>
+</ol>
+</blockquote>
+<ul>
+<li>简述C++中多态的实现原理</li>
+</ul>
+<blockquote>
+<p><code>多态</code>：指通过基类指针或者引用调用一个虚函数时，编译时不确定调用的时基类还是派生类的函数，运行时才确定。这样做，可以隐藏实现细节，使得代码更加模块化；并且使得接口重用，使得在类的继承和派生中，保证家族中任一类的实例的某一属性时的正确调用。</p>
+</blockquote>
+<p><code>多态</code>的实现是通过<code>虚函数表</code>完成的，每一个有虚函数的类（包括其派生类）都有一个虚函数表，该类的任何实例化对象中都会存放指向虚函数表的指针。该虚函数表中列出了该类的全部虚函数地址。查表的过程参见文章<a target="_blank" rel="noopener" href="http://c.biancheng.net/view/267.html">C++虚函数表（多态的实现原理）</a></p>
+<ul>
+<li>C中static的作用</li>
+</ul>
+<blockquote>
+<ol>
+<li>隐藏。 当我们同时编译多个文件时，所有未加static前缀的全局变量和函数都具有全局可见性，故使用static在不同的文件中定义同名函数和同名变量，而不必担心命名冲突。</li>
+<li>持久。存储在静态数据区的变量会在程序刚开始运行时就完成初始化，也是唯一的一次初始化。共有两种变量存储在静态存储区：全局变量和static变量。</li>
+<li>默认初始化为0。其实全局变量也具备这一属性，因为全局变量也存储在静态数据区。在静态数据区，内存中所有的字节默认值都是0×00</li>
+</ol>
+</blockquote>
+<ul>
+<li>C语言中volatile的含义是什么</li>
+</ul>
+<blockquote>
+<p>volatile的本意是“易变的” 。 由于访问寄存器的速度要快过RAM,所以编译器一般都会作减少存取外部RAM的优化，但有可能会读脏数据。当要求使用volatile 声明的变量的值的时候，系统总是重新从它所在的内存读取数据，即使它前面的指令刚刚从该处读取过数据。而且读取的数据立刻被保存。 精确地说就是，优化器在用到这个变量时必须每次都小心地重新读取这个变量的值，而不是使用保存在寄存器里的备份。<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/143892920">From: 一面阿里云C++面试题汇总</a></p>
+</blockquote>
+<ul>
+<li><code>const</code>与<code>#define</code>相比的优势</li>
+</ul>
+<blockquote>
+<ol>
+<li>const常量有数据类型，而宏常量没有数据类型，编译器可以对前者进行类型安全检查。而对后者只进行字符替换，没有类型安全检查，并且在字符替换可能会产生意料不到的错误（边际效应）。</li>
+<li>有些集成化的调试工具可以对 const 常量进行调试，但是不能对宏常量进行调试。</li>
+</ol>
+</blockquote>
+<ul>
+<li>基类的析构函数不是虚函数，会带来什么问题</li>
+</ul>
+<blockquote>
+<p>派生类的析构函数用不上，会造成资源的泄漏。</p>
+</blockquote>
+<ul>
+<li>参考</li>
+</ul>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/274914765qq/p/5134489.html">C/C++ 经典面试题汇总</a></li>
+<li><a target="_blank" rel="noopener" href="http://c.biancheng.net/view/267.html">C++虚函数表（多态的实现原理）</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/143892920">一面阿里云C++面试题汇总</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/weiyuefei/article/details/50413529">C/C++面试题大汇总之基本问题</a></li>
+</ol>
+<h4 id="python"><a class="markdownIt-Anchor" href="#python"></a> python</h4>
+<ul>
+<li>is 和 == 的区别</li>
+</ul>
+<blockquote>
+<p><code>is</code>表示的是对象标示符，检查对象的内存地址是否一样。<br>
+<code>==</code>用于检查两个对象的值是否相等。</p>
+</blockquote>
+<pre class="highlight"><code class="python">a <span class="hljs-keyword">is</span> b <span class="hljs-comment"># 等价于 id(a) == id(b)</span>
+a == b <span class="hljs-comment"># 等价于 a.__eq__(b)</span>
+</code></pre>
+<ul>
+<li>python中的可变对象与不可变对象</li>
+</ul>
+<blockquote>
+<p>可变对象：创建后可以改变，但地址不会改变，比如<code>dict, list</code><br>
+不可变对象：创建后就不能改变，如果改变将会指向一个新的对象，比如<code>str, int, tuple, float</code></p>
+</blockquote>
+<p>可变对象</p>
+<pre class="highlight"><code class="python">a = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>] <span class="hljs-comment"># id(a) -&gt; 140455165822688</span>
+a += [<span class="hljs-number">4</span>,<span class="hljs-number">5</span>] <span class="hljs-comment"># id(a) -&gt; 140455165822688</span>
+</code></pre>
+<p>不可变对象</p>
+<pre class="highlight"><code class="python">a = <span class="hljs-number">1</span> <span class="hljs-comment"># id(a) -&gt; 93883717583648</span>
+a = a + <span class="hljs-number">1</span> <span class="hljs-comment"># id(a) -&gt; 93883717583680</span>
+</code></pre>
+<p>默认参数引发的一个小问题</p>
+<pre class="highlight"><code class="python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">group</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, num, members=[])</span>:</span>
+        self.num = num
+        self.members = members
+    
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">addMember</span><span class="hljs-params">(self, mm)</span>:</span>
+        self.members.append(mm)
+g1 = group(<span class="hljs-number">1</span>)
+g1.addMember(<span class="hljs-string">'1'</span>)
+g2 = group(<span class="hljs-number">2</span>)
+g2.addMember(<span class="hljs-string">'2'</span>)
+print(g1.members) <span class="hljs-comment"># ['1', '2']</span>
+</code></pre>
+<p><code>g2</code>的修改居然会影响到<code>g1</code>！！！<br>
+这是因为<code>members</code>是一个默认<code>list</code>参数，如果实例化对象时没有新建该默认参数，则所有实例化成员会共用此默认参数值。如果是不可变对象就没有这个问题了。</p>
+<pre class="highlight"><code class="python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">group</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, num, members=[])</span>:</span>
+        self.num = num
+        self.members = members
+    
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">addMember</span><span class="hljs-params">(self, mm)</span>:</span>
+        self.members.append(mm)
+g1 = group(<span class="hljs-number">1</span>, [])
+g1.addMember(<span class="hljs-string">'1'</span>)
+g2 = group(<span class="hljs-number">2</span>, [])
+g2.addMember(<span class="hljs-string">'2'</span>)
+print(g1.members) <span class="hljs-comment"># ['1']</span>
+</code></pre>
+<p>这样就正常了。但是使用默认参数的本身目的就丢失了，所以默认参数如果是可变对象，还是要非常注意的。或者说这种情况下的默认参数就没有意义了。</p>
+<ul>
+<li>字符串拼接中<code>join</code>和<code>+</code>的区别</li>
+</ul>
+<blockquote>
+<p>数值结果上，两者是一样的，但性能上，<code>join</code>优于<code>+</code>。因为字符串是不可变对象，因此当用操作符+连接字符串的时候，每执行一次+都会申请一块新的内存，然后复制上一个+操作的结果和本次操作的右操作符到这块内存空间，因此用+连接字符串的时候会涉及好几次内存申请和复制。而join在连接字符串的时候，会先计算需要多大的内存存放结果，然后一次性申请所需内存并将字符串复制过去，这是为什么join的性能优于+的原因。</p>
+</blockquote>
+<ul>
+<li>参考</li>
+</ul>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://www.imooc.com/article/50668">经典7大Python面试题</a></li>
+</ol>
+<h3 id="数学"><a class="markdownIt-Anchor" href="#数学"></a> 数学</h3>
+<ul>
+<li>某城市发生了一起汽车撞人逃跑事件，该城市只有两种颜色的车，蓝20%绿80%，事发时现场有一个目击者，他指证是蓝车，但是根据专家在现场分析，当时那种条件能看正确的可能性是80%，那么，肇事的车是蓝车的概率是多少？</li>
+</ul>
+<blockquote>
+<p>肇事车颜色是蓝色A1的概率为P(A1)=0.2，是绿色A2概率为P(A2)=0.8;‘+’表示看到的是蓝色，‘-’表示看到的是绿色，<br>
+《目击者看清》为条件概率，即P(+/A1)=0.8，P(-/A2)=0.8，同样的P(-/A1)=0.2，P(+/A2)=0.2；<br>
+问题是求看到蓝色车的前提下是蓝色车的概率，利用贝叶斯公式<br>
+P(A1/+)=P(+/A1)<em>P(A1)/(P(+/A1)<em>P(A1)+P(+/A2)<em>P(A2))=0.8</em>0.2/(0.8</em>0.2+0.2</em>0.8)=0.5</p>
+</blockquote>
+<ul>
+<li>老王有两个孩子，已知至少有一个孩子是在星期二出生的男孩。问：两个孩子都是男孩的概率是多大？</li>
+</ul>
+<blockquote>
+<p>男，周二：1/14<br>
+男，非周二：6/14<br>
+女，周二：1/14<br>
+女，非周二：6/14<br>
+两个孩子至少一个是周二生的男孩：1/14+1/14-1/14<em>1/14=27/196<br>
+两个孩子都是男孩且至少一个是周二生的：1/14</em>1/14+1/14<em>6/14+6/14</em>1/14=13/196<br>
+条件概率：13/27</p>
+</blockquote>
+<ul>
+<li>现在有一个程序由A，B两个同学结对编程完成，在整个程序中的代码比例是3:5，据往常的统计A同学的Bug率为0.01%，B同学的Bug率为0.015%，现在在改程序中发现了一个BUG，那么是由A同学的代码引起的BUG概率是</li>
+</ul>
+<blockquote>
+<p>记发现BUG为事件BUG，A编写代码为事件A，B编写代码为事件B，则<br>
+A编写的代码中发现BUG的概率为P(BUG|A)=0.01%<br>
+B编写的代码中发现BUG的概率为P(BUG|B)=0.015%<br>
+对于已经编好的一个程序，P(A)=3/8，P(B)=5/8<br>
+根据贝叶斯公式得：<br>
+P(A|BUG)=P(A)P(BUG|A)/{P(A)P(BUG|A)+P(B)P(BUG|B)}=3/8<em>0.01%/(3/8</em>0.01%+5/8*0.015%) = 28.6%</p>
+</blockquote>
+<ul>
+<li>三个骰子摇到的点数之和为（）的概率最大？</li>
+</ul>
+<blockquote>
+<p>杨辉三角类的分布，中间值最大<br>
+三个骰子：3～18，中间值为10和11，故10和11的概率最大</p>
+</blockquote>
+<ul>
+<li>有1,2,3,…无穷个格子，你从1号格子出发，每次1/2概率向前跳一格，1/2概率向前跳两格，走到格子编号为4的倍数时结束，结束时期望走的步数为</li>
+</ul>
+<blockquote>
+<p>则从1号开始走，我们的目标是求f(1)<br>
+f(1) = 0.5 * ( 1 + f(2) ) + 0.5 * ( 1 +f(3)) 即有0.5概率走一步到2号，0.5概率走两步到3号<br>
+f(2) = 0.5 * ( 1 + f(3) ) + 0.5 * ( 1 +f(4)) 即有0.5概率走一步到3号，0.5概率走两步到4号(结束)<br>
+f(3) = 0.5 * ( 1 + f(4) ) + 0.5 * (1 + f(1)) 即有0.5概率走一步到4号，0.5概率走两步到5号(5号即可看做1号)<br>
+f(4) =0 走到4号就结束了，故为0<br>
+可以解上述方程，得f(1) = 18/5.</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/41144193">BAT面试必考算法题之专项数学</a></li>
 </ul>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -813,7 +974,7 @@ esac
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://iyuge2.top/2020/linuxshell/">https://iyuge2.top/2020/linuxshell/</a>
+                    <a href="https://iyuge2.top/2020/interview/">https://iyuge2.top/2020/interview/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -851,8 +1012,8 @@ esac
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Linux/">
-                                    <span class="chip bg-color">Linux</span>
+                                <a href="/tags/%E5%B7%A5%E4%BD%9C/">
+                                    <span class="chip bg-color">工作</span>
                                 </a>
                             
                         </div>
@@ -1283,29 +1444,30 @@ esac
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/python/">
+                <a href="/2020/interview/">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/1.jpg" class="responsive-img" alt="python中容易忽视的小知识点">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/5.jpg" class="responsive-img" alt="程序员面试题汇总">
                         
-                        <span class="card-title">python中容易忽视的小知识点</span>
+                        <span class="card-title">程序员面试题汇总</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            python作为当前机器学习和深度学习的主流语言，了解它的方方面面显得尤为重要
+                            面试
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1318,11 +1480,12 @@ esac
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/%E5%B7%A5%E4%BD%9C/">
+                        <span class="chip bg-color">工作</span>
                     </a>
                     
                 </div>
@@ -1336,24 +1499,24 @@ esac
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/survey-mml/">
+                <a href="/2020/ml-svm/">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/9.jpg" class="responsive-img" alt="多模态学习各子领域的研究进展">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/18.jpg" class="responsive-img" alt="机器学习系列——支持向量机">
                         
-                        <span class="card-title">多模态学习各子领域的研究进展</span>
+                        <span class="card-title">机器学习系列——支持向量机</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            多模态学习作为近年兴起的一个分支，致力于结合多个模态信息进行识别判断。本文将结合多模态各个子领域的研究现状做一个尽可能全面的分析和讨论。
+                            支持向量机
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-08
                             </span>
                         <span class="publish-author">
                             
@@ -1370,12 +1533,8 @@ esac
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">深度学习</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%BB%BC%E8%BF%B0/">
-                        <span class="chip bg-color">综述</span>
+                    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">机器学习</span>
                     </a>
                     
                 </div>
