@@ -2,70 +2,105 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://iyuge2.top/2020/interview/</loc>
+    <loc>https://iyuge2.top/2020/ML-Start/</loc>
+    
+    <lastmod>2021-01-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/about/index.html</loc>
+    
+    <lastmod>2021-01-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2021/R/</loc>
+    
+    <lastmod>2021-01-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/ML-KMeans/</loc>
+    
+    <lastmod>2020-12-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/python-json/</loc>
+    
+    <lastmod>2020-12-29</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/useMysql/</loc>
+    
+    <lastmod>2020-12-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/Linux-Flask-Mysql/</loc>
+    
+    <lastmod>2020-10-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/Interview/</loc>
     
     <lastmod>2020-10-13</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/ml-start/</loc>
-    
-    <lastmod>2020-10-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/ml-decisiontree/</loc>
+    <loc>https://iyuge2.top/2020/ML-DecisionTree/</loc>
     
     <lastmod>2020-10-08</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/ml-svm/</loc>
+    <loc>https://iyuge2.top/2020/ML-SVM/</loc>
     
     <lastmod>2020-10-08</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/ml-lr/</loc>
+    <loc>https://iyuge2.top/2020/ML-LR/</loc>
     
     <lastmod>2020-10-08</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/ml-perception/</loc>
+    <loc>https://iyuge2.top/2020/ML-Perception/</loc>
     
     <lastmod>2020-10-07</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/ml-naivebayes/</loc>
+    <loc>https://iyuge2.top/2020/ML-NaiveBayes/</loc>
     
     <lastmod>2020-10-07</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/ml-knn/</loc>
+    <loc>https://iyuge2.top/2020/ML-KNN/</loc>
     
     <lastmod>2020-10-07</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/ml-kmeans/</loc>
-    
-    <lastmod>2020-10-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/dualproblem/</loc>
+    <loc>https://iyuge2.top/2020/dualProblem/</loc>
     
     <lastmod>2020-10-06</lastmod>
     
@@ -79,56 +114,49 @@
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/linuxshell/</loc>
+    <loc>https://iyuge2.top/2020/linuxShell/</loc>
     
     <lastmod>2020-09-28</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/createblog/</loc>
+    <loc>https://iyuge2.top/2020/createBlog/</loc>
     
     <lastmod>2020-09-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/usevscode/</loc>
+    <loc>https://iyuge2.top/2020/useVscode/</loc>
     
     <lastmod>2020-09-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/usessh/</loc>
+    <loc>https://iyuge2.top/2020/useSSH/</loc>
     
     <lastmod>2020-09-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/survey-mml/</loc>
+    <loc>https://iyuge2.top/2020/survey-MML/</loc>
     
     <lastmod>2020-09-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/start/</loc>
+    <loc>https://iyuge2.top/2020/survey-DS/</loc>
     
     <lastmod>2020-09-22</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/survey-ds/</loc>
-    
-    <lastmod>2020-09-22</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/pythonreplacement/</loc>
+    <loc>https://iyuge2.top/2020/pythonReplacement/</loc>
     
     <lastmod>2020-09-22</lastmod>
     
@@ -156,13 +184,6 @@
   </url>
   
   <url>
-    <loc>https://iyuge2.top/about/index.html</loc>
-    
-    <lastmod>2020-09-15</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://iyuge2.top/tags/index.html</loc>
     
     <lastmod>2020-09-15</lastmod>
@@ -179,78 +200,92 @@
 
   <url>
     <loc>https://iyuge2.top/</loc>
-    <lastmod>2020-10-13</lastmod>
+    <lastmod>2021-01-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://iyuge2.top/tags/Linux/</loc>
+    <lastmod>2021-01-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2021-01-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2020-10-13</lastmod>
+    <lastmod>2021-01-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/</loc>
-    <lastmod>2020-10-13</lastmod>
+    <lastmod>2021-01-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://iyuge2.top/tags/%E6%95%B0%E5%AD%A6/</loc>
-    <lastmod>2020-10-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/tags/Linux/</loc>
-    <lastmod>2020-10-13</lastmod>
+    <lastmod>2021-01-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://iyuge2.top/tags/python/</loc>
-    <lastmod>2020-10-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/tags/%E8%B5%B7%E7%82%B9/</loc>
-    <lastmod>2020-10-13</lastmod>
+    <lastmod>2021-01-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://iyuge2.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2020-10-13</lastmod>
+    <lastmod>2021-01-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://iyuge2.top/tags/%E7%BB%BC%E8%BF%B0/</loc>
-    <lastmod>2020-10-13</lastmod>
+    <lastmod>2021-01-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2021-01-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://iyuge2.top/tags/linux/</loc>
-    <lastmod>2020-10-13</lastmod>
+    <lastmod>2021-01-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/tags/R/</loc>
+    <lastmod>2021-01-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://iyuge2.top/tags/%E5%B7%A5%E4%BD%9C/</loc>
-    <lastmod>2020-10-13</lastmod>
+    <lastmod>2021-01-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -259,14 +294,7 @@
   
   <url>
     <loc>https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/</loc>
-    <lastmod>2020-10-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/categories/%E6%9D%82%E6%83%B3%E9%97%B4/</loc>
-    <lastmod>2020-10-13</lastmod>
+    <lastmod>2021-01-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

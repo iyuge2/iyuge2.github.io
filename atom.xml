@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>iyuge2</title>
   
-  <subtitle>1 + 1 &gt; 2</subtitle>
+  <subtitle>Cosine的贝壳屋</subtitle>
   <link href="https://iyuge2.top/atom.xml" rel="self"/>
   
   <link href="https://iyuge2.top/"/>
-  <updated>2020-10-13T02:12:53.067Z</updated>
+  <updated>2021-01-12T13:38:27.825Z</updated>
   <id>https://iyuge2.top/</id>
   
   <author>
@@ -17,9 +17,122 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>R语言知识点小结</title>
+    <link href="https://iyuge2.top/2021/R/"/>
+    <id>https://iyuge2.top/2021/R/</id>
+    <published>2021-01-03T16:00:00.000Z</published>
+    <updated>2021-01-12T13:38:27.825Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt; 写在前面&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;之前没接触过R，所以，会稍微记得详细点&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="R" scheme="https://iyuge2.top/tags/R/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python中的json操作</title>
+    <link href="https://iyuge2.top/2020/python-json/"/>
+    <id>https://iyuge2.top/2020/python-json/</id>
+    <published>2020-11-30T11:17:36.000Z</published>
+    <updated>2020-12-29T07:55:55.591Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       </summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="python" scheme="https://iyuge2.top/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql的常用操作</title>
+    <link href="https://iyuge2.top/2020/useMysql/"/>
+    <id>https://iyuge2.top/2020/useMysql/</id>
+    <published>2020-10-18T16:00:00.000Z</published>
+    <updated>2020-12-02T07:35:22.170Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;mysql 5.7&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;基本知识&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#基本知识&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="数据库" scheme="https://iyuge2.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux环境下的“Python + Flask + Mysql”配置</title>
+    <link href="https://iyuge2.top/2020/Linux-Flask-Mysql/"/>
+    <id>https://iyuge2.top/2020/Linux-Flask-Mysql/</id>
+    <published>2020-10-16T16:00:00.000Z</published>
+    <updated>2020-10-19T12:44:55.127Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;linux服务端配置&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#linux服务端配置&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="Linux" scheme="https://iyuge2.top/tags/Linux/"/>
+    
+    <category term="环境配置" scheme="https://iyuge2.top/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>程序员面试题汇总</title>
-    <link href="https://iyuge2.top/2020/interview/"/>
-    <id>https://iyuge2.top/2020/interview/</id>
+    <link href="https://iyuge2.top/2020/Interview/"/>
+    <id>https://iyuge2.top/2020/Interview/</id>
     <published>2020-10-12T02:13:00.000Z</published>
     <updated>2020-10-13T02:12:53.067Z</updated>
     
@@ -44,8 +157,8 @@
   
   <entry>
     <title>机器学习系列——支持向量机</title>
-    <link href="https://iyuge2.top/2020/ml-svm/"/>
-    <id>https://iyuge2.top/2020/ml-svm/</id>
+    <link href="https://iyuge2.top/2020/ML-SVM/"/>
+    <id>https://iyuge2.top/2020/ML-SVM/</id>
     <published>2020-10-08T08:14:49.000Z</published>
     <updated>2020-10-08T09:47:18.840Z</updated>
     
@@ -69,8 +182,8 @@
   
   <entry>
     <title>机器学习系列——逻辑斯谛回归</title>
-    <link href="https://iyuge2.top/2020/ml-lr/"/>
-    <id>https://iyuge2.top/2020/ml-lr/</id>
+    <link href="https://iyuge2.top/2020/ML-LR/"/>
+    <id>https://iyuge2.top/2020/ML-LR/</id>
     <published>2020-10-08T07:17:49.000Z</published>
     <updated>2020-10-08T09:47:18.839Z</updated>
     
@@ -93,37 +206,9 @@
   </entry>
   
   <entry>
-    <title>机器学习系列—决策树</title>
-    <link href="https://iyuge2.top/2020/ml-decisiontree/"/>
-    <id>https://iyuge2.top/2020/ml-decisiontree/</id>
-    <published>2020-10-07T07:59:29.000Z</published>
-    <updated>2020-10-08T09:47:18.841Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;决策树模型可以同时用于分类和回归任务，该模型的解释性较好。包含三个关键步骤：特征选择、树的生成和树的剪枝。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>机器学习系列—朴素贝叶斯</title>
-    <link href="https://iyuge2.top/2020/ml-naivebayes/"/>
-    <id>https://iyuge2.top/2020/ml-naivebayes/</id>
+    <link href="https://iyuge2.top/2020/ML-NaiveBayes/"/>
+    <id>https://iyuge2.top/2020/ML-NaiveBayes/</id>
     <published>2020-10-07T07:59:29.000Z</published>
     <updated>2020-10-07T11:46:35.369Z</updated>
     
@@ -149,11 +234,39 @@
   </entry>
   
   <entry>
+    <title>机器学习系列—决策树</title>
+    <link href="https://iyuge2.top/2020/ML-DecisionTree/"/>
+    <id>https://iyuge2.top/2020/ML-DecisionTree/</id>
+    <published>2020-10-07T07:59:29.000Z</published>
+    <updated>2020-10-08T09:47:18.841Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;决策树模型可以同时用于分类和回归任务，该模型的解释性较好。包含三个关键步骤：特征选择、树的生成和树的剪枝。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>机器学习系列——KMeans</title>
-    <link href="https://iyuge2.top/2020/ml-kmeans/"/>
-    <id>https://iyuge2.top/2020/ml-kmeans/</id>
+    <link href="https://iyuge2.top/2020/ML-KMeans/"/>
+    <id>https://iyuge2.top/2020/ML-KMeans/</id>
     <published>2020-10-07T06:40:36.000Z</published>
-    <updated>2020-10-07T08:55:46.265Z</updated>
+    <updated>2020-12-29T08:02:12.507Z</updated>
     
     
       
@@ -179,8 +292,8 @@
   
   <entry>
     <title>机器学习系列——K近邻法</title>
-    <link href="https://iyuge2.top/2020/ml-knn/"/>
-    <id>https://iyuge2.top/2020/ml-knn/</id>
+    <link href="https://iyuge2.top/2020/ML-KNN/"/>
+    <id>https://iyuge2.top/2020/ML-KNN/</id>
     <published>2020-10-06T11:50:36.000Z</published>
     <updated>2020-10-07T08:55:46.266Z</updated>
     
@@ -205,8 +318,8 @@
   
   <entry>
     <title>数学系列——对偶问题</title>
-    <link href="https://iyuge2.top/2020/dualproblem/"/>
-    <id>https://iyuge2.top/2020/dualproblem/</id>
+    <link href="https://iyuge2.top/2020/dualProblem/"/>
+    <id>https://iyuge2.top/2020/dualProblem/</id>
     <published>2020-10-06T08:09:36.000Z</published>
     <updated>2020-10-06T09:57:58.947Z</updated>
     
@@ -257,8 +370,8 @@
   
   <entry>
     <title>Linux脚本知识点总结</title>
-    <link href="https://iyuge2.top/2020/linuxshell/"/>
-    <id>https://iyuge2.top/2020/linuxshell/</id>
+    <link href="https://iyuge2.top/2020/linuxShell/"/>
+    <id>https://iyuge2.top/2020/linuxShell/</id>
     <published>2020-09-28T05:08:36.000Z</published>
     <updated>2020-09-28T05:06:19.413Z</updated>
     
@@ -282,8 +395,8 @@
   
   <entry>
     <title>多模态学习各子领域的研究进展</title>
-    <link href="https://iyuge2.top/2020/survey-mml/"/>
-    <id>https://iyuge2.top/2020/survey-mml/</id>
+    <link href="https://iyuge2.top/2020/survey-MML/"/>
+    <id>https://iyuge2.top/2020/survey-MML/</id>
     <published>2020-09-16T16:00:00.000Z</published>
     <updated>2020-09-22T05:14:32.624Z</updated>
     
@@ -313,8 +426,8 @@
   
   <entry>
     <title>对话系统中点点滴滴</title>
-    <link href="https://iyuge2.top/2020/survey-ds/"/>
-    <id>https://iyuge2.top/2020/survey-ds/</id>
+    <link href="https://iyuge2.top/2020/survey-DS/"/>
+    <id>https://iyuge2.top/2020/survey-DS/</id>
     <published>2020-09-16T16:00:00.000Z</published>
     <updated>2020-09-22T05:14:32.623Z</updated>
     
@@ -344,8 +457,8 @@
   
   <entry>
     <title>机器学习系列——感知机</title>
-    <link href="https://iyuge2.top/2020/ml-perception/"/>
-    <id>https://iyuge2.top/2020/ml-perception/</id>
+    <link href="https://iyuge2.top/2020/ML-Perception/"/>
+    <id>https://iyuge2.top/2020/ML-Perception/</id>
     <published>2020-09-16T15:11:36.000Z</published>
     <updated>2020-10-07T11:54:07.258Z</updated>
     
@@ -372,10 +485,10 @@
   
   <entry>
     <title>机器学习系列——开篇</title>
-    <link href="https://iyuge2.top/2020/ml-start/"/>
-    <id>https://iyuge2.top/2020/ml-start/</id>
+    <link href="https://iyuge2.top/2020/ML-Start/"/>
+    <id>https://iyuge2.top/2020/ML-Start/</id>
     <published>2020-09-16T15:11:36.000Z</published>
-    <updated>2020-10-12T02:12:51.411Z</updated>
+    <updated>2021-01-12T16:42:30.510Z</updated>
     
     
       
@@ -397,8 +510,8 @@
   
   <entry>
     <title>使用ssh免密登录服务器</title>
-    <link href="https://iyuge2.top/2020/usessh/"/>
-    <id>https://iyuge2.top/2020/usessh/</id>
+    <link href="https://iyuge2.top/2020/useSSH/"/>
+    <id>https://iyuge2.top/2020/useSSH/</id>
     <published>2020-09-16T14:39:02.000Z</published>
     <updated>2020-09-22T05:14:32.654Z</updated>
     
@@ -424,97 +537,9 @@
   </entry>
   
   <entry>
-    <title>开始的地方</title>
-    <link href="https://iyuge2.top/2020/start/"/>
-    <id>https://iyuge2.top/2020/start/</id>
-    <published>2020-09-15T16:00:00.000Z</published>
-    <updated>2020-09-22T05:14:32.623Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;象牙塔的日子就要看到终点了，一个全新的起点也即将开始。总觉得要慢慢开始写点啥了，雁过留痕，风过留声。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;script&gt;
-       </summary>
-        
-      
-    
-    
-    
-    <category term="杂想间" scheme="https://iyuge2.top/categories/%E6%9D%82%E6%83%B3%E9%97%B4/"/>
-    
-    
-    <category term="起点" scheme="https://iyuge2.top/tags/%E8%B5%B7%E7%82%B9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vscode + Github + Hexo构建个人博客</title>
-    <link href="https://iyuge2.top/2020/createblog/"/>
-    <id>https://iyuge2.top/2020/createblog/</id>
-    <published>2020-09-15T16:00:00.000Z</published>
-    <updated>2020-09-22T05:38:24.486Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt; 写在前面&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;一直想着打造个人博客，总结知识，现在终于开始动手了。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="说明文档" scheme="https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VScode使用Tips</title>
-    <link href="https://iyuge2.top/2020/usevscode/"/>
-    <id>https://iyuge2.top/2020/usevscode/</id>
-    <published>2020-09-15T16:00:00.000Z</published>
-    <updated>2020-09-22T05:14:32.655Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;配置文件&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#配置文件&quot;&gt;&lt;/a&gt; 配置文件&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;vscode中的配置分用户区（User）和工作区（Workspace）。&lt;br&gt;
-覆盖范围：用户区</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="说明文档" scheme="https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
-    
-    <category term="python" scheme="https://iyuge2.top/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>由置换操作&quot;a,b = b,a&quot;引发的一些思考</title>
-    <link href="https://iyuge2.top/2020/pythonreplacement/"/>
-    <id>https://iyuge2.top/2020/pythonreplacement/</id>
+    <link href="https://iyuge2.top/2020/pythonReplacement/"/>
+    <id>https://iyuge2.top/2020/pythonReplacement/</id>
     <published>2020-09-15T16:00:00.000Z</published>
     <updated>2020-09-22T05:14:32.622Z</updated>
     

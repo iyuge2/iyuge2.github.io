@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="python中容易忽视的小知识点, 笔记">
+    <meta name="keywords" content="R语言知识点小结, 笔记">
     <meta name="description" content="存放个人学习中的重要笔记以及生活中的片段记忆">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>python中容易忽视的小知识点 | iyuge2</title>
+    <title>R语言知识点小结 | iyuge2</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -316,7 +316,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">python中容易忽视的小知识点</h1>
+                    <h1 class="description center-align post-title">R语言知识点小结</h1>
                 </div>
             </div>
         </div>
@@ -433,8 +433,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/python/">
-                                <span class="chip bg-color">python</span>
+                            <a href="/tags/R/">
+                                <span class="chip bg-color">R</span>
                             </a>
                         
                     </div>
@@ -458,28 +458,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-28
+                    2021-01-04
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-09-30
+                    2021-01-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    500
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    2 分
                 </div>
                 
 
@@ -496,216 +496,99 @@
             <div id="articleContent">
                 <h4 id="写在前面"><a class="markdownIt-Anchor" href="#写在前面"></a> 写在前面</h4>
 <blockquote>
-<p>本文不会记录<code>python</code>的详细知识，而只是记录笔者在回顾<code>python官方文档</code>时的笔记。</p>
+<p>之前没接触过R，所以，会稍微记得详细点</p>
 </blockquote>
-<h5 id="数组与字符串"><a class="markdownIt-Anchor" href="#数组与字符串"></a> 数组与字符串</h5>
+<h3 id="开发环境"><a class="markdownIt-Anchor" href="#开发环境"></a> 开发环境</h3>
 <ul>
-<li>切片的越界索引会被自动处理</li>
+<li>Rstudio的页面布局，看起来还是非常清晰的，用起来也比较方便。<br>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="Rstudio.png" alt=""></li>
 </ul>
-<pre class="highlight"><code class="python">arr = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]
-arr[<span class="hljs-number">2</span>:<span class="hljs-number">10</span>] <span class="hljs-comment"># 3,4,5</span>
-</code></pre>
-<h5 id="控制语句"><a class="markdownIt-Anchor" href="#控制语句"></a> 控制语句</h5>
+<h3 id="包相关命令"><a class="markdownIt-Anchor" href="#包相关命令"></a> 包相关命令</h3>
+<blockquote>
+<p>功能齐全的安装包和便捷的包管理机制是R语言的特点之一</p>
+</blockquote>
 <ul>
-<li>在循环里修改序列的值，可以先创建一份拷贝副本<code>[:]</code></li>
-</ul>
-<pre class="highlight"><code class="python"><span class="hljs-keyword">for</span> w <span class="hljs-keyword">in</span> words[:]:
-    <span class="hljs-keyword">if</span> len(w) &gt; <span class="hljs-number">5</span>:
-        words.insert(<span class="hljs-number">0</span>, w)
-</code></pre>
-<ul>
-<li>循环语句（不是<code>if</code>子句哦）可能带有一个<code>else</code>子句，它在循环结束后被执行，但是不会在循环被break语句终止时执行。</li>
-</ul>
-<pre class="highlight"><code class="python"><span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>):
-    <span class="hljs-keyword">if</span> n &gt; <span class="hljs-number">5</span>:
-        <span class="hljs-keyword">break</span>
-    print(n)
-<span class="hljs-keyword">else</span>:
-    print(<span class="hljs-string">"Over"</span>)
-<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span> <span class="hljs-number">4</span> <span class="hljs-number">5</span>
-</code></pre>
-<h5 id="函数"><a class="markdownIt-Anchor" href="#函数"></a> 函数</h5>
-<ul>
-<li>函数参数定义中，默认值只会执行一次，这条规则在默认值为可变对象（列表，字典等）时非常重要。</li>
-</ul>
-<pre class="highlight"><code class="python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">f</span><span class="hljs-params">(a, L=[])</span>:</span>
-    L.append(a)
-    <span class="hljs-keyword">return</span> a
-
-print(f(<span class="hljs-number">1</span>)) <span class="hljs-comment"># [1]</span>
-print(f(<span class="hljs-number">2</span>)) <span class="hljs-comment"># [1,2]</span>
-print(f(<span class="hljs-number">3</span>)) <span class="hljs-comment"># [1,2,3]</span>
-</code></pre>
-<ul>
-<li>可变参数
-<ul>
-<li><code>*args</code>: 接收一个包含除了已有行参列表以外的位置参数的元组的行参</li>
-<li><code>**args</code>: 接收一个字典，包含除了与已有行参相应的关键字参数以外的所有关键字参数</li>
-</ul>
-</li>
-</ul>
-<pre class="highlight"><code class="python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">cheeseshop</span><span class="hljs-params">(kind, *arguments, **keywords)</span>:</span>
-    <span class="hljs-keyword">for</span> arg <span class="hljs-keyword">in</span> arguments:
-        print(arg)
-    print(<span class="hljs-string">"-"</span> * <span class="hljs-number">40</span>)
-    <span class="hljs-keyword">for</span> kw <span class="hljs-keyword">in</span> keywords:
-        print(kw, <span class="hljs-string">":"</span>, keywords[kw])
-<span class="hljs-meta">&gt;&gt;&gt; </span>cheeseshop(<span class="hljs-string">"apple"</span>, <span class="hljs-string">"a1"</span>, <span class="hljs-string">"a2"</span>, client=<span class="hljs-string">"John"</span>, shopkeeper=<span class="hljs-string">"Bob"</span>)
-</code></pre>
-<ul>
-<li>使用<code>*</code>运算符编写函数调用可以从列表或者元组中解包参数</li>
-</ul>
-<pre class="highlight"><code class="python">args = [<span class="hljs-number">3</span>,<span class="hljs-number">6</span>]
-list(range(*args)) <span class="hljs-comment"># 等价于list(range(3,6))</span>
-</code></pre>
-<ul>
-<li>文档字符串规范</li>
+<li>安装包</li>
 </ul>
 <blockquote>
-<p>第一行简要概述对象的目的，然后空一个行，后面分段阐述必要说明</p>
+<p>install.packages("***")</p>
 </blockquote>
-<pre class="highlight"><code class="python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">function</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-string">"""Do nothing, but document it.
-
-    It doesn't do anything.
-    """</span>
-    <span class="hljs-keyword">pass</span>
-<span class="hljs-meta">&gt;&gt;&gt; </span>print(function.__doc__)
-</code></pre>
-<h5 id="类"><a class="markdownIt-Anchor" href="#类"></a> 类</h5>
 <ul>
-<li>实例变量用于每个实例的唯一数据，而类变量用于类的所有实例共享的属性和方法。</li>
-<li>数据属性会覆盖掉具有相同名称的方法属性。</li>
-<li>python有两个内置函数可被用于继承机制：
-<ul>
-<li><code>isinstance()</code>来检查一个<strong>实例的类型</strong>，<code>isinstance(obj, int)</code></li>
-<li>使用<code>issubclass()</code>来检查<strong>类的继承关系</strong>：<code>issubclass(bool, int)</code>为<code>True</code>，因为<code>bool</code>是<code>int</code>的子类，但是<code>issubclass(float, int)</code>为<code>False</code></li>
-</ul>
-</li>
-<li>私有数据成员和方法的名字以双下划线<code>__</code>开头</li>
-</ul>
-<h5 id="迭代器与生成器"><a class="markdownIt-Anchor" href="#迭代器与生成器"></a> 迭代器与生成器</h5>
-<ul>
-<li>迭代器</li>
+<li>更新包</li>
 </ul>
 <blockquote>
-<p>迭代器类中定义一个<code>__iter__()</code> 方法来返回一个带有<code>__next__()</code> 方法的对象。 如果类已定义了<code>__next__()</code>，则<code>__iter__()</code> 可以简单地返回<code>self</code></p>
+<p>update.packages("***")</p>
 </blockquote>
-<pre class="highlight"><code class="python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Reverse</span>:</span>
-    <span class="hljs-string">"""Iterator for looping over a sequence backwards."""</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, data)</span>:</span>
-        self.data = data
-        self.index = len(data)
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__iter__</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-keyword">return</span> self
-
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__next__</span><span class="hljs-params">(self)</span>:</span>
-        <span class="hljs-keyword">if</span> self.index == <span class="hljs-number">0</span>:
-            <span class="hljs-keyword">raise</span> StopIteration
-        self.index = self.index - <span class="hljs-number">1</span>
-        <span class="hljs-keyword">return</span> self.data[self.index]
-</code></pre>
 <ul>
-<li>生成器</li>
+<li>载入包</li>
+</ul>
+<blockquote>
+<p>library("***")</p>
+</blockquote>
+<h3 id="常用系统函数"><a class="markdownIt-Anchor" href="#常用系统函数"></a> 常用系统函数</h3>
+<pre class="highlight"><code class="">getwd() # 获取当前工作路径
+setwd(/path/to/working_dir) # 设置工作路径
+class(var_name) # 获取变量的数据类型
+</code></pre>
+<h3 id="数据类型"><a class="markdownIt-Anchor" href="#数据类型"></a> 数据类型</h3>
+<ol>
+<li>数值型 numerics (整数或者浮点数)</li>
+<li>逻辑判断 logical (TRUE or FALSE)</li>
+<li>字符型 characters (字符串)</li>
+<li>因子 factors</li>
+</ol>
+<p>前面三种在其他语言中也比较常见，这里主要记录第四种</p>
+<h3 id="数据对象"><a class="markdownIt-Anchor" href="#数据对象"></a> 数据对象</h3>
+<blockquote>
+<p>与普通数据类型不同的是，数据对象还包含一些对实例对象的操作函数</p>
+</blockquote>
+<ul>
+<li>注意点</li>
 </ul>
 <ol>
-<li>利用<code>yield</code>语句，在函数中需要返回值的地方用<code>yield</code>语句替代<code>return</code>，每次对生成器调用<code>next()</code>方法时，会从上次离开的位置恢复执行（会记住上次执行语句时的所有数据值）。</li>
+<li>R语言中的索引从1开始，切片是左右都闭合的闭区间</li>
+<li>切片索引可以是倒序的</li>
 </ol>
-<pre class="highlight"><code class="python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">reverse</span><span class="hljs-params">(data)</span>:</span>
-    <span class="hljs-keyword">for</span> index <span class="hljs-keyword">in</span> range(len(data)<span class="hljs-number">-1</span>, <span class="hljs-number">-1</span>, <span class="hljs-number">-1</span>):
-        <span class="hljs-keyword">yield</span> data[index]
+<h4 id="vector向量"><a class="markdownIt-Anchor" href="#vector向量"></a> vector向量</h4>
+<blockquote>
+<p>用于存储数值型、字符型或逻辑型数据的一维数组，单个vector向量中的所有元素的数据类型应该一致。</p>
+</blockquote>
+<pre class="highlight"><code class="R"><span class="hljs-comment"># 创建</span>
+a = c(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>)
+b = c(<span class="hljs-string">"a"</span>, <span class="hljs-string">"b"</span>, <span class="hljs-string">"c"</span>)
+c = c(<span class="hljs-literal">TRUE</span>, <span class="hljs-literal">FALSE</span>)
+<span class="hljs-comment"># 查找</span>
+a[c(<span class="hljs-number">2</span>)] <span class="hljs-comment"># 2</span>
+a[c(<span class="hljs-number">1</span>,<span class="hljs-number">3</span>)] <span class="hljs-comment"># 1, 3</span>
+a[c(<span class="hljs-number">1</span>:<span class="hljs-number">3</span>)] <span class="hljs-comment"># 1, 2, 3</span>
+a[c(<span class="hljs-number">3</span>:<span class="hljs-number">1</span>)] <span class="hljs-comment"># 3, 2, 1</span>
 </code></pre>
-<ol start="2">
-<li>用<code>生成器表达式</code></li>
-</ol>
-<pre class="highlight"><code class="python">[data[i] <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(data)<span class="hljs-number">-1</span>, <span class="hljs-number">-1</span>, <span class="hljs-number">-1</span>)]
-</code></pre>
-<h5 id="装饰器"><a class="markdownIt-Anchor" href="#装饰器"></a> 装饰器</h5>
-<p>理解<code>装饰器</code>之前，首先要明白在<code>python</code>中函数也是一个对象，也可以被赋值。</p>
-<pre class="highlight"><code class="python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hello</span><span class="hljs-params">()</span>:</span>
-    print(<span class="hljs-string">'hello world'</span>)
-sayHi = hello
-<span class="hljs-keyword">del</span> hello
-hello() <span class="hljs-comment"># NameError: name 'hello' is not defined</span>
-sayHi() <span class="hljs-comment"># hello world</span>
+<h4 id="matrix矩阵"><a class="markdownIt-Anchor" href="#matrix矩阵"></a> matrix矩阵</h4>
+<blockquote>
+<p>matrix是一种二维数组，每个矩阵中所有元素的数据类型都应该保持一致</p>
+</blockquote>
+<p><strong>定义</strong></p>
+<pre class="highlight"><code class="R">matrix(vector, nrow=number_of_rows, ncol=number_of_columns, byrow=logical_value)
 </code></pre>
 <ul>
-<li>需求</li>
+<li>参数解析</li>
 </ul>
 <blockquote>
-<p>在一个函数执行之前做一点其他的事情，比如常见的日志等</p>
+<p>vector: 一维向量<br>
+nrow: 行数<br>
+ncol: 列数<br>
+byrow: 是否按行扩展</p>
 </blockquote>
-<ul>
-<li>实现</li>
-</ul>
-<pre class="highlight"><code class="python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">log</span><span class="hljs-params">(func)</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">wrapper</span><span class="hljs-params">(*args, **kw)</span>:</span>
-        print(<span class="hljs-string">'call %s():'</span> %func.__name__)
-        <span class="hljs-keyword">return</span> func(*args, **kw)
-    <span class="hljs-keyword">return</span> wrapper
-
-<span class="hljs-meta">@log</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run</span><span class="hljs-params">()</span>:</span>
-    print(<span class="hljs-string">"hello world"</span>)
-run() <span class="hljs-comment"># call run():\n hello world</span>
+<pre class="highlight"><code class="R"><span class="hljs-comment"># 创建</span>
+my_matrix = matrix(c(<span class="hljs-number">1</span>:<span class="hljs-number">18</span>), <span class="hljs-number">2</span>) <span class="hljs-comment"># 2行9列</span>
+<span class="hljs-comment"># 查找</span>
+my_matrix[<span class="hljs-number">2</span>, c(<span class="hljs-number">3</span>:<span class="hljs-number">5</span>)] <span class="hljs-comment"># 第2行的第3至第5列</span>
 </code></pre>
-<p>可见，上面的方法中，<code>log</code>接受函数作为参数，同时，在里面定义的<code>wrapper</code>方法中以函数作为返回值。这样，就可以在函数<code>func</code>被执行之前，做任意操作了。</p>
-<ul>
-<li>另一点需求</li>
-</ul>
-<blockquote>
-<p>但是，如果<code>log</code>也想接受一个额外的参数呢？</p>
-</blockquote>
-<ul>
-<li>实现</li>
-</ul>
-<blockquote>
-<p>再套一层外部封装</p>
-</blockquote>
-<pre class="highlight"><code class="python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">log</span><span class="hljs-params">(text)</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">decorator</span><span class="hljs-params">(func)</span>:</span>
-        <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">wrapper</span><span class="hljs-params">(*args, **kw)</span>:</span>
-            print(<span class="hljs-string">'%s call %s():'</span> %(text, func.__name__))
-            <span class="hljs-keyword">return</span> func(*args, **kw)
-        <span class="hljs-keyword">return</span> wrapper
-    <span class="hljs-keyword">return</span> decorator
-
-<span class="hljs-meta">@log('iyuge2')</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run</span><span class="hljs-params">()</span>:</span>
-    print(<span class="hljs-string">"hello world"</span>)
-run() <span class="hljs-comment"># iyuge2 call run():\n hello world</span>
-</code></pre>
-<p>上面方法等价于<code>log('iyuge2')()</code>。</p>
-<ul>
-<li>另一个问题</li>
-</ul>
-<blockquote>
-<p>上面那种装饰方法会改变<code>run.__name__</code>的值，除了在装饰器内部重新给<code>func.__name__</code>赋值之外，<code>python</code>提供了另一种新的方法实现。</p>
-</blockquote>
-<pre class="highlight"><code class="python"><span class="hljs-keyword">import</span> functools
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">log</span><span class="hljs-params">(func)</span>:</span>
-<span class="hljs-meta">    @functools.wraps(func)</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">wrapper</span><span class="hljs-params">(*args, **kw)</span>:</span>
-        print(<span class="hljs-string">'call %s():'</span> % func.__name__)
-        <span class="hljs-keyword">return</span> func(*args, **kw)
-    <span class="hljs-keyword">return</span> wrapper
-
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">log</span><span class="hljs-params">(text)</span>:</span>
-    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">decorator</span><span class="hljs-params">(func)</span>:</span>
-<span class="hljs-meta">        @functools.wraps(func)</span>
-        <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">wrapper</span><span class="hljs-params">(*args, **kw)</span>:</span>
-            print(<span class="hljs-string">'%s %s():'</span> % (text, func.__name__))
-            <span class="hljs-keyword">return</span> func(*args, **kw)
-        <span class="hljs-keyword">return</span> wrapper
-    <span class="hljs-keyword">return</span> decorator
-</code></pre>
-<p>其实，也就是<code>functools.wraps</code>也用了一层封装，将<code>__name__</code>属性重新改了回来。</p>
+<h4 id="dataframe数据框"><a class="markdownIt-Anchor" href="#dataframe数据框"></a> dataframe数据框</h4>
 <h4 id="参考资料"><a class="markdownIt-Anchor" href="#参考资料"></a> 参考资料</h4>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/">python中文文档</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017451662295584">装饰器·廖雪峰</a></li>
+<li><a target="_blank" rel="noopener" href="http://codingdict.com/article/2822">CodingDict-R</a></li>
+<li><a target="_blank" rel="noopener" href="https://bookdown.org/qiyuandong/intro_r">R语言入门</a></li>
 </ul>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -750,7 +633,7 @@ run() <span class="hljs-comment"># iyuge2 call run():\n hello world</span>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://iyuge2.top/2020/python/">https://iyuge2.top/2020/python/</a>
+                    <a href="https://iyuge2.top/2021/R/">https://iyuge2.top/2021/R/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -788,8 +671,8 @@ run() <span class="hljs-comment"># iyuge2 call run():\n hello world</span>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/python/">
-                                    <span class="chip bg-color">python</span>
+                                <a href="/tags/R/">
+                                    <span class="chip bg-color">R</span>
                                 </a>
                             
                         </div>
@@ -1094,29 +977,30 @@ run() <span class="hljs-comment"># iyuge2 call run():\n hello world</span>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/dualProblem/">
+                <a href="/2021/R/">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/17.jpg" class="responsive-img" alt="数学系列——对偶问题">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/1.jpg" class="responsive-img" alt="R语言知识点小结">
                         
-                        <span class="card-title">数学系列——对偶问题</span>
+                        <span class="card-title">R语言知识点小结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            原始问题 -> 对偶问题
+                            我承认，学R是为了...
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1129,11 +1013,12 @@ run() <span class="hljs-comment"># iyuge2 call run():\n hello world</span>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%B0%E5%AD%A6/">
-                        <span class="chip bg-color">数学</span>
+                    <a href="/tags/R/">
+                        <span class="chip bg-color">R</span>
                     </a>
                     
                 </div>
@@ -1147,24 +1032,27 @@ run() <span class="hljs-comment"># iyuge2 call run():\n hello world</span>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/linuxShell/">
+                <a href="/2020/python-json/">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/18.jpg" class="responsive-img" alt="Linux脚本知识点总结">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/10.jpg" class="responsive-img" alt="python中的json操作">
                         
-                        <span class="card-title">Linux脚本知识点总结</span>
+                        <span class="card-title">python中的json操作</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            懒惰是人的天性，linux脚本就是可以帮助我们更方便地执行系统流水操作的一种必备技能。
+                            
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-30
                             </span>
                         <span class="publish-author">
                             
@@ -1181,8 +1069,8 @@ run() <span class="hljs-comment"># iyuge2 call run():\n hello world</span>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Linux/">
-                        <span class="chip bg-color">Linux</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>
