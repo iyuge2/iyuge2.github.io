@@ -2,14 +2,133 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://iyuge2.top/2020/ML-Start/</loc>
+    <loc>https://iyuge2.top/2021/r/</loc>
     
     <lastmod>2021-01-13</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/ML-Start-2/</loc>
+    <loc>https://iyuge2.top/2020/use-vscode/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/use-ssh/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/use-mysql/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/survey-mml/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/survey-ds/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/python-replacement/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/interview/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/ml-svm/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/ml-start/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/ml-perception/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/ml-naivebayes/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/ml-lr/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/ml-knn/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/ml-kmeans/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/ml-decisionTree/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/dual-problem/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/create-blog/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/linux-flask-mysql/</loc>
     
     <lastmod>2021-01-13</lastmod>
     
@@ -23,42 +142,7 @@
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2021/R/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/Interview/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/dualProblem/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/createBlog/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://iyuge2.top/about/index.html</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/Linux-Flask-Mysql/</loc>
     
     <lastmod>2021-01-13</lastmod>
     
@@ -72,98 +156,7 @@
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/useVscode/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/useSSH/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/useMysql/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/survey-MML/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/survey-DS/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/pythonReplacement/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://iyuge2.top/2020/python/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/ML-SVM/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/ML-NaiveBayes/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/ML-LR/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/ML-KNN/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/ML-KMeans/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/ML-DecisionTree/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/ML-Perception/</loc>
     
     <lastmod>2021-01-13</lastmod>
     
@@ -221,6 +214,20 @@
   </url>
   
   <url>
+    <loc>https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/</loc>
+    <lastmod>2021-01-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/tags/%E6%95%B0%E5%AD%A6/</loc>
+    <lastmod>2021-01-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://iyuge2.top/tags/Linux/</loc>
     <lastmod>2021-01-13</lastmod>
     <changefreq>daily</changefreq>
@@ -243,20 +250,6 @@
   
   <url>
     <loc>https://iyuge2.top/tags/python/</loc>
-    <lastmod>2021-01-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/</loc>
-    <lastmod>2021-01-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/tags/%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2021-01-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
