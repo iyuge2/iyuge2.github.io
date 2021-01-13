@@ -6,7 +6,7 @@
   <link href="https://iyuge2.top/atom.xml" rel="self"/>
   
   <link href="https://iyuge2.top/"/>
-  <updated>2021-01-13T15:49:05.226Z</updated>
+  <updated>2021-01-13T16:03:28.648Z</updated>
   <id>https://iyuge2.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://iyuge2.top/2021/r/"/>
     <id>https://iyuge2.top/2021/r/</id>
     <published>2021-01-03T16:00:00.000Z</published>
-    <updated>2021-01-13T15:49:05.226Z</updated>
+    <updated>2021-01-13T16:03:28.648Z</updated>
     
     
       
@@ -107,7 +107,7 @@
     <link href="https://iyuge2.top/2020/linux-flask-mysql/"/>
     <id>https://iyuge2.top/2020/linux-flask-mysql/</id>
     <published>2020-10-16T16:00:00.000Z</published>
-    <updated>2021-01-13T15:45:08.864Z</updated>
+    <updated>2021-01-13T16:04:49.051Z</updated>
     
     
       
@@ -206,34 +206,6 @@
   </entry>
   
   <entry>
-    <title>机器学习系列—决策树</title>
-    <link href="https://iyuge2.top/2020/ml-decisionTree/"/>
-    <id>https://iyuge2.top/2020/ml-decisionTree/</id>
-    <published>2020-10-07T07:59:29.000Z</published>
-    <updated>2021-01-13T15:45:36.883Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;决策树模型可以同时用于分类和回归任务，该模型的解释性较好。包含三个关键步骤：特征选择、树的生成和树的剪枝。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>机器学习系列—朴素贝叶斯</title>
     <link href="https://iyuge2.top/2020/ml-naivebayes/"/>
     <id>https://iyuge2.top/2020/ml-naivebayes/</id>
@@ -249,6 +221,34 @@
 &lt;p&gt;朴素贝叶斯算法是基于贝叶斯定理和特征条件独立性假设的分类方法。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#基本原理&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习系列—决策树</title>
+    <link href="https://iyuge2.top/2020/ml-decisionTree/"/>
+    <id>https://iyuge2.top/2020/ml-decisionTree/</id>
+    <published>2020-10-07T07:59:29.000Z</published>
+    <updated>2021-01-13T15:45:36.883Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;决策树模型可以同时用于分类和回归任务，该模型的解释性较好。包含三个关键步骤：特征选择、树的生成和树的剪枝。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
         
       
     
@@ -321,7 +321,7 @@
     <link href="https://iyuge2.top/2020/dual-problem/"/>
     <id>https://iyuge2.top/2020/dual-problem/</id>
     <published>2020-10-06T08:09:36.000Z</published>
-    <updated>2021-01-13T15:45:24.049Z</updated>
+    <updated>2021-01-13T16:04:31.586Z</updated>
     
     
       
@@ -370,10 +370,10 @@
   
   <entry>
     <title>Linux脚本知识点总结</title>
-    <link href="https://iyuge2.top/2020/linuxShell/"/>
-    <id>https://iyuge2.top/2020/linuxShell/</id>
+    <link href="https://iyuge2.top/2020/linux-shell/"/>
+    <id>https://iyuge2.top/2020/linux-shell/</id>
     <published>2020-09-28T05:08:36.000Z</published>
-    <updated>2021-01-13T09:35:24.024Z</updated>
+    <updated>2021-01-13T16:02:49.639Z</updated>
     
     
       
@@ -390,37 +390,6 @@
     
     
     <category term="Linux" scheme="https://iyuge2.top/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>多模态学习各子领域的研究进展</title>
-    <link href="https://iyuge2.top/2020/survey-mml/"/>
-    <id>https://iyuge2.top/2020/survey-mml/</id>
-    <published>2020-09-16T16:00:00.000Z</published>
-    <updated>2021-01-13T15:48:32.028Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       </summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="深度学习" scheme="https://iyuge2.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="综述" scheme="https://iyuge2.top/tags/%E7%BB%BC%E8%BF%B0/"/>
     
   </entry>
   
@@ -456,18 +425,22 @@
   </entry>
   
   <entry>
-    <title>机器学习系列——开篇</title>
-    <link href="https://iyuge2.top/2020/ml-start/"/>
-    <id>https://iyuge2.top/2020/ml-start/</id>
-    <published>2020-09-16T15:11:36.000Z</published>
-    <updated>2021-01-13T15:46:41.165Z</updated>
+    <title>多模态学习各子领域的研究进展</title>
+    <link href="https://iyuge2.top/2020/survey-mml/"/>
+    <id>https://iyuge2.top/2020/survey-mml/</id>
+    <published>2020-09-16T16:00:00.000Z</published>
+    <updated>2021-01-13T15:48:32.028Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h4 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt;</summary>
+    <summary type="html">&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       </summary>
         
       
     
@@ -476,7 +449,9 @@
     <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="深度学习" scheme="https://iyuge2.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="综述" scheme="https://iyuge2.top/tags/%E7%BB%BC%E8%BF%B0/"/>
     
   </entry>
   
@@ -537,22 +512,40 @@
   </entry>
   
   <entry>
-    <title>Vscode + Github + Hexo构建个人博客</title>
-    <link href="https://iyuge2.top/2020/create-blog/"/>
-    <id>https://iyuge2.top/2020/create-blog/</id>
+    <title>由置换操作&quot;a,b = b,a&quot;引发的一些思考</title>
+    <link href="https://iyuge2.top/2020/python-replacement/"/>
+    <id>https://iyuge2.top/2020/python-replacement/</id>
     <published>2020-09-15T16:00:00.000Z</published>
-    <updated>2021-01-13T15:45:16.958Z</updated>
+    <updated>2021-01-13T15:48:21.387Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;在C或者C++中，交换两个变量的值，一般需要借由中间变量实现（某些情况下可以直接通过加减实现，但这种不够安全）。&lt;br&gt;
+但是，在Python中，竟可以直接通过“a,b = b,a”实现，这是如何做到的呢？以及这种实现方式有什么需要注意的吗？&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="python" scheme="https://iyuge2.top/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习系列——开篇</title>
+    <link href="https://iyuge2.top/2020/ml-start/"/>
+    <id>https://iyuge2.top/2020/ml-start/</id>
+    <published>2020-09-15T16:00:00.000Z</published>
+    <updated>2021-01-13T16:03:21.683Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt; 写在前面&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;一直想着打造个人博客，总结知识，现在终于开始动手了。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3</summary>
+    <summary type="html">&lt;h4 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt;</summary>
         
       
     
@@ -561,7 +554,7 @@
     <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="说明文档" scheme="https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   

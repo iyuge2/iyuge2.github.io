@@ -2,7 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://iyuge2.top/2020/linux-flask-mysql/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/dual-problem/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://iyuge2.top/2021/r/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/ml-start/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/linux-shell/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/create-blog/</loc>
     
     <lastmod>2021-01-13</lastmod>
     
@@ -65,13 +100,6 @@
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/ml-start/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://iyuge2.top/2020/ml-perception/</loc>
     
     <lastmod>2021-01-13</lastmod>
@@ -114,27 +142,6 @@
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/dual-problem/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/create-blog/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/linux-flask-mysql/</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://iyuge2.top/2020/python-json/</loc>
     
     <lastmod>2021-01-13</lastmod>
@@ -143,13 +150,6 @@
   
   <url>
     <loc>https://iyuge2.top/about/index.html</loc>
-    
-    <lastmod>2021-01-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/2020/linuxShell/</loc>
     
     <lastmod>2021-01-13</lastmod>
     
@@ -205,13 +205,6 @@
     <priority>1.0</priority>
   </url>
 
-  
-  <url>
-    <loc>https://iyuge2.top/tags/R/</loc>
-    <lastmod>2021-01-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
   
   <url>
     <loc>https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/</loc>
@@ -278,6 +271,13 @@
   
   <url>
     <loc>https://iyuge2.top/tags/linux/</loc>
+    <lastmod>2021-01-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/tags/R/</loc>
     <lastmod>2021-01-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
