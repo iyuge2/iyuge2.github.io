@@ -50,7 +50,7 @@
     <link href="https://iyuge2.top/2020/python-json/"/>
     <id>https://iyuge2.top/2020/python-json/</id>
     <published>2020-11-30T11:17:36.000Z</published>
-    <updated>2021-01-13T12:39:04.624Z</updated>
+    <updated>2021-01-13T15:27:30.938Z</updated>
     
     
       
@@ -394,37 +394,6 @@
   </entry>
   
   <entry>
-    <title>多模态学习各子领域的研究进展</title>
-    <link href="https://iyuge2.top/2020/survey-MML/"/>
-    <id>https://iyuge2.top/2020/survey-MML/</id>
-    <published>2020-09-16T16:00:00.000Z</published>
-    <updated>2021-01-13T09:26:17.362Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       </summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="深度学习" scheme="https://iyuge2.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="综述" scheme="https://iyuge2.top/tags/%E7%BB%BC%E8%BF%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>对话系统中点点滴滴</title>
     <link href="https://iyuge2.top/2020/survey-DS/"/>
     <id>https://iyuge2.top/2020/survey-DS/</id>
@@ -456,18 +425,22 @@
   </entry>
   
   <entry>
-    <title>机器学习系列——开篇</title>
-    <link href="https://iyuge2.top/2020/ML-Start/"/>
-    <id>https://iyuge2.top/2020/ML-Start/</id>
-    <published>2020-09-16T15:11:36.000Z</published>
-    <updated>2021-01-13T08:40:18.060Z</updated>
+    <title>多模态学习各子领域的研究进展</title>
+    <link href="https://iyuge2.top/2020/survey-MML/"/>
+    <id>https://iyuge2.top/2020/survey-MML/</id>
+    <published>2020-09-16T16:00:00.000Z</published>
+    <updated>2021-01-13T09:26:17.362Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h4 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt;</summary>
+    <summary type="html">&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       </summary>
         
       
     
@@ -476,7 +449,9 @@
     <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="深度学习" scheme="https://iyuge2.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="综述" scheme="https://iyuge2.top/tags/%E7%BB%BC%E8%BF%B0/"/>
     
   </entry>
   
@@ -496,6 +471,31 @@
 &lt;p&gt;感知机是一种分类算法，1957年就被提出，也算机器学习的开山代表作了。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#基本原理&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习系列——开篇</title>
+    <link href="https://iyuge2.top/2020/ML-Start/"/>
+    <id>https://iyuge2.top/2020/ML-Start/</id>
+    <published>2020-09-16T15:11:36.000Z</published>
+    <updated>2021-01-13T13:03:29.882Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt;</summary>
         
       
     
