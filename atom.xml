@@ -6,7 +6,7 @@
   <link href="https://iyuge2.top/atom.xml" rel="self"/>
   
   <link href="https://iyuge2.top/"/>
-  <updated>2021-01-13T16:03:28.648Z</updated>
+  <updated>2021-01-13T17:00:42.088Z</updated>
   <id>https://iyuge2.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://iyuge2.top/2021/r/"/>
     <id>https://iyuge2.top/2021/r/</id>
     <published>2021-01-03T16:00:00.000Z</published>
-    <updated>2021-01-13T16:03:28.648Z</updated>
+    <updated>2021-01-13T17:00:42.088Z</updated>
     
     
       
@@ -79,7 +79,7 @@
     <link href="https://iyuge2.top/2020/use-mysql/"/>
     <id>https://iyuge2.top/2020/use-mysql/</id>
     <published>2020-10-18T16:00:00.000Z</published>
-    <updated>2021-01-13T15:48:39.794Z</updated>
+    <updated>2021-01-13T17:09:39.997Z</updated>
     
     
       
@@ -107,7 +107,7 @@
     <link href="https://iyuge2.top/2020/linux-flask-mysql/"/>
     <id>https://iyuge2.top/2020/linux-flask-mysql/</id>
     <published>2020-10-16T16:00:00.000Z</published>
-    <updated>2021-01-13T16:04:49.051Z</updated>
+    <updated>2021-01-13T17:06:37.189Z</updated>
     
     
       
@@ -185,7 +185,7 @@
     <link href="https://iyuge2.top/2020/ml-lr/"/>
     <id>https://iyuge2.top/2020/ml-lr/</id>
     <published>2020-10-08T07:17:49.000Z</published>
-    <updated>2021-01-13T15:46:00.323Z</updated>
+    <updated>2021-01-13T17:07:59.148Z</updated>
     
     
       
@@ -210,7 +210,7 @@
     <link href="https://iyuge2.top/2020/ml-naivebayes/"/>
     <id>https://iyuge2.top/2020/ml-naivebayes/</id>
     <published>2020-10-07T07:59:29.000Z</published>
-    <updated>2021-01-13T15:46:13.860Z</updated>
+    <updated>2021-01-13T17:08:05.848Z</updated>
     
     
       
@@ -237,8 +237,8 @@
     <title>机器学习系列—决策树</title>
     <link href="https://iyuge2.top/2020/ml-decisionTree/"/>
     <id>https://iyuge2.top/2020/ml-decisionTree/</id>
-    <published>2020-10-07T07:59:29.000Z</published>
-    <updated>2021-01-13T15:45:36.883Z</updated>
+    <published>2020-10-06T16:00:00.000Z</published>
+    <updated>2021-01-13T17:07:22.530Z</updated>
     
     
       
@@ -265,8 +265,8 @@
     <title>机器学习系列——KMeans</title>
     <link href="https://iyuge2.top/2020/ml-kmeans/"/>
     <id>https://iyuge2.top/2020/ml-kmeans/</id>
-    <published>2020-10-07T06:40:36.000Z</published>
-    <updated>2021-01-13T15:45:48.782Z</updated>
+    <published>2020-10-06T16:00:00.000Z</published>
+    <updated>2021-01-13T17:07:34.497Z</updated>
     
     
       
@@ -291,37 +291,11 @@
   </entry>
   
   <entry>
-    <title>机器学习系列——K近邻法</title>
-    <link href="https://iyuge2.top/2020/ml-knn/"/>
-    <id>https://iyuge2.top/2020/ml-knn/</id>
-    <published>2020-10-06T11:50:36.000Z</published>
-    <updated>2021-01-13T15:45:55.462Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;K近邻法（K-nearest neighbor,</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>数学系列——对偶问题</title>
     <link href="https://iyuge2.top/2020/dual-problem/"/>
     <id>https://iyuge2.top/2020/dual-problem/</id>
     <published>2020-10-06T08:09:36.000Z</published>
-    <updated>2021-01-13T16:04:31.586Z</updated>
+    <updated>2021-01-13T17:05:23.482Z</updated>
     
     
       
@@ -344,11 +318,37 @@
   </entry>
   
   <entry>
+    <title>机器学习系列——K近邻法</title>
+    <link href="https://iyuge2.top/2020/ml-knn/"/>
+    <id>https://iyuge2.top/2020/ml-knn/</id>
+    <published>2020-10-05T16:00:00.000Z</published>
+    <updated>2021-01-13T17:07:47.561Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;K近邻法（K-nearest neighbor,</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python中容易忽视的小知识点</title>
     <link href="https://iyuge2.top/2020/python/"/>
     <id>https://iyuge2.top/2020/python/</id>
     <published>2020-09-28T05:30:36.000Z</published>
-    <updated>2021-01-13T09:25:55.122Z</updated>
+    <updated>2021-01-13T17:09:04.279Z</updated>
     
     
       
@@ -398,38 +398,7 @@
     <link href="https://iyuge2.top/2020/survey-mml/"/>
     <id>https://iyuge2.top/2020/survey-mml/</id>
     <published>2020-09-16T16:00:00.000Z</published>
-    <updated>2021-01-13T15:48:32.028Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       </summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="深度学习" scheme="https://iyuge2.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="综述" scheme="https://iyuge2.top/tags/%E7%BB%BC%E8%BF%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>对话系统中点点滴滴</title>
-    <link href="https://iyuge2.top/2020/survey-ds/"/>
-    <id>https://iyuge2.top/2020/survey-ds/</id>
-    <published>2020-09-16T16:00:00.000Z</published>
-    <updated>2021-01-13T15:48:26.824Z</updated>
+    <updated>2021-01-13T17:09:32.516Z</updated>
     
     
       
@@ -460,7 +429,7 @@
     <link href="https://iyuge2.top/2020/ml-perception/"/>
     <id>https://iyuge2.top/2020/ml-perception/</id>
     <published>2020-09-16T15:11:36.000Z</published>
-    <updated>2021-01-13T15:46:24.213Z</updated>
+    <updated>2021-01-13T17:08:14.723Z</updated>
     
     
       
@@ -488,7 +457,7 @@
     <link href="https://iyuge2.top/2020/use-ssh/"/>
     <id>https://iyuge2.top/2020/use-ssh/</id>
     <published>2020-09-16T14:39:02.000Z</published>
-    <updated>2021-01-13T15:48:45.852Z</updated>
+    <updated>2021-01-13T17:09:48.768Z</updated>
     
     
       
@@ -512,11 +481,63 @@
   </entry>
   
   <entry>
+    <title>由置换操作&quot;a,b = b,a&quot;引发的一些思考</title>
+    <link href="https://iyuge2.top/2020/python-replacement/"/>
+    <id>https://iyuge2.top/2020/python-replacement/</id>
+    <published>2020-09-15T16:00:00.000Z</published>
+    <updated>2021-01-13T17:08:48.561Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;在C或者C++中，交换两个变量的值，一般需要借由中间变量实现（某些情况下可以直接通过加减实现，但这种不够安全）。&lt;br&gt;
+但是，在Python中，竟可以直接通过“a,b = b,a”实现，这是如何做到的呢？以及这种实现方式有什么需要注意的吗？&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="python" scheme="https://iyuge2.top/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VScode使用Tips</title>
+    <link href="https://iyuge2.top/2020/use-vscode/"/>
+    <id>https://iyuge2.top/2020/use-vscode/</id>
+    <published>2020-09-15T16:00:00.000Z</published>
+    <updated>2021-01-13T17:10:22.550Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;配置文件&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#配置文件&quot;&gt;&lt;/a&gt; 配置文件&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;vscode中的配置分用户区（User）和工作区（Workspace）。&lt;br&gt;
+覆盖范围：用户区</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="说明文档" scheme="https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
+    
+    <category term="python" scheme="https://iyuge2.top/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Vscode + Github + Hexo构建个人博客</title>
     <link href="https://iyuge2.top/2020/create-blog/"/>
     <id>https://iyuge2.top/2020/create-blog/</id>
     <published>2020-09-15T16:00:00.000Z</published>
-    <updated>2021-01-13T16:45:54.051Z</updated>
+    <updated>2021-01-13T17:05:02.416Z</updated>
     
     
       
@@ -537,28 +558,6 @@
     
     
     <category term="说明文档" scheme="https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>由置换操作&quot;a,b = b,a&quot;引发的一些思考</title>
-    <link href="https://iyuge2.top/2020/python-replacement/"/>
-    <id>https://iyuge2.top/2020/python-replacement/</id>
-    <published>2020-09-15T16:00:00.000Z</published>
-    <updated>2021-01-13T15:48:21.387Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;在C或者C++中，交换两个变量的值，一般需要借由中间变量实现（某些情况下可以直接通过加减实现，但这种不够安全）。&lt;br&gt;
-但是，在Python中，竟可以直接通过“a,b = b,a”实现，这是如何做到的呢？以及这种实现方式有什么需要注意的吗？&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="python" scheme="https://iyuge2.top/tags/python/"/>
     
   </entry>
   
