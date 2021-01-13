@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>iyuge2</title>
-  
+  <icon>https://www.gravatar.com/avatar/0c42aabf4c6601686c22cc1308c318de</icon>
   <subtitle>Cosine的贝壳屋</subtitle>
   <link href="https://iyuge2.top/atom.xml" rel="self"/>
   
   <link href="https://iyuge2.top/"/>
-  <updated>2021-01-12T13:38:27.825Z</updated>
+  <updated>2021-01-13T09:44:27.567Z</updated>
   <id>https://iyuge2.top/</id>
   
   <author>
     <name>iyuge2</name>
-    
+    <email>iyuge2@qq.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
@@ -21,7 +21,7 @@
     <link href="https://iyuge2.top/2021/R/"/>
     <id>https://iyuge2.top/2021/R/</id>
     <published>2021-01-03T16:00:00.000Z</published>
-    <updated>2021-01-12T13:38:27.825Z</updated>
+    <updated>2021-01-13T09:44:27.567Z</updated>
     
     
       
@@ -50,7 +50,7 @@
     <link href="https://iyuge2.top/2020/python-json/"/>
     <id>https://iyuge2.top/2020/python-json/</id>
     <published>2020-11-30T11:17:36.000Z</published>
-    <updated>2020-12-29T07:55:55.591Z</updated>
+    <updated>2021-01-13T09:25:50.809Z</updated>
     
     
       
@@ -79,7 +79,7 @@
     <link href="https://iyuge2.top/2020/useMysql/"/>
     <id>https://iyuge2.top/2020/useMysql/</id>
     <published>2020-10-18T16:00:00.000Z</published>
-    <updated>2020-12-02T07:35:22.170Z</updated>
+    <updated>2021-01-13T09:26:22.693Z</updated>
     
     
       
@@ -107,7 +107,7 @@
     <link href="https://iyuge2.top/2020/Linux-Flask-Mysql/"/>
     <id>https://iyuge2.top/2020/Linux-Flask-Mysql/</id>
     <published>2020-10-16T16:00:00.000Z</published>
-    <updated>2020-10-19T12:44:55.127Z</updated>
+    <updated>2021-01-13T09:35:32.171Z</updated>
     
     
       
@@ -134,7 +134,7 @@
     <link href="https://iyuge2.top/2020/Interview/"/>
     <id>https://iyuge2.top/2020/Interview/</id>
     <published>2020-10-12T02:13:00.000Z</published>
-    <updated>2020-10-13T02:12:53.067Z</updated>
+    <updated>2021-01-13T09:35:36.943Z</updated>
     
     
       
@@ -160,7 +160,7 @@
     <link href="https://iyuge2.top/2020/ML-SVM/"/>
     <id>https://iyuge2.top/2020/ML-SVM/</id>
     <published>2020-10-08T08:14:49.000Z</published>
-    <updated>2020-10-08T09:47:18.840Z</updated>
+    <updated>2021-01-13T09:25:46.312Z</updated>
     
     
       
@@ -185,7 +185,7 @@
     <link href="https://iyuge2.top/2020/ML-LR/"/>
     <id>https://iyuge2.top/2020/ML-LR/</id>
     <published>2020-10-08T07:17:49.000Z</published>
-    <updated>2020-10-08T09:47:18.839Z</updated>
+    <updated>2021-01-13T09:24:47.855Z</updated>
     
     
       
@@ -206,39 +206,11 @@
   </entry>
   
   <entry>
-    <title>机器学习系列—朴素贝叶斯</title>
-    <link href="https://iyuge2.top/2020/ML-NaiveBayes/"/>
-    <id>https://iyuge2.top/2020/ML-NaiveBayes/</id>
-    <published>2020-10-07T07:59:29.000Z</published>
-    <updated>2020-10-07T11:46:35.369Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;朴素贝叶斯算法是基于贝叶斯定理和特征条件独立性假设的分类方法。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#基本原理&quot;&gt;&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>机器学习系列—决策树</title>
     <link href="https://iyuge2.top/2020/ML-DecisionTree/"/>
     <id>https://iyuge2.top/2020/ML-DecisionTree/</id>
     <published>2020-10-07T07:59:29.000Z</published>
-    <updated>2020-10-08T09:47:18.841Z</updated>
+    <updated>2021-01-13T09:24:19.053Z</updated>
     
     
       
@@ -262,11 +234,39 @@
   </entry>
   
   <entry>
+    <title>机器学习系列—朴素贝叶斯</title>
+    <link href="https://iyuge2.top/2020/ML-NaiveBayes/"/>
+    <id>https://iyuge2.top/2020/ML-NaiveBayes/</id>
+    <published>2020-10-07T07:59:29.000Z</published>
+    <updated>2021-01-13T09:24:53.057Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;朴素贝叶斯算法是基于贝叶斯定理和特征条件独立性假设的分类方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#基本原理&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>机器学习系列——KMeans</title>
     <link href="https://iyuge2.top/2020/ML-KMeans/"/>
     <id>https://iyuge2.top/2020/ML-KMeans/</id>
     <published>2020-10-07T06:40:36.000Z</published>
-    <updated>2020-12-29T08:02:12.507Z</updated>
+    <updated>2021-01-13T09:24:38.622Z</updated>
     
     
       
@@ -277,7 +277,7 @@
 &lt;p&gt;K-Means算法是一种常用的无监督聚类算法。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;代码实现&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#代码实现&quot;&gt;&lt;/a&gt; 代码实现&lt;/h3&gt;
-&lt;pre</summary>
+&lt;figure</summary>
         
       
     
@@ -295,7 +295,7 @@
     <link href="https://iyuge2.top/2020/ML-KNN/"/>
     <id>https://iyuge2.top/2020/ML-KNN/</id>
     <published>2020-10-06T11:50:36.000Z</published>
-    <updated>2020-10-07T08:55:46.266Z</updated>
+    <updated>2021-01-13T09:24:43.529Z</updated>
     
     
       
@@ -321,7 +321,7 @@
     <link href="https://iyuge2.top/2020/dualProblem/"/>
     <id>https://iyuge2.top/2020/dualProblem/</id>
     <published>2020-10-06T08:09:36.000Z</published>
-    <updated>2020-10-06T09:57:58.947Z</updated>
+    <updated>2021-01-13T09:35:41.983Z</updated>
     
     
       
@@ -348,7 +348,7 @@
     <link href="https://iyuge2.top/2020/python/"/>
     <id>https://iyuge2.top/2020/python/</id>
     <published>2020-09-28T05:30:36.000Z</published>
-    <updated>2020-09-30T02:28:58.338Z</updated>
+    <updated>2021-01-13T09:25:55.122Z</updated>
     
     
       
@@ -373,7 +373,7 @@
     <link href="https://iyuge2.top/2020/linuxShell/"/>
     <id>https://iyuge2.top/2020/linuxShell/</id>
     <published>2020-09-28T05:08:36.000Z</published>
-    <updated>2020-09-28T05:06:19.413Z</updated>
+    <updated>2021-01-13T09:35:24.024Z</updated>
     
     
       
@@ -394,11 +394,11 @@
   </entry>
   
   <entry>
-    <title>多模态学习各子领域的研究进展</title>
-    <link href="https://iyuge2.top/2020/survey-MML/"/>
-    <id>https://iyuge2.top/2020/survey-MML/</id>
+    <title>对话系统中点点滴滴</title>
+    <link href="https://iyuge2.top/2020/survey-DS/"/>
+    <id>https://iyuge2.top/2020/survey-DS/</id>
     <published>2020-09-16T16:00:00.000Z</published>
-    <updated>2020-09-22T05:14:32.624Z</updated>
+    <updated>2021-01-13T09:26:11.684Z</updated>
     
     
       
@@ -425,11 +425,11 @@
   </entry>
   
   <entry>
-    <title>对话系统中点点滴滴</title>
-    <link href="https://iyuge2.top/2020/survey-DS/"/>
-    <id>https://iyuge2.top/2020/survey-DS/</id>
+    <title>多模态学习各子领域的研究进展</title>
+    <link href="https://iyuge2.top/2020/survey-MML/"/>
+    <id>https://iyuge2.top/2020/survey-MML/</id>
     <published>2020-09-16T16:00:00.000Z</published>
-    <updated>2020-09-22T05:14:32.623Z</updated>
+    <updated>2021-01-13T09:26:17.362Z</updated>
     
     
       
@@ -452,6 +452,31 @@
     <category term="深度学习" scheme="https://iyuge2.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="综述" scheme="https://iyuge2.top/tags/%E7%BB%BC%E8%BF%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习系列——开篇</title>
+    <link href="https://iyuge2.top/2020/ML-Start/"/>
+    <id>https://iyuge2.top/2020/ML-Start/</id>
+    <published>2020-09-16T15:11:36.000Z</published>
+    <updated>2021-01-13T08:40:18.060Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -460,7 +485,7 @@
     <link href="https://iyuge2.top/2020/ML-Perception/"/>
     <id>https://iyuge2.top/2020/ML-Perception/</id>
     <published>2020-09-16T15:11:36.000Z</published>
-    <updated>2020-10-07T11:54:07.258Z</updated>
+    <updated>2021-01-13T09:23:45.777Z</updated>
     
     
       
@@ -484,36 +509,11 @@
   </entry>
   
   <entry>
-    <title>机器学习系列——开篇</title>
-    <link href="https://iyuge2.top/2020/ML-Start/"/>
-    <id>https://iyuge2.top/2020/ML-Start/</id>
-    <published>2020-09-16T15:11:36.000Z</published>
-    <updated>2021-01-12T16:42:30.510Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>使用ssh免密登录服务器</title>
     <link href="https://iyuge2.top/2020/useSSH/"/>
     <id>https://iyuge2.top/2020/useSSH/</id>
     <published>2020-09-16T14:39:02.000Z</published>
-    <updated>2020-09-22T05:14:32.654Z</updated>
+    <updated>2021-01-13T09:26:27.513Z</updated>
     
     
       
@@ -523,7 +523,7 @@
     <summary type="html">&lt;ul&gt;
 &lt;li&gt;在服务器端使用&lt;code&gt;ssh-keygen&lt;/code&gt;生成密钥对，在用户的家目录中生成了一个 .ssh 的隐藏目录，内含两个密钥文件，id_rsa 为私钥，id_rsa.pub 为公钥。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre</summary>
+&lt;figure</summary>
         
       
     
@@ -541,7 +541,7 @@
     <link href="https://iyuge2.top/2020/pythonReplacement/"/>
     <id>https://iyuge2.top/2020/pythonReplacement/</id>
     <published>2020-09-15T16:00:00.000Z</published>
-    <updated>2020-09-22T05:14:32.622Z</updated>
+    <updated>2021-01-13T09:26:04.161Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
