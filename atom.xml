@@ -206,34 +206,6 @@
   </entry>
   
   <entry>
-    <title>机器学习系列—朴素贝叶斯</title>
-    <link href="https://iyuge2.top/2020/ml-naivebayes/"/>
-    <id>https://iyuge2.top/2020/ml-naivebayes/</id>
-    <published>2020-10-07T07:59:29.000Z</published>
-    <updated>2021-01-13T15:46:13.860Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;朴素贝叶斯算法是基于贝叶斯定理和特征条件独立性假设的分类方法。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#基本原理&quot;&gt;&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>机器学习系列—决策树</title>
     <link href="https://iyuge2.top/2020/ml-decisionTree/"/>
     <id>https://iyuge2.top/2020/ml-decisionTree/</id>
@@ -249,6 +221,34 @@
 &lt;p&gt;决策树模型可以同时用于分类和回归任务，该模型的解释性较好。包含三个关键步骤：特征选择、树的生成和树的剪枝。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习系列—朴素贝叶斯</title>
+    <link href="https://iyuge2.top/2020/ml-naivebayes/"/>
+    <id>https://iyuge2.top/2020/ml-naivebayes/</id>
+    <published>2020-10-07T07:59:29.000Z</published>
+    <updated>2021-01-13T15:46:13.860Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;朴素贝叶斯算法是基于贝叶斯定理和特征条件独立性假设的分类方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#基本原理&quot;&gt;&lt;/a&gt;</summary>
         
       
     
@@ -512,31 +512,6 @@
   </entry>
   
   <entry>
-    <title>机器学习系列——开篇</title>
-    <link href="https://iyuge2.top/2020/ml-start/"/>
-    <id>https://iyuge2.top/2020/ml-start/</id>
-    <published>2020-09-15T16:00:00.000Z</published>
-    <updated>2021-01-13T16:03:21.683Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>由置换操作&quot;a,b = b,a&quot;引发的一些思考</title>
     <link href="https://iyuge2.top/2020/python-replacement/"/>
     <id>https://iyuge2.top/2020/python-replacement/</id>
@@ -555,6 +530,35 @@
     
     
     <category term="python" scheme="https://iyuge2.top/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vscode + Github + Hexo构建个人博客</title>
+    <link href="https://iyuge2.top/2020/create-blog/"/>
+    <id>https://iyuge2.top/2020/create-blog/</id>
+    <published>2020-09-15T16:00:00.000Z</published>
+    <updated>2021-01-13T16:45:54.051Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt; 写在前面&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一直想着打造个人博客，总结知识，现在终于开始动手了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="说明文档" scheme="https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
     
   </entry>
   
