@@ -134,7 +134,7 @@
     <link href="https://iyuge2.top/2020/Interview/"/>
     <id>https://iyuge2.top/2020/Interview/</id>
     <published>2020-10-12T02:13:00.000Z</published>
-    <updated>2021-01-13T09:35:36.943Z</updated>
+    <updated>2021-01-13T12:36:07.233Z</updated>
     
     
       
@@ -206,34 +206,6 @@
   </entry>
   
   <entry>
-    <title>机器学习系列—朴素贝叶斯</title>
-    <link href="https://iyuge2.top/2020/ML-NaiveBayes/"/>
-    <id>https://iyuge2.top/2020/ML-NaiveBayes/</id>
-    <published>2020-10-07T07:59:29.000Z</published>
-    <updated>2021-01-13T09:24:53.057Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;朴素贝叶斯算法是基于贝叶斯定理和特征条件独立性假设的分类方法。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#基本原理&quot;&gt;&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>机器学习系列—决策树</title>
     <link href="https://iyuge2.top/2020/ML-DecisionTree/"/>
     <id>https://iyuge2.top/2020/ML-DecisionTree/</id>
@@ -249,6 +221,34 @@
 &lt;p&gt;决策树模型可以同时用于分类和回归任务，该模型的解释性较好。包含三个关键步骤：特征选择、树的生成和树的剪枝。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习系列—朴素贝叶斯</title>
+    <link href="https://iyuge2.top/2020/ML-NaiveBayes/"/>
+    <id>https://iyuge2.top/2020/ML-NaiveBayes/</id>
+    <published>2020-10-07T07:59:29.000Z</published>
+    <updated>2021-01-13T09:24:53.057Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;朴素贝叶斯算法是基于贝叶斯定理和特征条件独立性假设的分类方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#基本原理&quot;&gt;&lt;/a&gt;</summary>
         
       
     
@@ -321,7 +321,7 @@
     <link href="https://iyuge2.top/2020/dualProblem/"/>
     <id>https://iyuge2.top/2020/dualProblem/</id>
     <published>2020-10-06T08:09:36.000Z</published>
-    <updated>2021-01-13T09:35:41.983Z</updated>
+    <updated>2021-01-13T12:35:43.428Z</updated>
     
     
       
@@ -456,6 +456,31 @@
   </entry>
   
   <entry>
+    <title>机器学习系列——开篇</title>
+    <link href="https://iyuge2.top/2020/ML-Start/"/>
+    <id>https://iyuge2.top/2020/ML-Start/</id>
+    <published>2020-09-16T15:11:36.000Z</published>
+    <updated>2021-01-13T08:40:18.060Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>机器学习系列——感知机</title>
     <link href="https://iyuge2.top/2020/ML-Perception/"/>
     <id>https://iyuge2.top/2020/ML-Perception/</id>
@@ -471,31 +496,6 @@
 &lt;p&gt;感知机是一种分类算法，1957年就被提出，也算机器学习的开山代表作了。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#基本原理&quot;&gt;&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习系列——开篇</title>
-    <link href="https://iyuge2.top/2020/ML-Start/"/>
-    <id>https://iyuge2.top/2020/ML-Start/</id>
-    <published>2020-09-16T15:11:36.000Z</published>
-    <updated>2021-01-13T08:40:18.060Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt;</summary>
         
       
     
