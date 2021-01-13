@@ -356,9 +356,9 @@
     
     
     <entry>
-      <title>对话系统中点点滴滴</title>
-      <link href="2020/survey-DS/"/>
-      <url>2020/survey-DS/</url>
+      <title>多模态学习各子领域的研究进展</title>
+      <link href="2020/survey-MML/"/>
+      <url>2020/survey-MML/</url>
       
         <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
@@ -383,9 +383,9 @@
     
     
     <entry>
-      <title>多模态学习各子领域的研究进展</title>
-      <link href="2020/survey-MML/"/>
-      <url>2020/survey-MML/</url>
+      <title>对话系统中点点滴滴</title>
+      <link href="2020/survey-DS/"/>
+      <url>2020/survey-DS/</url>
       
         <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
