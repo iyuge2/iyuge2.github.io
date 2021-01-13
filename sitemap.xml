@@ -2,14 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://iyuge2.top/2020/python-json/</loc>
+    <loc>https://iyuge2.top/2020/ML-Start/</loc>
     
     <lastmod>2021-01-13</lastmod>
     
   </url>
   
   <url>
-    <loc>https://iyuge2.top/2020/ML-Start/</loc>
+    <loc>https://iyuge2.top/2020/ML-Start-2/</loc>
+    
+    <lastmod>2021-01-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://iyuge2.top/2020/python-json/</loc>
     
     <lastmod>2021-01-13</lastmod>
     
@@ -207,6 +214,13 @@
 
   
   <url>
+    <loc>https://iyuge2.top/tags/R/</loc>
+    <lastmod>2021-01-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://iyuge2.top/tags/Linux/</loc>
     <lastmod>2021-01-13</lastmod>
     <changefreq>daily</changefreq>
@@ -228,6 +242,13 @@
   </url>
   
   <url>
+    <loc>https://iyuge2.top/tags/python/</loc>
+    <lastmod>2021-01-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/</loc>
     <lastmod>2021-01-13</lastmod>
     <changefreq>daily</changefreq>
@@ -236,13 +257,6 @@
   
   <url>
     <loc>https://iyuge2.top/tags/%E6%95%B0%E5%AD%A6/</loc>
-    <lastmod>2021-01-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/tags/python/</loc>
     <lastmod>2021-01-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -271,13 +285,6 @@
   
   <url>
     <loc>https://iyuge2.top/tags/linux/</loc>
-    <lastmod>2021-01-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://iyuge2.top/tags/R/</loc>
     <lastmod>2021-01-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
