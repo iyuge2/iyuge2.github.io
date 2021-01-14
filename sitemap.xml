@@ -200,13 +200,6 @@
 
   
   <url>
-    <loc>https://iyuge2.top/tags/R/</loc>
-    <lastmod>2021-01-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/</loc>
     <lastmod>2021-01-14</lastmod>
     <changefreq>daily</changefreq>
@@ -249,6 +242,13 @@
   </url>
   
   <url>
+    <loc>https://iyuge2.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://iyuge2.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2021-01-14</lastmod>
     <changefreq>daily</changefreq>
@@ -263,14 +263,14 @@
   </url>
   
   <url>
-    <loc>https://iyuge2.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>https://iyuge2.top/tags/linux/</loc>
     <lastmod>2021-01-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://iyuge2.top/tags/linux/</loc>
+    <loc>https://iyuge2.top/tags/R/</loc>
     <lastmod>2021-01-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
