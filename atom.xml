@@ -6,7 +6,7 @@
   <link href="https://iyuge2.top/atom.xml" rel="self"/>
   
   <link href="https://iyuge2.top/"/>
-  <updated>2021-01-13T17:00:42.088Z</updated>
+  <updated>2021-01-17T07:51:03.252Z</updated>
   <id>https://iyuge2.top/</id>
   
   <author>
@@ -17,22 +17,45 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>R语言-批量生存分析</title>
+    <link href="https://iyuge2.top/2021/batch-surv-analysis/"/>
+    <id>https://iyuge2.top/2021/batch-surv-analysis/</id>
+    <published>2021-01-16T16:00:00.000Z</published>
+    <updated>2021-01-17T07:51:03.252Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;需求&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#需求&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="R" scheme="https://iyuge2.top/tags/R/"/>
+    
+  </entry>
+  
+  <entry>
     <title>R语言知识点小结</title>
     <link href="https://iyuge2.top/2021/r/"/>
     <id>https://iyuge2.top/2021/r/</id>
     <published>2021-01-03T16:00:00.000Z</published>
-    <updated>2021-01-13T17:00:42.088Z</updated>
+    <updated>2021-01-17T07:49:42.455Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h4 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt; 写在前面&lt;/h4&gt;
+    <summary type="html">&lt;h3 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt; 写在前面&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;之前没接触过R，所以，会稍微记得详细点&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3</summary>
+&lt;p&gt;之前没接触过R，所以，会稍微记得详细点,</summary>
         
       
     
@@ -234,6 +257,34 @@
   </entry>
   
   <entry>
+    <title>机器学习系列—决策树</title>
+    <link href="https://iyuge2.top/2020/ml-decisiontree/"/>
+    <id>https://iyuge2.top/2020/ml-decisiontree/</id>
+    <published>2020-10-06T16:00:00.000Z</published>
+    <updated>2021-01-14T09:14:15.722Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;决策树模型可以同时用于分类和回归任务，该模型的解释性较好。包含三个关键步骤：特征选择、树的生成和树的剪枝。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>机器学习系列——KMeans</title>
     <link href="https://iyuge2.top/2020/ml-kmeans/"/>
     <id>https://iyuge2.top/2020/ml-kmeans/</id>
@@ -250,34 +301,6 @@
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;代码实现&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#代码实现&quot;&gt;&lt;/a&gt; 代码实现&lt;/h3&gt;
 &lt;figure</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习系列—决策树</title>
-    <link href="https://iyuge2.top/2020/ml-decisionTree/"/>
-    <id>https://iyuge2.top/2020/ml-decisionTree/</id>
-    <published>2020-10-06T16:00:00.000Z</published>
-    <updated>2021-01-13T17:07:22.530Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;决策树模型可以同时用于分类和回归任务，该模型的解释性较好。包含三个关键步骤：特征选择、树的生成和树的剪枝。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
         
       
     
@@ -506,61 +529,24 @@
   </entry>
   
   <entry>
-    <title>VScode使用Tips</title>
-    <link href="https://iyuge2.top/2020/use-vscode/"/>
-    <id>https://iyuge2.top/2020/use-vscode/</id>
+    <title>由置换操作&quot;a,b = b,a&quot;引发的一些思考</title>
+    <link href="https://iyuge2.top/2020/python-replacement/"/>
+    <id>https://iyuge2.top/2020/python-replacement/</id>
     <published>2020-09-15T16:00:00.000Z</published>
-    <updated>2021-01-13T17:10:22.550Z</updated>
+    <updated>2021-01-13T17:08:48.561Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;配置文件&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#配置文件&quot;&gt;&lt;/a&gt; 配置文件&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;vscode中的配置分用户区（User）和工作区（Workspace）。&lt;br&gt;
-覆盖范围：用户区</summary>
-        
-      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;在C或者C++中，交换两个变量的值，一般需要借由中间变量实现（某些情况下可以直接通过加减实现，但这种不够安全）。&lt;br&gt;
+但是，在Python中，竟可以直接通过“a,b = b,a”实现，这是如何做到的呢？以及这种实现方式有什么需要注意的吗？&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
     
     
     
     <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
-    
-    <category term="说明文档" scheme="https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
     
     <category term="python" scheme="https://iyuge2.top/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vscode + Github + Hexo构建个人博客</title>
-    <link href="https://iyuge2.top/2020/create-blog/"/>
-    <id>https://iyuge2.top/2020/create-blog/</id>
-    <published>2020-09-15T16:00:00.000Z</published>
-    <updated>2021-01-13T17:05:02.416Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt; 写在前面&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;一直想着打造个人博客，总结知识，现在终于开始动手了。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="说明文档" scheme="https://iyuge2.top/tags/%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/"/>
     
   </entry>
   
