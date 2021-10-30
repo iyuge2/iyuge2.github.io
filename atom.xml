@@ -3,11 +3,11 @@
   <title>iyuge2</title>
   <icon>https://www.gravatar.com/avatar/0c42aabf4c6601686c22cc1308c318de</icon>
   <subtitle>Cosine的贝壳屋</subtitle>
-  <link href="https://iyuge2.top/atom.xml" rel="self"/>
+  <link href="https://iyuge2.github.io/atom.xml" rel="self"/>
   
-  <link href="https://iyuge2.top/"/>
-  <updated>2021-04-18T15:07:44.889Z</updated>
-  <id>https://iyuge2.top/</id>
+  <link href="https://iyuge2.github.io/"/>
+  <updated>2021-04-21T02:42:10.030Z</updated>
+  <id>https://iyuge2.github.io/</id>
   
   <author>
     <name>iyuge2</name>
@@ -17,9 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>机器学习系列——EM算法</title>
+    <link href="https://iyuge2.github.io/2021/ml-em/"/>
+    <id>https://iyuge2.github.io/2021/ml-em/</id>
+    <published>2021-04-18T16:00:00.000Z</published>
+    <updated>2021-04-21T02:42:10.030Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#基本原理&quot;&gt;&lt;/a&gt; 基本原理&lt;/h3&gt;
+&lt;h3 id=&quot;优缺点&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#优缺点&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python可视化包汇总</title>
-    <link href="https://iyuge2.top/2021/python-vis/"/>
-    <id>https://iyuge2.top/2021/python-vis/</id>
+    <link href="https://iyuge2.github.io/2021/python-vis/"/>
+    <id>https://iyuge2.github.io/2021/python-vis/</id>
     <published>2021-03-03T02:43:11.000Z</published>
     <updated>2021-04-18T15:07:44.889Z</updated>
     
@@ -44,17 +70,17 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="Python" scheme="https://iyuge2.top/tags/Python/"/>
+    <category term="Python" scheme="https://iyuge2.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Git使用理解</title>
-    <link href="https://iyuge2.top/2021/use-git/"/>
-    <id>https://iyuge2.top/2021/use-git/</id>
+    <link href="https://iyuge2.github.io/2021/use-git/"/>
+    <id>https://iyuge2.github.io/2021/use-git/</id>
     <published>2021-01-27T15:46:20.000Z</published>
     <updated>2021-03-01T09:20:07.192Z</updated>
     
@@ -72,17 +98,17 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="git" scheme="https://iyuge2.top/tags/git/"/>
+    <category term="git" scheme="https://iyuge2.github.io/tags/git/"/>
     
   </entry>
   
   <entry>
     <title>Python中日志模块的简易用法</title>
-    <link href="https://iyuge2.top/2021/python-logging/"/>
-    <id>https://iyuge2.top/2021/python-logging/</id>
+    <link href="https://iyuge2.github.io/2021/python-logging/"/>
+    <id>https://iyuge2.github.io/2021/python-logging/</id>
     <published>2021-01-25T05:44:58.000Z</published>
     <updated>2021-03-01T09:20:07.186Z</updated>
     
@@ -97,17 +123,17 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="Python" scheme="https://iyuge2.top/tags/Python/"/>
+    <category term="Python" scheme="https://iyuge2.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Python中推荐学习的模块集合</title>
-    <link href="https://iyuge2.top/2021/python-stl/"/>
-    <id>https://iyuge2.top/2021/python-stl/</id>
+    <link href="https://iyuge2.github.io/2021/python-stl/"/>
+    <id>https://iyuge2.github.io/2021/python-stl/</id>
     <published>2021-01-25T03:56:22.000Z</published>
     <updated>2021-03-01T09:20:07.189Z</updated>
     
@@ -126,17 +152,17 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="Python" scheme="https://iyuge2.top/tags/Python/"/>
+    <category term="Python" scheme="https://iyuge2.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>R语言-批量生存分析</title>
-    <link href="https://iyuge2.top/2021/batch-surv-analysis/"/>
-    <id>https://iyuge2.top/2021/batch-surv-analysis/</id>
+    <link href="https://iyuge2.github.io/2021/batch-surv-analysis/"/>
+    <id>https://iyuge2.github.io/2021/batch-surv-analysis/</id>
     <published>2021-01-16T16:00:00.000Z</published>
     <updated>2021-01-17T08:11:08.587Z</updated>
     
@@ -151,17 +177,17 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="R" scheme="https://iyuge2.top/tags/R/"/>
+    <category term="R" scheme="https://iyuge2.github.io/tags/R/"/>
     
   </entry>
   
   <entry>
     <title>R语言知识点小结</title>
-    <link href="https://iyuge2.top/2021/r/"/>
-    <id>https://iyuge2.top/2021/r/</id>
+    <link href="https://iyuge2.github.io/2021/r/"/>
+    <id>https://iyuge2.github.io/2021/r/</id>
     <published>2021-01-03T16:00:00.000Z</published>
     <updated>2021-01-26T15:21:45.595Z</updated>
     
@@ -178,17 +204,17 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="R" scheme="https://iyuge2.top/tags/R/"/>
+    <category term="R" scheme="https://iyuge2.github.io/tags/R/"/>
     
   </entry>
   
   <entry>
     <title>python中的json操作</title>
-    <link href="https://iyuge2.top/2020/python-json/"/>
-    <id>https://iyuge2.top/2020/python-json/</id>
+    <link href="https://iyuge2.github.io/2020/python-json/"/>
+    <id>https://iyuge2.github.io/2020/python-json/</id>
     <published>2020-11-30T11:17:36.000Z</published>
     <updated>2021-01-13T15:27:30.938Z</updated>
     
@@ -207,17 +233,17 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="python" scheme="https://iyuge2.top/tags/python/"/>
+    <category term="python" scheme="https://iyuge2.github.io/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>Mysql的常用操作</title>
-    <link href="https://iyuge2.top/2020/use-mysql/"/>
-    <id>https://iyuge2.top/2020/use-mysql/</id>
+    <link href="https://iyuge2.github.io/2020/use-mysql/"/>
+    <id>https://iyuge2.github.io/2020/use-mysql/</id>
     <published>2020-10-18T16:00:00.000Z</published>
     <updated>2021-01-13T17:09:39.997Z</updated>
     
@@ -235,17 +261,17 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="数据库" scheme="https://iyuge2.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="数据库" scheme="https://iyuge2.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
   <entry>
     <title>Linux环境下的“Python + Flask + Mysql”配置</title>
-    <link href="https://iyuge2.top/2020/linux-flask-mysql/"/>
-    <id>https://iyuge2.top/2020/linux-flask-mysql/</id>
+    <link href="https://iyuge2.github.io/2020/linux-flask-mysql/"/>
+    <id>https://iyuge2.github.io/2020/linux-flask-mysql/</id>
     <published>2020-10-16T16:00:00.000Z</published>
     <updated>2021-01-13T17:06:37.189Z</updated>
     
@@ -260,19 +286,19 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="Linux" scheme="https://iyuge2.top/tags/Linux/"/>
+    <category term="Linux" scheme="https://iyuge2.github.io/tags/Linux/"/>
     
-    <category term="环境配置" scheme="https://iyuge2.top/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <category term="环境配置" scheme="https://iyuge2.github.io/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
   <entry>
     <title>程序员面试题汇总</title>
-    <link href="https://iyuge2.top/2020/interview/"/>
-    <id>https://iyuge2.top/2020/interview/</id>
+    <link href="https://iyuge2.github.io/2020/interview/"/>
+    <id>https://iyuge2.github.io/2020/interview/</id>
     <published>2020-10-12T02:13:00.000Z</published>
     <updated>2021-01-13T15:46:57.452Z</updated>
     
@@ -288,17 +314,17 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="工作" scheme="https://iyuge2.top/tags/%E5%B7%A5%E4%BD%9C/"/>
+    <category term="工作" scheme="https://iyuge2.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
     
   </entry>
   
   <entry>
     <title>机器学习系列——支持向量机</title>
-    <link href="https://iyuge2.top/2020/ml-svm/"/>
-    <id>https://iyuge2.top/2020/ml-svm/</id>
+    <link href="https://iyuge2.github.io/2020/ml-svm/"/>
+    <id>https://iyuge2.github.io/2020/ml-svm/</id>
     <published>2020-10-08T08:14:49.000Z</published>
     <updated>2021-01-13T15:46:47.430Z</updated>
     
@@ -313,17 +339,17 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="机器学习" scheme="https://iyuge2.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>机器学习系列——逻辑斯谛回归</title>
-    <link href="https://iyuge2.top/2020/ml-lr/"/>
-    <id>https://iyuge2.top/2020/ml-lr/</id>
+    <link href="https://iyuge2.github.io/2020/ml-lr/"/>
+    <id>https://iyuge2.github.io/2020/ml-lr/</id>
     <published>2020-10-08T07:17:49.000Z</published>
     <updated>2021-01-13T17:07:59.148Z</updated>
     
@@ -338,17 +364,17 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="机器学习" scheme="https://iyuge2.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>机器学习系列—朴素贝叶斯</title>
-    <link href="https://iyuge2.top/2020/ml-naivebayes/"/>
-    <id>https://iyuge2.top/2020/ml-naivebayes/</id>
+    <link href="https://iyuge2.github.io/2020/ml-naivebayes/"/>
+    <id>https://iyuge2.github.io/2020/ml-naivebayes/</id>
     <published>2020-10-07T07:59:29.000Z</published>
     <updated>2021-01-13T17:08:05.848Z</updated>
     
@@ -366,48 +392,19 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习系列——KMeans</title>
-    <link href="https://iyuge2.top/2020/ml-kmeans/"/>
-    <id>https://iyuge2.top/2020/ml-kmeans/</id>
-    <published>2020-10-06T16:00:00.000Z</published>
-    <updated>2021-01-13T17:07:34.497Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;K-Means算法是一种常用的无监督聚类算法。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;代码实现&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#代码实现&quot;&gt;&lt;/a&gt; 代码实现&lt;/h3&gt;
-&lt;figure</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="机器学习" scheme="https://iyuge2.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>机器学习系列—决策树</title>
-    <link href="https://iyuge2.top/2020/ml-decisiontree/"/>
-    <id>https://iyuge2.top/2020/ml-decisiontree/</id>
+    <link href="https://iyuge2.github.io/2020/ml-decisiontree/"/>
+    <id>https://iyuge2.github.io/2020/ml-decisiontree/</id>
     <published>2020-10-06T16:00:00.000Z</published>
-    <updated>2021-01-18T02:35:22.617Z</updated>
+    <updated>2021-04-19T12:40:11.704Z</updated>
     
     
       
@@ -423,17 +420,43 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="机器学习" scheme="https://iyuge2.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习系列——KMeans</title>
+    <link href="https://iyuge2.github.io/2020/ml-kmeans/"/>
+    <id>https://iyuge2.github.io/2020/ml-kmeans/</id>
+    <published>2020-10-06T16:00:00.000Z</published>
+    <updated>2021-04-19T12:36:55.649Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;K-Means算法是一种常用的无监督聚类算法。&quot;其步骤是，预将数据分为K组，则随机选取K个对象作为初始的聚类中心，然后计算每个对象与各个种子聚类中心之间的距离，把每个对象分配给距离它最近的聚类中心。聚类中心以及分配给它们的对象就代表一个聚类。每分配</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>数学系列——对偶问题</title>
-    <link href="https://iyuge2.top/2020/dual-problem/"/>
-    <id>https://iyuge2.top/2020/dual-problem/</id>
+    <link href="https://iyuge2.github.io/2020/dual-problem/"/>
+    <id>https://iyuge2.github.io/2020/dual-problem/</id>
     <published>2020-10-06T08:09:36.000Z</published>
     <updated>2021-01-13T17:05:23.482Z</updated>
     
@@ -450,19 +473,19 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="数学" scheme="https://iyuge2.top/tags/%E6%95%B0%E5%AD%A6/"/>
+    <category term="数学" scheme="https://iyuge2.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>机器学习系列——K近邻法</title>
-    <link href="https://iyuge2.top/2020/ml-knn/"/>
-    <id>https://iyuge2.top/2020/ml-knn/</id>
+    <link href="https://iyuge2.github.io/2020/ml-knn/"/>
+    <id>https://iyuge2.github.io/2020/ml-knn/</id>
     <published>2020-10-05T16:00:00.000Z</published>
-    <updated>2021-01-13T17:07:47.561Z</updated>
+    <updated>2021-04-19T12:51:18.862Z</updated>
     
     
       
@@ -476,17 +499,17 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="机器学习" scheme="https://iyuge2.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="机器学习" scheme="https://iyuge2.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>python中容易忽视的小知识点</title>
-    <link href="https://iyuge2.top/2020/python/"/>
-    <id>https://iyuge2.top/2020/python/</id>
+    <link href="https://iyuge2.github.io/2020/python/"/>
+    <id>https://iyuge2.github.io/2020/python/</id>
     <published>2020-09-28T05:30:36.000Z</published>
     <updated>2021-01-13T17:09:04.279Z</updated>
     
@@ -501,17 +524,17 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="python" scheme="https://iyuge2.top/tags/python/"/>
+    <category term="python" scheme="https://iyuge2.github.io/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>Linux脚本知识点总结</title>
-    <link href="https://iyuge2.top/2020/linux-shell/"/>
-    <id>https://iyuge2.top/2020/linux-shell/</id>
+    <link href="https://iyuge2.github.io/2020/linux-shell/"/>
+    <id>https://iyuge2.github.io/2020/linux-shell/</id>
     <published>2020-09-28T05:08:36.000Z</published>
     <updated>2021-01-25T03:28:12.226Z</updated>
     
@@ -526,41 +549,10 @@
     
     
     
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
     
     
-    <category term="Linux" scheme="https://iyuge2.top/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>多模态学习各子领域的研究进展</title>
-    <link href="https://iyuge2.top/2020/survey-mml/"/>
-    <id>https://iyuge2.top/2020/survey-mml/</id>
-    <published>2020-09-16T16:00:00.000Z</published>
-    <updated>2021-01-13T17:09:32.516Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       </summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.top/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="深度学习" scheme="https://iyuge2.top/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="综述" scheme="https://iyuge2.top/tags/%E7%BB%BC%E8%BF%B0/"/>
+    <category term="Linux" scheme="https://iyuge2.github.io/tags/Linux/"/>
     
   </entry>
   

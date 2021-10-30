@@ -1,107 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://iyuge2.top/2021/python-vis/</loc>
+    <loc>https://iyuge2.github.io/2021/ml-em/</loc>
+    <lastmod>2021-04-21</lastmod>
+  </url>
+  <url>
+    <loc>https://iyuge2.github.io/2020/ml-start/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>https://iyuge2.github.io/2020/ml-knn/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>https://iyuge2.github.io/2020/ml-decisiontree/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>https://iyuge2.github.io/2020/ml-kmeans/</loc>
+    <lastmod>2021-04-19</lastmod>
+  </url>
+  <url>
+    <loc>https://iyuge2.github.io/2021/python-vis/</loc>
     <lastmod>2021-04-18</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2021/use-git/</loc>
+    <loc>https://iyuge2.github.io/2021/use-git/</loc>
     <lastmod>2021-03-01</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2021/python-stl/</loc>
+    <loc>https://iyuge2.github.io/2021/python-stl/</loc>
     <lastmod>2021-03-01</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2021/python-logging/</loc>
+    <loc>https://iyuge2.github.io/2021/python-logging/</loc>
     <lastmod>2021-03-01</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2021/r/</loc>
+    <loc>https://iyuge2.github.io/2021/r/</loc>
     <lastmod>2021-01-26</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/use-vscode/</loc>
+    <loc>https://iyuge2.github.io/2020/use-vscode/</loc>
     <lastmod>2021-01-25</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/linux-shell/</loc>
+    <loc>https://iyuge2.github.io/2020/linux-shell/</loc>
     <lastmod>2021-01-25</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/ml-decisiontree/</loc>
-    <lastmod>2021-01-18</lastmod>
-  </url>
-  <url>
-    <loc>https://iyuge2.top/2021/batch-surv-analysis/</loc>
+    <loc>https://iyuge2.github.io/2021/batch-surv-analysis/</loc>
     <lastmod>2021-01-17</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/create-blog/</loc>
+    <loc>https://iyuge2.github.io/2020/create-blog/</loc>
     <lastmod>2021-01-14</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/use-ssh/</loc>
+    <loc>https://iyuge2.github.io/2020/use-ssh/</loc>
     <lastmod>2021-01-13</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/use-mysql/</loc>
+    <loc>https://iyuge2.github.io/2020/use-mysql/</loc>
     <lastmod>2021-01-13</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/survey-mml/</loc>
+    <loc>https://iyuge2.github.io/2020/survey-mml/</loc>
     <lastmod>2021-01-13</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/python/</loc>
+    <loc>https://iyuge2.github.io/2020/python/</loc>
     <lastmod>2021-01-13</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/python-replacement/</loc>
+    <loc>https://iyuge2.github.io/2020/python-replacement/</loc>
     <lastmod>2021-01-13</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/ml-perception/</loc>
+    <loc>https://iyuge2.github.io/2020/ml-perception/</loc>
     <lastmod>2021-01-13</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/ml-naivebayes/</loc>
+    <loc>https://iyuge2.github.io/2020/ml-naivebayes/</loc>
     <lastmod>2021-01-13</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/ml-lr/</loc>
+    <loc>https://iyuge2.github.io/2020/ml-lr/</loc>
     <lastmod>2021-01-13</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/ml-knn/</loc>
+    <loc>https://iyuge2.github.io/2020/linux-flask-mysql/</loc>
     <lastmod>2021-01-13</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/ml-kmeans/</loc>
+    <loc>https://iyuge2.github.io/2020/dual-problem/</loc>
     <lastmod>2021-01-13</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/linux-flask-mysql/</loc>
+    <loc>https://iyuge2.github.io/2020/interview/</loc>
     <lastmod>2021-01-13</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/dual-problem/</loc>
+    <loc>https://iyuge2.github.io/2020/ml-svm/</loc>
     <lastmod>2021-01-13</lastmod>
   </url>
   <url>
-    <loc>https://iyuge2.top/2020/ml-start/</loc>
-    <lastmod>2021-01-13</lastmod>
-  </url>
-  <url>
-    <loc>https://iyuge2.top/2020/interview/</loc>
-    <lastmod>2021-01-13</lastmod>
-  </url>
-  <url>
-    <loc>https://iyuge2.top/2020/ml-svm/</loc>
-    <lastmod>2021-01-13</lastmod>
-  </url>
-  <url>
-    <loc>https://iyuge2.top/2020/python-json/</loc>
+    <loc>https://iyuge2.github.io/2020/python-json/</loc>
     <lastmod>2021-01-13</lastmod>
   </url>
 </urlset> 
