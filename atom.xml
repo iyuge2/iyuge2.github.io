@@ -6,7 +6,7 @@
   <link href="https://iyuge2.github.io/atom.xml" rel="self"/>
   
   <link href="https://iyuge2.github.io/"/>
-  <updated>2021-04-21T02:42:10.030Z</updated>
+  <updated>2022-07-08T15:00:00.714Z</updated>
   <id>https://iyuge2.github.io/</id>
   
   <author>
@@ -15,6 +15,59 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搜广推资源合集</title>
+    <link href="https://iyuge2.github.io/2022/reco-collections/"/>
+    <id>https://iyuge2.github.io/2022/reco-collections/</id>
+    <published>2022-07-07T16:00:00.000Z</published>
+    <updated>2022-07-08T15:00:00.714Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;相关-github&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#相关-github&quot;&gt;&lt;/a&gt; 相关 Github&lt;/h1&gt;
+&lt;h2 id=&quot;论文合集&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="合集, 搜索，广告，推荐" scheme="https://iyuge2.github.io/tags/%E5%90%88%E9%9B%86-%E6%90%9C%E7%B4%A2%EF%BC%8C%E5%B9%BF%E5%91%8A%EF%BC%8C%E6%8E%A8%E8%8D%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>推荐常用指标解析</title>
+    <link href="https://iyuge2.github.io/2022/reco-rank-evals/"/>
+    <id>https://iyuge2.github.io/2022/reco-rank-evals/</id>
+    <published>2022-06-30T16:00:00.000Z</published>
+    <updated>2022-07-30T15:18:35.958Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;参考&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#参考&quot;&gt;&lt;/a&gt; 参考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="推荐" scheme="https://iyuge2.github.io/tags/%E6%8E%A8%E8%8D%90/"/>
+    
+  </entry>
   
   <entry>
     <title>机器学习系列——EM算法</title>
@@ -351,7 +404,7 @@
     <link href="https://iyuge2.github.io/2020/ml-lr/"/>
     <id>https://iyuge2.github.io/2020/ml-lr/</id>
     <published>2020-10-08T07:17:49.000Z</published>
-    <updated>2021-01-13T17:07:59.148Z</updated>
+    <updated>2022-05-13T12:03:46.681Z</updated>
     
     
       
@@ -400,6 +453,32 @@
   </entry>
   
   <entry>
+    <title>机器学习系列——KMeans</title>
+    <link href="https://iyuge2.github.io/2020/ml-kmeans/"/>
+    <id>https://iyuge2.github.io/2020/ml-kmeans/</id>
+    <published>2020-10-06T16:00:00.000Z</published>
+    <updated>2021-04-19T12:36:55.649Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;K-Means算法是一种常用的无监督聚类算法。&quot;其步骤是，预将数据分为K组，则随机选取K个对象作为初始的聚类中心，然后计算每个对象与各个种子聚类中心之间的距离，把每个对象分配给距离它最近的聚类中心。聚类中心以及分配给它们的对象就代表一个聚类。每分配</summary>
+        
+      
+    
+    
+    
+    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
+    
+    
+    <category term="机器学习" scheme="https://iyuge2.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>机器学习系列—决策树</title>
     <link href="https://iyuge2.github.io/2020/ml-decisiontree/"/>
     <id>https://iyuge2.github.io/2020/ml-decisiontree/</id>
@@ -415,32 +494,6 @@
 &lt;p&gt;决策树模型可以同时用于分类和回归任务，该模型的解释性较好。包含三个关键步骤：特征选择、树的生成和树的剪枝。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;基本原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="机器学习" scheme="https://iyuge2.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习系列——KMeans</title>
-    <link href="https://iyuge2.github.io/2020/ml-kmeans/"/>
-    <id>https://iyuge2.github.io/2020/ml-kmeans/</id>
-    <published>2020-10-06T16:00:00.000Z</published>
-    <updated>2021-04-19T12:36:55.649Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;K-Means算法是一种常用的无监督聚类算法。&quot;其步骤是，预将数据分为K组，则随机选取K个对象作为初始的聚类中心，然后计算每个对象与各个种子聚类中心之间的距离，把每个对象分配给距离它最近的聚类中心。聚类中心以及分配给它们的对象就代表一个聚类。每分配</summary>
         
       
     
@@ -503,56 +556,6 @@
     
     
     <category term="机器学习" scheme="https://iyuge2.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python中容易忽视的小知识点</title>
-    <link href="https://iyuge2.github.io/2020/python/"/>
-    <id>https://iyuge2.github.io/2020/python/</id>
-    <published>2020-09-28T05:30:36.000Z</published>
-    <updated>2021-01-13T17:09:04.279Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="python" scheme="https://iyuge2.github.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux脚本知识点总结</title>
-    <link href="https://iyuge2.github.io/2020/linux-shell/"/>
-    <id>https://iyuge2.github.io/2020/linux-shell/</id>
-    <published>2020-09-28T05:08:36.000Z</published>
-    <updated>2021-01-25T03:28:12.226Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;写在前面&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#写在前面&quot;&gt;&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="技术区" scheme="https://iyuge2.github.io/categories/%E6%8A%80%E6%9C%AF%E5%8C%BA/"/>
-    
-    
-    <category term="Linux" scheme="https://iyuge2.github.io/tags/Linux/"/>
     
   </entry>
   

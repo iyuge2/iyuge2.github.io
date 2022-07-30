@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://iyuge2.github.io/2022/reco-rank-evals/</loc>
+    <lastmod>2022-07-30</lastmod>
+  </url>
+  <url>
+    <loc>https://iyuge2.github.io/2022/reco-collections/</loc>
+    <lastmod>2022-07-08</lastmod>
+  </url>
+  <url>
+    <loc>https://iyuge2.github.io/2020/ml-lr/</loc>
+    <lastmod>2022-05-13</lastmod>
+  </url>
+  <url>
     <loc>https://iyuge2.github.io/2021/ml-em/</loc>
     <lastmod>2021-04-21</lastmod>
   </url>
@@ -82,10 +94,6 @@
   </url>
   <url>
     <loc>https://iyuge2.github.io/2020/ml-naivebayes/</loc>
-    <lastmod>2021-01-13</lastmod>
-  </url>
-  <url>
-    <loc>https://iyuge2.github.io/2020/ml-lr/</loc>
     <lastmod>2021-01-13</lastmod>
   </url>
   <url>
