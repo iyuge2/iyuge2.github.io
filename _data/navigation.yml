@@ -1,0 +1,9 @@
+main:
+  - title: "首页"
+    url: /
+  - title: "工作"
+    url: /work/
+  - title: "文章"
+    url: /blog/
+  - title: "关于"
+    url: /about/

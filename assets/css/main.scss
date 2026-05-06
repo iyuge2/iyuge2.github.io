@@ -1,0 +1,20 @@
+---
+# Only the main Sass file needs front matter.
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes";
+
+.archive__subtitle {
+  border-bottom-color: mix(#7a8ca3, #ffffff, 25%);
+}
+
+.page__hero--overlay .page__title,
+.page__hero--overlay .page__lead {
+  text-shadow: none;
+}
+
+.feature__item .archive__item-title {
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,81 @@
+title: iyuge2
+subtitle: Wenmeng Yu
+name: Wenmeng Yu
+description: >-
+  算法工程师，关注推荐系统、机器学习工程和多模态理解。
+url: "https://iyuge2.github.io"
+baseurl: ""
+repository: iyuge2/iyuge2.github.io
+locale: zh-CN
+timezone: Asia/Shanghai
+
+remote_theme: "mmistakes/minimal-mistakes@4.28.0"
+minimal_mistakes_skin: "air"
+
+search: true
+search_full_content: false
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+permalink: /blog/:year/:month/:day/:title/
+
+include:
+  - _pages
+
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+author:
+  name: "Wenmeng Yu"
+  avatar:
+  bio: "算法工程师。关注推荐系统、机器学习工程和多模态理解。"
+  location: "China"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:iyuge2@qq.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/iyuge2"
+
+footer:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:iyuge2@qq.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/iyuge2"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+      related: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules
