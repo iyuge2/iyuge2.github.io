@@ -55,17 +55,14 @@ a:hover {
 }
 
 .avatar {
-  display: grid;
+  display: block;
   width: 128px;
   height: 128px;
   margin-bottom: 22px;
-  place-items: center;
   border: 1px solid var(--line);
   border-radius: 50%;
-  background: var(--soft);
-  color: #344054;
-  font-size: 32px;
-  font-weight: 700;
+  object-fit: cover;
+  object-position: center;
 }
 
 .sidebar h1 {
@@ -227,7 +224,6 @@ a:hover {
   .avatar {
     width: 96px;
     height: 96px;
-    font-size: 26px;
   }
 
   .timeline-item {
