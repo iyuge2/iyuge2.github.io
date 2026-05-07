@@ -6,12 +6,12 @@ title: "Leo | Wenmeng Yu"
 ## About Me
 
 <p class="lead">
-I am <strong>Leo (Wenmeng Yu)</strong>, an algorithm engineer interested in agentic intelligence and multimodal learning.
+I am <strong>Leo (Wenmeng Yu)</strong>.
 </p>
 
-I believe <strong>AGI = agentic + multimodal</strong>: intelligence should be able to perceive the world through rich modalities, reason over goals, and take useful actions. I hope to work on things that are meaningful, useful, and genuinely helpful to people.
+I believe <strong>AGI = agentic + multimodal</strong>. 
 
-I received my M.S. degree from the Department of Computer Science and Technology at Tsinghua University and my B.S. degree from Huazhong University of Science and Technology.
+I hope to work on things that are meaningful, useful, and genuinely helpful to people.
 
 ## Research Interests
 
