@@ -1,0 +1,118 @@
+- title: "PlotGen-Bench: Evaluating VLMs on Generating Visualization Code from Diverse Plots across Multiple Libraries"
+  authors: "Yi Zhao, Zhen Yang, Shuaiqi Duan, Wenmeng Yu, Zhe Su, Jibing Gong, Jie Tang"
+  venue: "arXiv"
+  year: 2026
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/abs/2601.11525"
+    - label: "project"
+      url: "https://plotgen.github.io/"
+
+- title: "GLM-4.5V and GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning"
+  authors: "GLM-V Team: Wenyi Hong, Wenmeng Yu, Xiaotao Gu, et al."
+  venue: "arXiv"
+  year: 2025
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/abs/2507.01006"
+
+- title: "AlignMMBench: Evaluating Chinese Multimodal Alignment in Large Vision-Language Models"
+  authors: "Yuhang Wu*, Wenmeng Yu*, Yean Cheng, Yan Wang, Xiaohan Zhang, Jiazheng Xu, Ming Ding, Yuxiao Dong"
+  venue: "ACL"
+  year: 2025
+  note: "* Equal contribution"
+  links:
+    - label: "paper"
+      url: "https://aclanthology.org/2025.acl-long.327/"
+    - label: "project"
+      url: "https://alignmmbench.github.io/"
+    - label: "code"
+      url: "https://github.com/THUDM/AlignMMBench"
+
+- title: "CogVLM2: Visual Language Models for Image and Video Understanding"
+  authors: "Wenyi Hong, Weihan Wang, Ming Ding, Wenmeng Yu, Qingsong Lv, Yan Wang, Yean Cheng, et al."
+  venue: "arXiv"
+  year: 2024
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/abs/2408.16500"
+    - label: "code"
+      url: "https://github.com/THUDM/CogVLM2"
+
+- title: "CogAgent: A Visual Language Model for GUI Agents"
+  authors: "Wenyi Hong, Weihan Wang, Qingsong Lv, Jiazheng Xu, Wenmeng Yu, Junhui Ji, Yan Wang, et al."
+  venue: "CVPR"
+  year: 2024
+  links:
+    - label: "paper"
+      url: "https://openaccess.thecvf.com/content/CVPR2024/html/Hong_CogAgent_A_Visual_Language_Model_for_GUI_Agents_CVPR_2024_paper.html"
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2312.08914"
+    - label: "code"
+      url: "https://github.com/zai-org/CogAgent"
+
+- title: "CogVLM: Visual Expert for Pretrained Language Models"
+  authors: "Weihan Wang, Qingsong Lv, Wenmeng Yu, Wenyi Hong, Ji Qi, Yan Wang, Junhui Ji, et al."
+  venue: "NeurIPS"
+  year: 2024
+  links:
+    - label: "paper"
+      url: "https://proceedings.neurips.cc/paper_files/paper/2024/hash/dc06d4d2792265fb5454a6092bfd5c6a-Abstract-Conference.html"
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2311.03079"
+    - label: "code"
+      url: "https://github.com/zai-org/CogVLM"
+
+- title: "M-SENA: An Integrated Platform for Multimodal Sentiment Analysis"
+  authors: "Huisheng Mao, Ziqi Yuan, Hua Xu, Wenmeng Yu, Yihe Liu, Kai Gao"
+  venue: "ACL Demo"
+  year: 2022
+  links:
+    - label: "paper"
+      url: "https://aclanthology.org/2022.acl-demo.20/"
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2203.12441"
+    - label: "code"
+      url: "https://github.com/thuiar/M-SENA"
+
+- title: "Co-Attentive Multi-Task Convolutional Neural Network for Facial Expression Recognition"
+  authors: "Wenmeng Yu, Hua Xu"
+  venue: "Pattern Recognition"
+  year: 2022
+  links:
+    - label: "paper"
+      url: "https://www.sciencedirect.com/science/article/pii/S003132032100577X"
+    - label: "code"
+      url: "https://github.com/thuiar/cmcnn"
+
+- title: "Transformer-based Feature Reconstruction Network for Robust Multimodal Sentiment Analysis"
+  authors: "Ziqi Yuan, Wei Li, Hua Xu, Wenmeng Yu"
+  venue: "ACM MM"
+  year: 2021
+  links:
+    - label: "paper"
+      url: "https://dl.acm.org/doi/10.1145/3474085.3475585"
+    - label: "code"
+      url: "https://github.com/thuiar/TFR-Net"
+
+- title: "Learning Modality-Specific Representations with Self-Supervised Multi-Task Learning for Multimodal Sentiment Analysis"
+  authors: "Wenmeng Yu, Hua Xu, Ziqi Yuan, Jiele Wu"
+  venue: "AAAI"
+  year: 2021
+  links:
+    - label: "paper"
+      url: "https://ojs.aaai.org/index.php/AAAI/article/view/17289"
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2102.04830"
+    - label: "code"
+      url: "https://github.com/thuiar/Self-MM"
+
+- title: "CH-SIMS: A Chinese Multimodal Sentiment Analysis Dataset with Fine-grained Annotation of Modality"
+  authors: "Wenmeng Yu, Hua Xu, Fanyang Meng, Yilin Zhu, Yixiao Ma, Jiele Wu, Jiyun Zou, Kaicheng Yang"
+  venue: "ACL"
+  year: 2020
+  links:
+    - label: "paper"
+      url: "https://aclanthology.org/2020.acl-main.343/"
+    - label: "code"
+      url: "https://github.com/thuiar/MMSA"

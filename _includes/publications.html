@@ -1,0 +1,19 @@
+<ol class="publications">
+  {% for pub in site.data.publications %}
+    <li>
+      <div class="pub-title">{{ pub.title }}</div>
+      <div class="pub-authors">{{ pub.authors }}</div>
+      <div class="pub-venue">{{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}</div>
+      {% if pub.note %}
+        <div class="pub-note">{{ pub.note }}</div>
+      {% endif %}
+      {% if pub.links %}
+        <div class="pub-links">
+          {% for link in pub.links %}
+            <a href="{{ link.url }}">{{ link.label }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ol>

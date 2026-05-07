@@ -1,19 +1,16 @@
-title: iyuge2
-subtitle: Wenmeng Yu
-name: Wenmeng Yu
+title: Leo | Wenmeng Yu
+name: Leo
+position: Algorithm Engineer
+email: iyuge2@qq.com
+scholar: https://scholar.google.com/citations?user=AE5tvE4AAAAJ&hl=zh-CN
+github: https://github.com/iyuge2
 description: >-
-  算法工程师，关注推荐系统、机器学习工程和多模态理解。
+  Leo (Wenmeng Yu) is an algorithm engineer interested in multimodal learning, recommender systems, and machine learning engineering.
 url: "https://iyuge2.github.io"
 baseurl: ""
 repository: iyuge2/iyuge2.github.io
 locale: zh-CN
 timezone: Asia/Shanghai
-
-remote_theme: "mmistakes/minimal-mistakes@4.28.0"
-minimal_mistakes_skin: "air"
-
-search: false
-search_full_content: false
 
 markdown: kramdown
 kramdown:
@@ -22,40 +19,8 @@ kramdown:
   syntax_highlighter: rouge
 
 plugins:
-  - jekyll-include-cache
-  - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
-
-author:
-  name: "Wenmeng Yu"
-  avatar:
-  bio: "算法工程师。关注推荐系统、机器学习工程和多模态理解。"
-  location: "China"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:iyuge2@qq.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/iyuge2"
-
-footer:
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:iyuge2@qq.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/iyuge2"
-
-defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: false
 
 exclude:
   - Gemfile

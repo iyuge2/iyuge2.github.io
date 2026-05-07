@@ -1,6 +1,6 @@
 # iyuge2.github.io
 
-One-page personal site powered by Jekyll and the Minimal Mistakes remote theme.
+One-page personal site powered by Jekyll with a Minimal Light-style academic layout.
 
 ## Local preview
 

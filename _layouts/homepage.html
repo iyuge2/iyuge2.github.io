@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="{{ site.locale | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% seo title=false %}
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar" aria-label="Profile">
+        <div class="avatar" aria-hidden="true">LY</div>
+        <h1>{{ site.name }}</h1>
+        <p class="role">{{ site.position }}</p>
+        <p class="motto">Stay hungry, stay foolish.</p>
+
+        <nav class="profile-links" aria-label="Profile links">
+          <a href="mailto:{{ site.email }}">Email</a>
+          <a href="{{ site.scholar }}">Google Scholar</a>
+          <a href="{{ site.github }}">GitHub</a>
+        </nav>
+
+        <div class="keywords">
+          <p>Natural Language Processing</p>
+          <p>Multimodal Learning</p>
+          <p>Facial Expression Recognition</p>
+          <p>Recommender Systems</p>
+        </div>
+      </aside>
+
+      <main class="content" id="main">
+        {{ content }}
+      </main>
+    </div>
+  </body>
+</html>
