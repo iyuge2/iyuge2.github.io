@@ -25,7 +25,7 @@
   links:
     - label: "paper"
       url: "https://arxiv.org/abs/2601.11525"
-    - label: "project"
+    - label: "homepage"
       url: "https://plotgen.github.io/"
 
 - title: "GLM-4.5V and GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning"
@@ -36,6 +36,8 @@
   links:
     - label: "paper"
       url: "https://arxiv.org/abs/2507.01006"
+    - label: "code"
+      url: "https://github.com/zai-org/GLM-V"
 
 - title: "AlignMMBench: Evaluating Chinese Multimodal Alignment in Large Vision-Language Models"
   authors: "Yuhang Wu*, Wenmeng Yu*, Yean Cheng, Yan Wang, Xiaohan Zhang, Jiazheng Xu, Ming Ding, Yuxiao Dong"
@@ -45,7 +47,7 @@
   links:
     - label: "paper"
       url: "https://aclanthology.org/2025.acl-long.327/"
-    - label: "project"
+    - label: "homepage"
       url: "https://alignmmbench.github.io/"
     - label: "code"
       url: "https://github.com/THUDM/AlignMMBench"
@@ -67,8 +69,6 @@
   links:
     - label: "paper"
       url: "https://openaccess.thecvf.com/content/CVPR2024/html/Hong_CogAgent_A_Visual_Language_Model_for_GUI_Agents_CVPR_2024_paper.html"
-    - label: "arXiv"
-      url: "https://arxiv.org/abs/2312.08914"
     - label: "code"
       url: "https://github.com/zai-org/CogAgent"
 
@@ -79,8 +79,6 @@
   links:
     - label: "paper"
       url: "https://proceedings.neurips.cc/paper_files/paper/2024/hash/dc06d4d2792265fb5454a6092bfd5c6a-Abstract-Conference.html"
-    - label: "arXiv"
-      url: "https://arxiv.org/abs/2311.03079"
     - label: "code"
       url: "https://github.com/zai-org/CogVLM"
 
@@ -91,8 +89,6 @@
   links:
     - label: "paper"
       url: "https://aclanthology.org/2022.acl-demo.20/"
-    - label: "arXiv"
-      url: "https://arxiv.org/abs/2203.12441"
     - label: "code"
       url: "https://github.com/thuiar/M-SENA"
 
@@ -123,8 +119,6 @@
   links:
     - label: "paper"
       url: "https://ojs.aaai.org/index.php/AAAI/article/view/17289"
-    - label: "arXiv"
-      url: "https://arxiv.org/abs/2102.04830"
     - label: "code"
       url: "https://github.com/thuiar/Self-MM"
 
