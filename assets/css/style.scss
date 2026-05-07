@@ -193,10 +193,22 @@ a:hover {
 
 .pub-authors,
 .pub-venue,
+.pub-role,
 .pub-note {
   margin-top: 3px;
   color: var(--muted);
   font-size: 14.5px;
+}
+
+.publication-note {
+  margin-top: -6px;
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-size: 14.5px;
+}
+
+.pub-role strong {
+  color: #344054;
 }
 
 .pub-links {

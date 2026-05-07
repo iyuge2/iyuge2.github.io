@@ -56,4 +56,6 @@ I hope to work on things that are meaningful, useful, and genuinely helpful to p
 
 ## Publications
 
+<p class="publication-note">* Equal contribution.</p>
+
 {% include publications.html %}

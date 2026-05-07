@@ -2,10 +2,21 @@
   authors: "GLM-V Team: Wenyi Hong, Xiaotao Gu, et al."
   venue: "arXiv"
   year: 2026
+  role: "Core Contributor"
   links:
     - label: "paper"
       url: "https://arxiv.org/pdf/2604.26752"
-    - label: "project"
+
+- title: "Glm-ocr technical report"
+  authors: "GLM-V Team: Shuaiqi Duan*, Yadong Xue*, et al."
+  venue: "arXiv"
+  year: 2026
+  role: "Project Leader"
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/pdf/2603.10910"
+    - label: "code"
+      url: "https://github.com/zai-org/GLM-OCR"
 
 - title: "PlotGen-Bench: Evaluating VLMs on Generating Visualization Code from Diverse Plots across Multiple Libraries"
   authors: "Yi Zhao, Zhen Yang, Shuaiqi Duan, Wenmeng Yu, Zhe Su, Jibing Gong, Jie Tang"
@@ -21,6 +32,7 @@
   authors: "GLM-V Team: Wenyi Hong, Wenmeng Yu, Xiaotao Gu, et al."
   venue: "arXiv"
   year: 2025
+  role: "Project Leader"
   links:
     - label: "paper"
       url: "https://arxiv.org/abs/2507.01006"
@@ -29,7 +41,7 @@
   authors: "Yuhang Wu*, Wenmeng Yu*, Yean Cheng, Yan Wang, Xiaohan Zhang, Jiazheng Xu, Ming Ding, Yuxiao Dong"
   venue: "ACL"
   year: 2025
-  note: "* Equal contribution"
+  role: "Project Leader"
   links:
     - label: "paper"
       url: "https://aclanthology.org/2025.acl-long.327/"
