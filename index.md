@@ -16,9 +16,9 @@ I hope to work on things that are meaningful, useful, and genuinely helpful to p
 ## Research Interests
 
 <ul class="interest-list">
-  <li><strong>Agentic Intelligence:</strong> GUI agents, tool-using agents, goal-oriented reasoning, and systems that can act reliably in real environments.</li>
-  <li><strong>Multimodal Learning:</strong> vision-language models, multimodal reasoning, multimodal sentiment analysis, and robust representation learning.</li>
-  <li><strong>Useful AI Systems:</strong> building practical AI systems that connect capability, usability, reliability, and real-world value.</li>
+  <li><strong>Agentic Intelligence:</strong> tool-using agents, goal-oriented reasoning, and systems that can act reliably in real environments.</li>
+  <li><strong>Multimodal Learning:</strong> multimodal understanding, multimodal reasoning, and unified multimodal understanding and generation.</li>
+  <li><strong>Useful AI Systems:</strong> building practical AI systems and products that connect capability, usability, reliability, and real-world value.</li>
 </ul>
 
 ## Experience
