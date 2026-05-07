@@ -9,7 +9,7 @@ title: "Leo | Wenmeng Yu"
 I am <strong>Leo (Wenmeng Yu)</strong>.
 </p>
 
-I believe <strong>AGI = agentic + multimodal</strong>. 
+I believe <strong>AGI = Multimodal + Agentic</strong>. 
 
 I hope to work on things that are meaningful, useful, and genuinely helpful to people.
 
